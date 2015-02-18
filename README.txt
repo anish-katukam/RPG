@@ -65,7 +65,6 @@ e.g.
 ///////////////        79
 
 
-
 GRAPHICS - 
 For final project
 USE SWORD AND SWORCERY GRAPHICS. THEY LOOK AMAZING.
@@ -91,20 +90,6 @@ Defense - Armor, Rings, hats
 HATS - or I quit
 
 Add attributes to any attribute, but in small quantities. Hats have a 1/10 chance to be UNUSUAL, where they add a higher amount to whatever. Hats are love, hats are life.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ITEM CATEGORIES

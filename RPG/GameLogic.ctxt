@@ -1,2 +1,5 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=void\ intro()
+comment0.text=\r\n\ Intro\ is\ the\ beginning\ of\ the\ game\ (expectably),\ and\ defines\ the\ character's\ name.\ The\ character\ does\ not\r\n\ get\ to\ define\ his\ own\ stats.\ Such\ is\ life.\r\n
+numComments=1

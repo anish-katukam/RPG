@@ -74,9 +74,8 @@ Weapons are found through defeating bosses - however, gear and potions can be fo
 Potions -
 Energy Restore
 Health Potion (only 1, kek, as health regen is done through lifesteal effects, or regen from gear)
-Enchant Potions (T1)
-Enchant Potions (T2)
-Enchant Potions (T3) //or maybe just one
+Attack Potion
+Defense Potion
 
 ATTRIBUTE SOURCES
 

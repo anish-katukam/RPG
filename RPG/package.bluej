@@ -271,6 +271,7 @@ target9.editor.x=960
 target9.editor.y=0
 target9.height=50
 target9.name=TextIO
+target9.naviview.expanded=true
 target9.showInterface=false
 target9.type=ClassTarget
 target9.typeParameters=

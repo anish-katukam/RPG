@@ -4,14 +4,14 @@
 public class TextIO
 {
     /*
-     * Opening logo. Proud of this. 56
+     * Opening logo. Proud of this.
      * -Anish
      */
     public void openingLogo(){
         String buffer = " ";
         for (int i = 1; i <50; i++){
             buffer = buffer + " ";
-            blank(13);
+            clear();
             System.out.println(buffer + "           /)");
             System.out.println(buffer + "         //");
             System.out.println(buffer + ".-------| |--------------------------------------------.__");
@@ -30,13 +30,38 @@ public class TextIO
             System.out.println(buffer + "                                                                                                          O =()()()============================()()()()||");
             System.out.println(buffer + "                                                                                                             \\---/                             ------/");
             delay(100);
-            clear();
         }
         delay(200);
         blank(15);
         System.out.println("                                                Designed and Coded by Anish Katukam and Sid Mani.");
     }
-
+    /*
+     * Chapter One's Logo & Quote
+       */
+    public void chapterOne(){
+        blank(7);
+        System.out.println("                                                                                    # ###      /                                                                  # ###");
+        System.out.println("                                                                                  /  /###  / #/                                                                 /  /###");
+        System.out.println("                                                                                 /  /  ###/  ##                                  #                             /  /  ###");
+        System.out.println("                                                                                /  ##   ##   ##                                 ##                            /  ##   ###");
+        System.out.println("                                                                               /  ###        ##                                 ##                           /  ###    ###");
+        System.out.println("                                                                              ##   ##        ##  /##      /###       /###     ######## /##  ###  /###       ##   ##     ## ###  /###     /##");
+        System.out.println("                                                                              ##   ##        ## / ###    / ###  /   / ###  / ######## / ###  ###/ #### /    ##   ##     ##  ###/ #### / / ###");
+        System.out.println("                                                                              ##   ##        ##/   ###  /   ###/   /   ###/     ##   /   ###  ##   ###/     ##   ##     ##   ##   ###/ /   ###");
+        System.out.println("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ##    ### ##            ##   ##     ##   ##    ## ##    ###");
+        System.out.println("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ########  ##            ##   ##     ##   ##    ## ########");
+        System.out.println("                                                                              ##  ##        ##     ## ##    ##   ##    ##      ##  #######   ##             ##  ##     ##   ##    ## #######");
+        System.out.println("                                                                               ## #      /  ##     ## ##    ##   ##    ##      ##  ##        ##              ## #      /    ##    ## ##");
+        System.out.println("                                                                                ###     /   ##     ## ##    /#   ##    ##      ##  ####    / ##               ###     /     ##    ## ####    /");
+        System.out.println("                                                                                 ######/    ##     ##  ####/ ##  #######       ##   ######/  ###               ######/      ###   ### ######/");
+        System.out.println("                                                                                  ###       ##    ##   ###   ## ######         ##   #####    ###                ###         ###   ### #####");
+        System.out.println("                                                                                                  /             ##");
+        System.out.println("                                                                                                 /              ##");
+        System.out.println("                                                                                                /               ##");
+        System.out.println("                                                                                               /                 ##");
+        blank(5);
+        dramatic(3000,"                                                                                                                        “Come without a map. Draw your own.”");
+    }
     /*
      * delay sleeps the thread for a passed-in time. Exceptions are caught but not dealt with.
      * -Anish

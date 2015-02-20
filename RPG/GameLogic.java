@@ -15,10 +15,16 @@ public class GameLogic
      * get to define his own stats. Such is life.
        */
     public void intro(){
-        t.dramatic(750,"Welcome.");
+        t.dramatic(1750,"Welcome.");
+        t.dramatic(2750,"This game is meant to be played in fullscreen. Please maximize now.");
         t.clear();
         t.openingLogo();
-        
-        
+        t.blank(5);
+        t.dramatic(6000,"                           “Which of us has not felt that the character we are reading in the screen is more real than the person standing beside us?”");
+        t.clear();
+        t.chapterOne();
+        t.blank(14);
+        t.delay(2000);
+        t.blank(10);
     }
 }

@@ -12,6 +12,7 @@ public class TextIO
         for (int i = 1; i <50; i++){
             buffer = buffer + " ";
             clear();
+            blank(15);
             System.out.println(buffer + "           /)");
             System.out.println(buffer + "         //");
             System.out.println(buffer + ".-------| |--------------------------------------------.__");
@@ -33,12 +34,12 @@ public class TextIO
         }
         delay(200);
         blank(15);
-        System.out.println("                                                Designed and Coded by Anish Katukam and Sid Mani.");
+        dramatic(6000,"                                                                  “Which of us has not felt that the character we are reading in the screen is more real than the person standing beside us?”");
     }
     /*
      * Chapter One's Logo & Quote
        */
-    public void chapterOne(){
+    public void chapterOneLogo(){
         blank(7);
         System.out.println("                                                                                    # ###      /                                                                  # ###");
         System.out.println("                                                                                  /  /###  / #/                                                                 /  /###");
@@ -60,11 +61,10 @@ public class TextIO
         System.out.println("                                                                                                /               ##");
         System.out.println("                                                                                               /                 ##");
         blank(5);
-        dramatic(3000,"                                                                                                                        “Come without a map. Draw your own.”");
+        dramatic(5000,"                                                                                                                        “Come without a map. Draw your own.”");
     }
     /*
      * delay sleeps the thread for a passed-in time. Exceptions are caught but not dealt with.
-     * -Anish
      */
     public void delay(int time) {
         try {
@@ -75,7 +75,6 @@ public class TextIO
 
     /*
      * For ease of use when writing the story, made clear command. Seems this only works RELIABLY on BlueJ.
-     * -Anish
      */
     public final static void clear()
     {
@@ -85,7 +84,6 @@ public class TextIO
     /*
      * Dramatic is used for when a line has to be outputted and then cleared. Saves lines in the grand scheme
      * of things, regardless of how frivolous it seems now.
-     * -Anish
      */
     public void dramatic(int time, String dialogue){
         System.out.println(dialogue);

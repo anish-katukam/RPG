@@ -24,7 +24,8 @@ public class GameLogic
         t.dramatic(3500,"Life without adversity is not life.");
         t.dramatic(3500,"But we hail no life. We are no more alive than those we call from the abyss.");
         t.dramatic(4500,"And so we seek to end those who did this.");
-    }
+    }
+
 
     /*
      * Intro is the beginning of the game (expectably), and introduces the person to the game. The character does not
@@ -58,5 +59,8 @@ public class GameLogic
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
     }
-
+    public void battle(Entity a, Entity b)
+    {
+        
+    }
 }

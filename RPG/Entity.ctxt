@@ -1,2 +1,12 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=Weapon\ getWeapon()
+comment1.params=
+comment1.target=Hat\ getHat()
+comment2.params=
+comment2.target=Potion\ getPotion()
+comment3.params=
+comment3.target=Ring\ getRing()
+comment4.params=
+comment4.target=Armor\ getArmor()
+numComments=5

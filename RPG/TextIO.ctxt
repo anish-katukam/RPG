@@ -1,20 +1,20 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ openingLogo()
-comment0.text=\r\n\ Opening\ logo.\ Proud\ of\ this.\r\n\ -Anish\r\n
+comment0.text=\n\ Opening\ logo.\ Proud\ of\ this.\n\ -Anish\n
 comment1.params=
 comment1.target=void\ chapterOneLogo()
-comment1.text=\r\n\ Chapter\ One's\ Logo\ &\ Quote\r\n
+comment1.text=\n\ Chapter\ One's\ Logo\ &\ Quote\n
 comment2.params=time
 comment2.target=void\ delay(int)
-comment2.text=\r\n\ delay\ sleeps\ the\ thread\ for\ a\ passed-in\ time.\ Exceptions\ are\ caught\ but\ not\ dealt\ with.\r\n
+comment2.text=\n\ delay\ sleeps\ the\ thread\ for\ a\ passed-in\ time.\ Exceptions\ are\ caught\ but\ not\ dealt\ with.\n
 comment3.params=
 comment3.target=void\ clear()
-comment3.text=\r\n\ For\ ease\ of\ use\ when\ writing\ the\ story,\ made\ clear\ command.\ Seems\ this\ only\ works\ RELIABLY\ on\ BlueJ.\r\n
+comment3.text=\n\ For\ ease\ of\ use\ when\ writing\ the\ story,\ made\ clear\ command.\ Seems\ this\ only\ works\ RELIABLY\ on\ BlueJ.\n
 comment4.params=time\ dialogue
 comment4.target=void\ dramatic(int,\ java.lang.String)
-comment4.text=\r\n\ Dramatic\ is\ used\ for\ when\ a\ line\ has\ to\ be\ outputted\ and\ then\ cleared.\ Saves\ lines\ in\ the\ grand\ scheme\r\n\ of\ things,\ regardless\ of\ how\ frivolous\ it\ seems\ now.\r\n
+comment4.text=\n\ Dramatic\ is\ used\ for\ when\ a\ line\ has\ to\ be\ outputted\ and\ then\ cleared.\ Saves\ lines\ in\ the\ grand\ scheme\n\ of\ things,\ regardless\ of\ how\ frivolous\ it\ seems\ now.\n
 comment5.params=lines
 comment5.target=void\ blank(int)
-comment5.text=\r\n\ Mainly\ used\ for\ logos,\ blank()\ offers\ a\ simple\ way\ of\ entering\ spaces.\r\n
+comment5.text=\n\ Mainly\ used\ for\ logos,\ blank()\ offers\ a\ simple\ way\ of\ entering\ spaces.\n
 numComments=6

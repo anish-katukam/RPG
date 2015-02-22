@@ -9,7 +9,7 @@ public class Entity
     private Potion potion;
     private Ring ring;
     private Armor armor;
-    
+    private String name;
     public Weapon getWeapon()
     {
         return this.weapon;
@@ -30,7 +30,11 @@ public class Entity
     {
         return this.armor;
     }
-    private void pickUp(Item x)
+    public String getName()
+    {
+        return this.name;
+    }
+    public void pickUp(Item x)
     {
       if (x instanceof Armor)
       {
@@ -52,5 +56,14 @@ public class Entity
       {
           ring = (Ring) x;
       }
+    }
+    public void takeHealthDamage(int amount)
+    {
+        health -= amount;
+    }
+    public void attack (Entity a)
+    {
+       int damage = (this.getWeapon().getPower() - a.getArmor().getStrength()) * (this.getAtkBuf() / a.getDefBuf());
+       b.takeHealthDamage(damage);
     }
 }

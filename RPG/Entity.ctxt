@@ -9,4 +9,6 @@ comment3.params=
 comment3.target=Ring\ getRing()
 comment4.params=
 comment4.target=Armor\ getArmor()
-numComments=5
+comment5.params=x
+comment5.target=void\ pickUp(Item)
+numComments=6

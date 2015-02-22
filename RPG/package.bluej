@@ -2,38 +2,32 @@
 dependency1.from=Starter
 dependency1.to=GameLogic
 dependency1.type=UsesDependency
+dependency10.from=Entity
+dependency10.to=Item
+dependency10.type=UsesDependency
 dependency2.from=GameLogic
 dependency2.to=TextIO
 dependency2.type=UsesDependency
-<<<<<<< HEAD
-objectbench.height=76
-objectbench.width=924
-package.editor.height=908
-package.editor.width=826
-package.editor.x=-1920
-package.editor.y=0
-package.numDependencies=2
-=======
-dependency3.from=GameLogic
-dependency3.to=TextIO
+dependency3.from=Entity
+dependency3.to=Weapon
 dependency3.type=UsesDependency
 dependency4.from=Entity
-dependency4.to=Weapon
+dependency4.to=Hat
 dependency4.type=UsesDependency
 dependency5.from=Entity
-dependency5.to=Hat
+dependency5.to=Potion
 dependency5.type=UsesDependency
 dependency6.from=Entity
-dependency6.to=Potion
+dependency6.to=Ring
 dependency6.type=UsesDependency
 dependency7.from=Entity
-dependency7.to=Ring
+dependency7.to=Armor
 dependency7.type=UsesDependency
-dependency8.from=Entity
-dependency8.to=Armor
+dependency8.from=GameLogic
+dependency8.to=Entity
 dependency8.type=UsesDependency
-dependency9.from=GameLogic
-dependency9.to=Entity
+dependency9.from=Inventory
+dependency9.to=Item
 dependency9.type=UsesDependency
 objectbench.height=76
 objectbench.width=1478
@@ -41,8 +35,7 @@ package.editor.height=865
 package.editor.width=1370
 package.editor.x=130
 package.editor.y=126
-package.numDependencies=9
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
+package.numDependencies=10
 package.numTargets=21
 package.showExtends=true
 package.showUses=true
@@ -64,14 +57,19 @@ target1.typeParameters=
 target1.width=80
 target1.x=780
 target1.y=120
+target10.editor.height=700
+target10.editor.width=900
+target10.editor.x=32
+target10.editor.y=23
 target10.height=50
 target10.name=Battle
+target10.naviview.expanded=true
 target10.showInterface=false
 target10.type=ClassTarget
 target10.typeParameters=
 target10.width=80
-target10.x=650
-target10.y=70
+target10.x=800
+target10.y=430
 target11.editor.height=1040
 target11.editor.width=960
 target11.editor.x=1269
@@ -82,17 +80,6 @@ target11.naviview.expanded=true
 target11.showInterface=false
 target11.type=ClassTarget
 target11.typeParameters=
-<<<<<<< HEAD
-target11.width=80
-target11.x=410
-target11.y=240
-target12.editor.height=700
-target12.editor.width=900
-target12.editor.x=-1888
-target12.editor.y=12
-target12.height=50
-target12.name=ModifyStats
-=======
 target11.width=90
 target11.x=220
 target11.y=20
@@ -102,20 +89,13 @@ target12.editor.x=32
 target12.editor.y=12
 target12.height=50
 target12.name=Character
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target12.naviview.expanded=true
 target12.showInterface=false
 target12.type=ClassTarget
 target12.typeParameters=
-<<<<<<< HEAD
-target12.width=90
-target12.x=410
-target12.y=20
-=======
 target12.width=80
 target12.x=940
 target12.y=120
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target13.editor.height=700
 target13.editor.width=900
 target13.editor.x=32
@@ -131,8 +111,8 @@ target13.x=520
 target13.y=410
 target14.editor.height=700
 target14.editor.width=900
-target14.editor.x=32
-target14.editor.y=23
+target14.editor.x=851
+target14.editor.y=559
 target14.height=50
 target14.name=Item
 target14.naviview.expanded=true
@@ -144,31 +124,16 @@ target14.x=410
 target14.y=240
 target15.editor.height=700
 target15.editor.width=900
-<<<<<<< HEAD
-target15.editor.x=-1888
-target15.editor.y=12
-=======
-target15.editor.x=32
-target15.editor.y=23
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
+target15.editor.x=170
+target15.editor.y=146
 target15.height=50
-target15.name=Battle
+target15.name=Armor
 target15.naviview.expanded=true
 target15.showInterface=false
 target15.type=ClassTarget
 target15.typeParameters=
 target15.width=80
-<<<<<<< HEAD
-target15.x=640
-target15.y=20
-target16.editor.height=700
-target16.editor.width=900
-target16.editor.x=32
-target16.editor.y=12
-target16.height=50
-target16.name=Armor
-=======
-target15.x=650
+target15.x=30
 target15.y=350
 target16.editor.height=700
 target16.editor.width=900
@@ -176,89 +141,53 @@ target16.editor.x=32
 target16.editor.y=23
 target16.height=50
 target16.name=Weapon
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target16.naviview.expanded=true
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
 target16.width=80
-<<<<<<< HEAD
-target16.x=650
-=======
 target16.x=290
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target16.y=350
 target17.editor.height=701
 target17.editor.width=900
 target17.editor.x=32
-<<<<<<< HEAD
-target17.editor.y=11
-target17.height=50
-target17.name=Ring
-=======
 target17.editor.y=23
 target17.height=50
 target17.name=Hat
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target17.naviview.expanded=true
 target17.showInterface=false
 target17.type=ClassTarget
 target17.typeParameters=
 target17.width=80
-<<<<<<< HEAD
-target17.x=530
-=======
 target17.x=410
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target17.y=350
 target18.editor.height=700
 target18.editor.width=900
 target18.editor.x=32
 target18.editor.y=12
 target18.height=50
-<<<<<<< HEAD
-target18.name=Enemy
-=======
 target18.name=RingOfAttack
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target18.naviview.expanded=true
 target18.showInterface=false
 target18.type=ClassTarget
 target18.typeParameters=
-<<<<<<< HEAD
-target18.width=80
-target18.x=800
-target18.y=90
-=======
 target18.width=100
 target18.x=520
 target18.y=470
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target19.editor.height=700
 target19.editor.width=900
 target19.editor.x=32
 target19.editor.y=12
 target19.height=50
-<<<<<<< HEAD
-target19.name=Hat
-=======
 target19.name=PotionOfAttack
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target19.naviview.expanded=true
 target19.showInterface=false
 target19.type=ClassTarget
 target19.typeParameters=
-<<<<<<< HEAD
-target19.width=80
-target19.x=410
-target19.y=350
-target2.editor.height=700
-=======
 target19.width=110
 target19.x=140
 target19.y=540
 target2.editor.height=701
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target2.editor.width=900
 target2.editor.x=32
 target2.editor.y=23
@@ -268,17 +197,6 @@ target2.naviview.expanded=true
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
-<<<<<<< HEAD
-target2.width=90
-target2.x=520
-target2.y=410
-target20.editor.height=1040
-target20.editor.width=960
-target20.editor.x=0
-target20.editor.y=0
-target20.height=50
-target20.name=GameLogic
-=======
 target2.width=80
 target2.x=530
 target2.y=350
@@ -288,44 +206,26 @@ target20.editor.x=32
 target20.editor.y=23
 target20.height=50
 target20.name=Potion
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target20.naviview.expanded=true
 target20.showInterface=false
 target20.type=ClassTarget
 target20.typeParameters=
-<<<<<<< HEAD
-target20.width=90
-target20.x=220
-target20.y=20
-target21.editor.height=700
-target21.editor.width=900
-target21.editor.x=665
-target21.editor.y=321
-target21.height=50
-target21.name=Inventory
-=======
 target20.width=80
-target20.x=170
+target20.x=160
 target20.y=350
 target21.editor.height=700
 target21.editor.width=900
-target21.editor.x=343
-target21.editor.y=461
+target21.editor.x=1013
+target21.editor.y=660
 target21.height=50
 target21.name=Entity
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target21.naviview.expanded=true
 target21.showInterface=false
 target21.type=ClassTarget
 target21.typeParameters=
 target21.width=80
-<<<<<<< HEAD
-target21.x=410
-target21.y=140
-=======
 target21.x=850
 target21.y=20
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target3.editor.height=700
 target3.editor.width=900
 target3.editor.x=32
@@ -375,15 +275,6 @@ target6.naviview.expanded=true
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
-<<<<<<< HEAD
-target6.width=100
-target6.x=520
-target6.y=470
-target7.editor.height=1080
-target7.editor.width=960
-target7.editor.x=-960
-target7.editor.y=0
-=======
 target6.width=120
 target6.x=130
 target6.y=480
@@ -391,7 +282,6 @@ target7.editor.height=700
 target7.editor.width=900
 target7.editor.x=665
 target7.editor.y=321
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e
 target7.height=50
 target7.name=Inventory
 target7.naviview.expanded=true
@@ -425,10 +315,5 @@ target9.showInterface=false
 target9.type=ClassTarget
 target9.typeParameters=
 target9.width=80
-<<<<<<< HEAD
-target9.x=230
-target9.y=90
-=======
 target9.x=110
 target9.y=20
->>>>>>> e6e9d18facd844a71570e8bcbb0c2e6141bec76e

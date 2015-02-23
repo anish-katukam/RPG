@@ -61,9 +61,14 @@ public class Entity
     {
         health -= amount;
     }
-    public void attack (Entity a)
+    public int attack (Entity a)
     {
-       int damage = (this.getWeapon().getPower() - a.getArmor().getStrength()) * (this.getAtkBuf() / a.getDefBuf());
+       int damage = 100 * (this.getWeapon().getDamage() / a.getArmor().getStrength()) * (this.getAtkBuf() / a.getDefBuf());
        b.takeHealthDamage(damage);
+       return damage;
+    }
+    public void updateStats()
+    {
+        
     }
 }

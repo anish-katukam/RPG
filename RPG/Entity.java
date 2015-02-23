@@ -3,7 +3,7 @@ public class Entity
     private int health;
     private int bloodlust;
     private int defense;
-    private int mana;
+    private int energy;
     private Weapon weapon;
     private Hat hat;
     private Potion potion;
@@ -63,12 +63,15 @@ public class Entity
     }
     public int attack (Entity a)
     {
-       int damage = 100 * (this.getWeapon().getDamage() / a.getArmor().getStrength()) * (this.getAtkBuf() / a.getDefBuf());
-       b.takeHealthDamage(damage);
+       int damage = 100 * (this.getWeapon().getDamage() / a.getArmor().getResistance());
+       //b.takeHealthDamage(damage);
        return damage;
     }
     public void updateStats()
     {
         
+    }
+    public int getHealth(){
+        return health;
     }
 }

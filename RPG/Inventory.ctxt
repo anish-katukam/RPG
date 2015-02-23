@@ -3,6 +3,4 @@ comment0.params=
 comment0.target=void\ modifyInventory()
 comment1.params=add
 comment1.target=void\ addItem(Item)
-comment2.params=check
-comment2.target=void\ checkItem(Item)
-numComments=3
+numComments=2

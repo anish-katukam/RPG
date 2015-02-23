@@ -3,4 +3,7 @@
    */
 public class Armor extends Item
 {
+    String name;
+    int resistance;
+    int hregen;
 }

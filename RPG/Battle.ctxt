@@ -1,4 +1,8 @@
 #BlueJ class context
-comment0.params=a\ b
-comment0.target=void\ Battle(Entity,\ Entity)
-numComments=1
+comment0.params=x\ y
+comment0.target=Battle(Entity,\ Entity)
+comment1.params=
+comment1.target=Entity\ advanceBattle()
+comment2.params=p
+comment2.target=Entity\ advanceBattle(Potion)
+numComments=3

@@ -7,6 +7,4 @@ comment1.target=void\ intro()
 comment1.text=\r\n\ Intro\ is\ the\ beginning\ of\ the\ game\ (expectably),\ and\ introduces\ the\ person\ to\ the\ game.\ The\ character\ does\ not\r\n\ get\ to\ define\ his\ own\ stats.\ Such\ is\ life.\r\n
 comment2.params=
 comment2.target=void\ chapterone()
-comment3.params=a\ b
-comment3.target=void\ battle(Entity,\ Entity)
-numComments=4
+numComments=3

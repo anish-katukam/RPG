@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class RingOfWar here.
+ * Write a description of class Placebo here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class RingOfWar extends Ring
+public class Placebo extends Armor
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class RingOfWar
+     * Constructor for objects of class Placebo
      */
-    public RingOfWar()
+    public Placebo()
     {
         // initialise instance variables
         x = 0;

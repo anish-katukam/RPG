@@ -9,11 +9,11 @@ public class Entity
     public Entity(String name)
     {
         stats = new Stats(name);
-        weapon = new weapon_t1();
-        hat = new hat_t1();
-        potion = new potion_t1();
-        ring = new ring_t1();
-        armor = new armor_t1();
+        weapon = new Crowbar();
+        hat = new GhastlyGibus();
+        potion = new Obamacare();
+        //ring = new ring_t1();
+        armor = new Norton360();
     }
 
     public Weapon getWeapon()
@@ -74,12 +74,14 @@ public class Entity
     {
         this.stats.setHealth(this.stats.getHealth() + a.getHealth());
         this.stats.setEnergy(this.stats.getEnergy() + a.getEnergy());
+        this.stats.setAttack(this.stats.getAttack() + a.getAttack());
         this.stats.setBloodlust(this.stats.getBloodlust() + a.getBloodlust());
+        this.stats.setDefense(this.stats.getDefense() + a.getDefense());
     }
 
     public int attack (Entity a)
     {
-        int damage = 100 * (this.getStats().getAttack() / a.getStats().getDefense);
+        int damage = 100 * (this.getStats().getAttack() / a.getStats().getDefense());
         a.getStats().takeHealthDamage(damage);
         return damage;
     }

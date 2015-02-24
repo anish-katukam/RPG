@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class StaffofHorror here.
+ * Write a description of class Norton360 here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class StaffofHorror extends Weapon
+public class Norton360 extends Armor
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class StaffofHorror
+     * Constructor for objects of class Norton360
      */
-    public StaffofHorror()
+    public Norton360()
     {
         // initialise instance variables
         x = 0;

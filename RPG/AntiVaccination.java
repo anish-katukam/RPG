@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class RingOfWar here.
+ * Write a description of class AntiVaccination here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class RingOfWar extends Ring
+public class AntiVaccination extends Potion
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class RingOfWar
+     * Constructor for objects of class AntiVaccination
      */
-    public RingOfWar()
+    public AntiVaccination()
     {
         // initialise instance variables
         x = 0;

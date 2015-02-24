@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Defibrillator here.
+ * Write a description of class DROPTABLE here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Defibrillator extends Weapon
+public class DROPTABLE extends Weapon
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class Defibrillator
+     * Constructor for objects of class DROPTABLE
      */
-    public Defibrillator()
+    public DROPTABLE()
     {
         // initialise instance variables
         x = 0;

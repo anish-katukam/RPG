@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Loadout here.
+ * Write a description of class Sombrero here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Loadout
+public class Sombrero extends Hat
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class Loadout
+     * Constructor for objects of class Sombrero
      */
-    public Loadout()
+    public Sombrero()
     {
         // initialise instance variables
         x = 0;

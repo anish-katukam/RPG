@@ -28,6 +28,11 @@ public class Stats
         return health;    
     }
 
+    public int getAttack()
+    {
+        return attack;
+    }
+
     public int getBloodlust()
     {
         return bloodlust;    
@@ -61,6 +66,11 @@ public class Stats
     public void setEnergy(int n)
     {
         energy = n;
+    }
+
+    public void setAttack(int n)
+    {
+        attack = n;
     }
 
     public void takeHealthDamage(int amount)

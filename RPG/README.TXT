@@ -1,12 +1,41 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
+Item Dossier:
 
-PROJECT TITLE: RPG
-PURPOSE OF PROJECT: Entertain and/or bore
-VERSION or DATE:
-HOW TO START THIS PROJECT: Run starter
-AUTHORS: Anish Katukam, Sid Mani
-USER INSTRUCTIONS: Run starter
+Armor:
+
+    1.  
+    2.  
+    3.  
+    4.  Placebo
+    5.  Norton 360
+    
+Potions:
+
+    1.  Faulty Anger Management  
+    2.  
+    3.
+    4.
+    5.
+
+Weapons:
+
+    1.  Praise Gaben
+    2.  '); DROP TABLE 
+    3.  Generic Wand
+    4.  Great Flag of the Glorious Democratic Republic of the Congo  
+    5.  Crowbar
+    
+Hats:
+
+    1.  Burning Flames Team Captain
+    2.  Bill's Hat
+    3.  Valhalla Helm
+    4.  Sombrero
+    5.  Ghastly Gibus
+    
+Rings:
+
+    1.
+    2.  
+    3.
+    4.
+    5.

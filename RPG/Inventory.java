@@ -19,42 +19,41 @@ public class Inventory
         t.blank(1);
         System.out.println("Armors:");
         for (Armor a : armorPack){
-            System.out.println(a.name);
-            System.out.println(a.resistance);
-            System.out.println(a.hregen);
+            System.out.println(a.getName());
+            System.out.println(a.getDefense());
+            System.out.println(a.getHRegen());
         }
         t.blank(1);
         System.out.println("Potions:");
         for (Potion p : potionPack){
-            System.out.println(p.name);
-            System.out.println(p.damage);
-            System.out.println(p.resistance);
-            System.out.println(p.hregen);
-            System.out.println(p.eregen);
+            System.out.println(p.getName());
+            System.out.println(p.getEnergy());
+            System.out.println(p.getHealth());
+            System.out.println(p.getBloodlust());
         }
         t.blank(1);
         System.out.println("Weapons:");
         for (Weapon w : weaponPack){
-            System.out.println(w.name);
-            System.out.println(w.damage);
+            System.out.println(w.getName());
+            System.out.println(w.getAttack());
         }
         t.blank(1);
         System.out.println("Hats:");
         for (Hat h : hatPack){
-            System.out.println(h.name);
-            System.out.println(h.damage);
-            System.out.println(h.resistance);
-            System.out.println(h.hregen);
-            System.out.println(h.eregen);
+            System.out.println(h.getName());
+            System.out.println(h.getAttack());
+            System.out.println(h.getDefense());
+            System.out.println(h.getHRegen());
+            System.out.println(h.getERegen());
         }
         t.blank(1);
         System.out.println("Rings:");
         for (Ring r : ringPack){
-            System.out.println(r.name);
-            System.out.println(r.damage);
-            System.out.println(r.resistance);
-            System.out.println(r.hregen);
-            System.out.println(r.eregen);
+            System.out.println(r.getName());
+            System.out.println(r.getAttack());
+            System.out.println(r.getDefense());
+            System.out.println(r.getHRegen());
+            System.out.println(r.getERegene());
         }
     }
 

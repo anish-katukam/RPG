@@ -10,12 +10,12 @@ public class Entity
     Random random = new Random();
     public Entity(String name)
     {
-        stats = new Stats(name);
-        weapon = new Crowbar();
-        hat = new GhastlyGibus();
-        potion = new Obamacare();
+        //stats = new Stats(name);
+        //weapon = new Crowbar();
+        //hat = new GhastlyGibus();
+        //potion = new Obamacare();
         //ring = new ring_t1();
-        armor = new Norton360();
+        //armor = new Norton360();
     }
 
     public Weapon getWeapon()

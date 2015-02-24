@@ -1,15 +1,20 @@
 public class Entity
 {
-    private int health;
-    private int bloodlust;
-    private int defense;
-    private int mana;
     private Weapon weapon;
     private Hat hat;
     private Potion potion;
     private Ring ring;
     private Armor armor;
-    private String name;
+    private Stats stats;
+    public static void Entity(String name)
+    {
+        stats = new Stats(name);
+        weapon = new weapon_t1;
+        hat = new hat_t1;
+        potion = new potion_t1;
+        ring = new ring_t1;
+        armor = new armor_t1;
+    }
     public Weapon getWeapon()
     {
         return this.weapon;
@@ -30,9 +35,9 @@ public class Entity
     {
         return this.armor;
     }
-    public String getName()
+    public Stats getStats()
     {
-        return this.name;
+        return this.stats;
     }
     public void pickUp(Item x)
     {
@@ -57,14 +62,10 @@ public class Entity
           ring = (Ring) x;
       }
     }
-    public void takeHealthDamage(int amount)
-    {
-        health -= amount;
-    }
     public int attack (Entity a)
     {
-       int damage = 100 * (this.getWeapon().getDamage() / a.getArmor().getStrength()) * (this.getAtkBuf() / a.getDefBuf());
-       b.takeHealthDamage(damage);
+       int damage = 100 * (this.getWeapon().getDamage() / a.getArmor().getResistance());
+       a.getStats().takeHealthDamage(damage);
        return damage;
     }
     public void updateStats()

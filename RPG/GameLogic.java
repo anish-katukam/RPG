@@ -40,7 +40,7 @@ public class GameLogic
     public void chapterone(){
         t.chapterOneLogo();
         t.dramatic(3500,"We awoke far, far away in lands strange and barren.");
-        t.dramatic(3500,"We could feel the magiks flowing through the sand and emanating in the air.");
+        t.dramatic(3500,"We could feel the ancient power flowing through the sand and reverberating in the air.");
         t.dramatic(3500,"We saw the yellow sands stretch forever. It culminated near the east in a great earthen spire.");
         t.dramatic(3500,"Our resolve hardened. We set off.");
         t.dramatic(3500,"The sands stirred a few feet ahead. We clutched our staff tightly.");
@@ -61,6 +61,9 @@ public class GameLogic
     }
     public void battle(Entity a, Entity b)
     {
+        
+    }
+    public void getStats(Entity a){
         
     }
     

@@ -6,4 +6,8 @@ public class Armor extends Item
     String name;
     int resistance;
     int hregen;
+    
+    public int getResistance(){
+        return resistance;
+    }
 }

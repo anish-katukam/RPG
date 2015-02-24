@@ -3,7 +3,7 @@
  * Add method to add an item
  * Add method to check if there's an item in the inventory
  * 
-   */
+ */
 public class Inventory
 {
     TextIO t = new TextIO();
@@ -12,7 +12,7 @@ public class Inventory
     Weapon[] weaponPack = new Weapon[5];
     Hat[] hatPack = new Hat[5];
     Ring[] ringPack = new Ring[5];
-    
+
     public void modifyInventory(){
         t.clear();
         System.out.println("Backpack:");
@@ -27,6 +27,10 @@ public class Inventory
         System.out.println("Potions:");
         for (Potion p : potionPack){
             System.out.println(p.name);
+            System.out.println(p.damage);
+            System.out.println(p.resistance);
+            System.out.println(p.hregen);
+            System.out.println(p.eregen);
         }
         t.blank(1);
         System.out.println("Weapons:");
@@ -38,13 +42,22 @@ public class Inventory
         System.out.println("Hats:");
         for (Hat h : hatPack){
             System.out.println(h.name);
+            System.out.println(h.damage);
+            System.out.println(h.resistance);
+            System.out.println(h.hregen);
+            System.out.println(h.eregen);
         }
         t.blank(1);
         System.out.println("Rings:");
         for (Ring r : ringPack){
             System.out.println(r.name);
+            System.out.println(r.damage);
+            System.out.println(r.resistance);
+            System.out.println(r.hregen);
+            System.out.println(r.eregen);
         }
     }
+
     public void addItem(Item add){
     }
 }

@@ -59,12 +59,5 @@ public class GameLogic
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
     }
-    public void battle(Entity a, Entity b)
-    {
-        
-    }
-    public void getStats(Entity a){
-        
-    }
     
 }

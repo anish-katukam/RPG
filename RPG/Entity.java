@@ -1,3 +1,4 @@
+import java.util.*;
 public class Entity
 {
     private Weapon weapon;
@@ -6,6 +7,7 @@ public class Entity
     private Ring ring;
     private Armor armor;
     private Stats stats;
+    Random random = new Random();
     public Entity(String name)
     {
         stats = new Stats(name);
@@ -83,6 +85,13 @@ public class Entity
     {
         int damage = 100 * (this.getStats().getAttack() / a.getStats().getDefense());
         a.getStats().takeHealthDamage(damage);
+        int critchance = random.nextInt(11);
+        if (critchance == 1){
+            return (2*damage);
+        }
+        else{
+            damage += (damage*(random.nextInt(10)-5));
+        }
         return damage;
     }
 }

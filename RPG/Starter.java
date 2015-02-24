@@ -5,5 +5,7 @@ public class Starter
         g.exposition();
         g.intro();
         g.chapterone();
+        g.chaptertwo();
+        g.chapterthree();
     }
 }

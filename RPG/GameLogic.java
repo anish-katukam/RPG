@@ -18,12 +18,6 @@ public class GameLogic
         t.dramatic(4000,"necromancy: a form of magic involving communication with the deceased – either by summoning their spirit as an apparition or raising them bodily");
         t.dramatic(3000,"We have surpassed life. Most do this only once."); 
         t.dramatic(3500,"We are not most.");
-        t.dramatic(3500,"We were feared and we were hailed, we were condemned and we were lauded.");
-        t.dramatic(3000,"But we were strong. We raised those fallen to fell more.");
-        t.dramatic(3500,"And now we have fallen.");
-        t.dramatic(3500,"Life without adversity is not life.");
-        t.dramatic(3500,"But we hail no life. We are no more alive than those we call from the abyss.");
-        t.dramatic(4500,"And so we seek to end those who did this.");
     }
 
 
@@ -59,5 +53,10 @@ public class GameLogic
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
     }
-    
+    public void chaptertwo(){
+        t.chapterTwoLogo();
+    }
+    public void chapterthree(){
+        t.chapterThreeLogo();
+    }
 }

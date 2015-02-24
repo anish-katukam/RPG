@@ -1,4 +1,5 @@
 import java.util.*;
+import java.io.*;
 /*
  * TextIO is a consolidation of methods (primarily ease-of-use) for delaying, clearing, or displaying logos.
  */
@@ -10,7 +11,7 @@ public class TextIO
      */
     public void openingLogo(){
         String buffer = " ";
-        for (int i = 1; i <50; i++){
+        for (int i = 1; i <47; i++){
             buffer = buffer + " ";
             clear();
             blank(15);
@@ -21,21 +22,35 @@ public class TextIO
             System.out.println(buffer + "`-------| |--------------------------------------------'^^");
             System.out.println(buffer + "         \\");
             System.out.println(buffer + "          \\)");
-            System.out.println(buffer + "                                         _____                        __     ___    _____                                ");
-            System.out.println(buffer + "                                        / ___/      ______  _________/ /____( _ )  / ___/____  _____________  _______  __");
-            System.out.println(buffer + "                                        \\__ \\ | /| / / __ \\/ ___/ __  / ___/ __ \\/|\\__ \\/ __ \\/ ___/ ___/ _ \\/ ___/ / / /");
-            System.out.println(buffer + "                                       ___/ / |/ |/ / /_/ / /  / /_/ (__  ) /_/  <___/ / /_/ / /  / /__/  __/ /  / /_/ / ");
-            System.out.println(buffer + "                                     /____/|__/|__/\\____/_/   \\__,_/____/\\____/\\/____/\\____/_/   \\___/\\___/_/   \\__, /  ");
-            System.out.println(buffer + "                                                                                                                /____/   ");
             blank(2);
-            System.out.println(buffer + "                                                                                                             /---\\                             ------\\ ");
-            System.out.println(buffer + "                                                                                                          O =()()()============================()()()()||");
-            System.out.println(buffer + "                                                                                                             \\---/                             ------/");
+            System.out.println(buffer + "      #######                                                  ##                                           ##             ####### ");
+            System.out.println(buffer + "    /       ###                                                 ##                                           ##          /       ###");
+            System.out.println(buffer + "   /         ##                                                 ##                                           ##         /         ##");
+            System.out.println(buffer + "   ##        # ##                                               ##                                           ##         ##        #");
+            System.out.println(buffer + "    ###        ##                                               ##                                           ##          ###   ");
+            System.out.println(buffer + "   ## ###       ##    ###    ####      /###   ###  /###     ### ##    /###          /###   ###  /###     ### ##         ## ###           /###   ###  /###     /###      /##  ###  /###   ##   ####");
+            System.out.println(buffer + "    ### ###      ##    ###     ###  / / ###  / ###/ #### / ######### / #### /      / ###  / ###/ #### / #########        ### ###        / ###  / ###/ #### / / ###  /  / ###  ###/ #### / ##    ###  / ");
+            System.out.println(buffer + "      ### ###    ##     ###     ###/ /   ###/   ##   ###/ ##   #### ##  ###/      /   ###/   ##   ###/ ##   ####           ### ###     /   ###/   ##   ###/ /   ###/  /   ###  ##   ###/  ##     ###/");
+            System.out.println(buffer + "        ### /##  ##      ##      ## ##    ##    ##        ##    ## ####          ##    ##    ##    ##  ##    ##              ### /##  ##    ##    ##       ##        ##    ### ##         ##      ##");
+            System.out.println(buffer + "          #/ /## ##      ##      ## ##    ##    ##        ##    ##   ###         ##    ##    ##    ##  ##    ##                #/ /## ##    ##    ##       ##        ########  ##         ##      ##");
+            System.out.println(buffer + "           #/ ## ##      ##      ## ##    ##    ##        ##    ##     ###       ##    ##    ##    ##  ##    ##                 #/ ## ##    ##    ##       ##        #######   ##         ##      ##");
+            System.out.println(buffer + "            # /  ##      ##      ## ##    ##    ##        ##    ##       ###     ##    ##    ##    ##  ##    ##                  # /  ##    ##    ##       ##        ##        ##         ##      ##");
+            System.out.println(buffer + "  /##        /   ##      /#      /  ##    ##    ##        ##    /#  /###  ##     ##    /#    ##    ##  ##    /#        /##        /   ##    ##    ##       ###     / ####    / ##         ##      ##");
+            System.out.println(buffer + " /  ########/     ######/ ######/    ######     ###        ####/   / #### /       ####/ ##   ###   ###  ####/         /  ########/     ######     ###       ######/   ######/  ###         #########");
+            System.out.println(buffer + "/     #####        #####   #####      ####       ###        ###       ###/         ###   ##   ###   ###  ###         /     #####        ####       ###       #####     #####    ###          #### ###");
+            System.out.println(buffer + "|                                                                                                                    |                                                                             ###");
+            System.out.println(buffer + " \\)                                                                                                                   \\)                                                                    #####   ###");
+            System.out.println(buffer + "                                                                                                                                                                                          /#######  /#");
+            System.out.println(buffer + "                                                                                                                                                                                         /      ###/");
+            blank(2);
+            System.out.println(buffer + "                                                                                                                                                           /---\\                             ------\\ ");
+            System.out.println(buffer + "                                                                                                                                                          O =()()()============================()()()()||");
+            System.out.println(buffer + "                                                                                                                                                           \\---/                             ------/");
             delay(100);
         }
         delay(200);
-        blank(15);
-        dramatic(6000,"                                                                  “Which of us has not felt that the character we are reading in the screen is more real than the person standing beside us?”");
+        blank(17);
+        dramatic(6000,"                                                                  “Which of us has not felt that the character we are watching in the screen is more real than the person standing beside us?”");
     }
 
     /*
@@ -43,27 +58,81 @@ public class TextIO
      */
     public void chapterOneLogo(){
         blank(7);
-        System.out.println("                                                                                    # ###      /                                                                  # ###");
-        System.out.println("                                                                                  /  /###  / #/                                                                 /  /###");
-        System.out.println("                                                                                 /  /  ###/  ##                                  #                             /  /  ###");
-        System.out.println("                                                                                /  ##   ##   ##                                 ##                            /  ##   ###");
-        System.out.println("                                                                               /  ###        ##                                 ##                           /  ###    ###");
-        System.out.println("                                                                              ##   ##        ##  /##      /###       /###     ######## /##  ###  /###       ##   ##     ## ###  /###     /##");
-        System.out.println("                                                                              ##   ##        ## / ###    / ###  /   / ###  / ######## / ###  ###/ #### /    ##   ##     ##  ###/ #### / / ###");
-        System.out.println("                                                                              ##   ##        ##/   ###  /   ###/   /   ###/     ##   /   ###  ##   ###/     ##   ##     ##   ##   ###/ /   ###");
-        System.out.println("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ##    ### ##            ##   ##     ##   ##    ## ##    ###");
-        System.out.println("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ########  ##            ##   ##     ##   ##    ## ########");
-        System.out.println("                                                                              ##  ##        ##     ## ##    ##   ##    ##      ##  #######   ##             ##  ##     ##   ##    ## #######");
-        System.out.println("                                                                               ## #      /  ##     ## ##    ##   ##    ##      ##  ##        ##              ## #      /    ##    ## ##");
-        System.out.println("                                                                                ###     /   ##     ## ##    /#   ##    ##      ##  ####    / ##               ###     /     ##    ## ####    /");
-        System.out.println("                                                                                 ######/    ##     ##  ####/ ##  #######       ##   ######/  ###               ######/      ###   ### ######/");
-        System.out.println("                                                                                  ###       ##    ##   ###   ## ######         ##   #####    ###                ###         ###   ### #####");
-        System.out.println("                                                                                                  /             ##");
-        System.out.println("                                                                                                 /              ##");
-        System.out.println("                                                                                                /               ##");
-        System.out.println("                                                                                               /                 ##");
+        say("                                                                                    # ###      /                                                                  # ###");
+        say("                                                                                  /  /###  / #/                                                                 /  /###");
+        say("                                                                                 /  /  ###/  ##                                  #                             /  /  ###");
+        say("                                                                                /  ##   ##   ##                                 ##                            /  ##   ###");
+        say("                                                                               /  ###        ##                                 ##                           /  ###    ###");
+        say("                                                                              ##   ##        ##  /##      /###       /###     ######## /##  ###  /###       ##   ##     ## ###  /###     /##");
+        say("                                                                              ##   ##        ## / ###    / ###  /   / ###  / ######## / ###  ###/ #### /    ##   ##     ##  ###/ #### / / ###");
+        say("                                                                              ##   ##        ##/   ###  /   ###/   /   ###/     ##   /   ###  ##   ###/     ##   ##     ##   ##   ###/ /   ###");
+        say("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ##    ### ##            ##   ##     ##   ##    ## ##    ###");
+        say("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ########  ##            ##   ##     ##   ##    ## ########");
+        say("                                                                               ##  ##        ##     ## ##    ##   ##    ##      ##  #######   ##             ##  ##     ##   ##    ## #######");
+        say("                                                                                ## #      /  ##     ## ##    ##   ##    ##      ##  ##        ##              ## #      /    ##    ## ##");
+        say("                                                                                 ###     /   ##     ## ##    /#   ##    ##      ##  ####    / ##               ###     /     ##    ## ####    /");
+        say("                                                                                  ######/    ##     ##  ####/ ##  #######       ##   ######/  ###               ######/      ###   ### ######/");
+        say("                                                                                   ###       ##    ##   ###   ## ######         ##   #####    ###                ###         ###   ### #####");
+        say("                                                                                                   /             ##");
+        say("                                                                                                  /              ##");
+        say("                                                                                                 /               ##");
+        say("                                                                                                /                 ##");
         blank(5);
-        dramatic(5000,"                                                                                                                        “%fdeep_quote%f.”");
+        dramatic(5000,"                                                                                                                        “Come without a map. Draw your own.”");
+    }
+
+    /*
+     * Chapter Two's Logo & Quote
+     */
+    public void chapterTwoLogo(){
+        blank(7);
+        say("                                                                                    # ###      /                                                              /###           /                             ");
+        say("                                                                                  /  /###  / #/                                                              /  ############/");
+        say("                                                                                 /  /  ###/  ##                                  #                          /     #########");
+        say("                                                                                /  ##   ##   ##                                 ##                          #     /  #     ##");
+        say("                                                                               /  ###        ##                                 ##                           ##  /  ##     ##");
+        say("                                                                              ##   ##        ##  /##      /###       /###     ######## /##  ###  /###           /  ###      ##    ###    ####      /###");
+        say("                                                                              ##   ##        ## / ###    / ###  /   / ###  / ######## / ###  ###/ #### /       ##   ##       ##    ###     ###  / / ###  /");
+        say("                                                                              ##   ##        ##/   ###  /   ###/   /   ###/     ##   /   ###  ##   ###/        ##   ##       ##     ###     ###/ /   ###/");
+        say("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ##    ### ##               ##   ##       ##      ##      ## ##    ##");
+        say("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ########  ##               ##   ##       ##      ##      ## ##    ##");
+        say("                                                                               ##  ##        ##     ## ##    ##   ##    ##      ##  #######   ##                ##  ##       ##      ##      ## ##    ##");
+        say("                                                                                ## #      /  ##     ## ##    ##   ##    ##      ##  ##        ##                 ## #      / ##      ##      ## ##    ##");
+        say("                                                                                 ###     /   ##     ## ##    /#   ##    ##      ##  ####    / ##                  ###     /  ##      /#      /  ##    ##");
+        say("                                                                                  ######/    ##     ##  ####/ ##  #######       ##   ######/  ###                  ######/    ######/ ######/    ######");
+        say("                                                                                    ###       ##    ##   ###   ## ######         ##   #####    ###                   ###       #####   #####      ####");
+        say("                                                                                                    /             ##");
+        say("                                                                                                   /              ##");
+        say("                                                                                                  /               ##");
+        say("                                                                                                 /                 ##");
+        blank(5);
+        dramatic(5000,"                                                                                                              “Seeking what is true is not seeking what is desirable.”");
+
+    }
+
+    public void chapterThreeLogo(){
+        blank(7);
+        say("                                                                                    # ###      /                                                              /###           /  /");
+        say("                                                                                  /  /###  / #/                                                              /  ############/ #/");
+        say("                                                                                 /  /  ###/  ##                                  #                          /     #########   ##");
+        say("                                                                                /  ##   ##   ##                                 ##                          #     /  #        ##");
+        say("                                                                               /  ###        ##                                 ##                           ##  /  ##        ##");
+        say("                                                                              ##   ##        ##  /##      /###       /###     ######## /##  ###  /###           /  ###        ##  /## ###  /###     /##       /##");
+        say("                                                                              ##   ##        ## / ###    / ###  /   / ###  / ######## / ###  ###/ #### /       ##   ##        ## / ### ###/ #### / / ###     / ###");
+        say("                                                                              ##   ##        ##/   ###  /   ###/   /   ###/     ##   /   ###  ##   ###/        ##   ##        ##/   ### ##   ###/ /   ###   /   ###");
+        say("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ##    ### ##               ##   ##        ##     ## ##       ##    ### ##    ### ");
+        say("                                                                              ##   ##        ##     ## ##    ##   ##    ##      ##  ########  ##               ##   ##        ##     ## ##       ########  ########");
+        say("                                                                               ##  ##        ##     ## ##    ##   ##    ##      ##  #######   ##                ##  ##        ##     ## ##       #######   #######");
+        say("                                                                                ## #      /  ##     ## ##    ##   ##    ##      ##  ##        ##                 ## #      /  ##     ## ##       ##        ##");
+        say("                                                                                 ###     /   ##     ## ##    /#   ##    ##      ##  ####    / ##                  ###     /   ##     ## ##       ####    / ####    / ");
+        say("                                                                                  ######/    ##     ##  ####/ ##  #######       ##   ######/  ###                  ######/    ##     ## ###       ######/   ######/");
+        say("                                                                                    ###       ##    ##   ###   ## ######         ##   #####    ###                   ###       ##    ##  ###       #####     #####");
+        say("                                                                                                    /             ##                                                                 /");
+        say("                                                                                                   /              ##                                                                /");
+        say("                                                                                                  /               ##                                                               / ");
+        say("                                                                                                 /                 ##                                                             /");
+        blank(5);
+        dramatic(5000,"                                                                                                              “Seeking what is true is not seeking what is desirable.”");
     }
 
     /*
@@ -89,7 +158,10 @@ public class TextIO
      * of things, regardless of how frivolous it seems now.
      */
     public void dramatic(int time, String dialogue){
-        System.out.println(dialogue);
+        for(char c : dialogue.toCharArray()){
+            System.out.print(c);
+            delay(40);
+        }
         delay(time);
         clear();
     }
@@ -109,13 +181,13 @@ public class TextIO
             System.out.println();
         }
     }
-    
+
     public int getInt(String question){
         Scanner scanner = new Scanner(System.in);
         say(question);
         return (scanner.nextInt());
     }
-    
+
     public String getString(String question){
         Scanner scanner = new Scanner(System.in);
         say(question);

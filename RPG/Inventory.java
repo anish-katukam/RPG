@@ -20,7 +20,7 @@ public class Inventory
         System.out.println("Armors:");
         for (Armor a : armorPack){
             System.out.println(a.getName());
-            System.out.println(a.getDefense());
+            System.out.println(a.getResistance());
             System.out.println(a.getHRegen());
         }
         t.blank(1);
@@ -53,7 +53,7 @@ public class Inventory
             System.out.println(r.getAttack());
             System.out.println(r.getDefense());
             System.out.println(r.getHRegen());
-            System.out.println(r.getERegene());
+            System.out.println(r.getERegen());
         }
     }
 

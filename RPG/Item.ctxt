@@ -1,2 +1,10 @@
 #BlueJ class context
-numComments=0
+comment0.params=
+comment0.target=java.lang.String\ getName()
+comment1.params=
+comment1.target=int\ getResistance()
+comment2.params=
+comment2.target=int\ getHRegen()
+comment3.params=
+comment3.target=int\ getERegen()
+numComments=4

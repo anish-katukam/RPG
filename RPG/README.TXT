@@ -39,3 +39,9 @@ Rings:
     3.
     4.
     5.
+
+OTHER: 
+When accessing items, do we have to use the methods? Why not keep them public?
+Add items
+Test stuff
+Story theme

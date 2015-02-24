@@ -1,3 +1,4 @@
+import java.util.*;
 /*
  * TextIO is a consolidation of methods (primarily ease-of-use) for delaying, clearing, or displaying logos.
  */
@@ -107,5 +108,21 @@ public class TextIO
         for (int i = 0; i<=lines; i++){
             System.out.println();
         }
+    }
+    
+    public int getInt(String question){
+        Scanner scanner = new Scanner(System.in);
+        say(question);
+        return (scanner.nextInt());
+    }
+    
+    public String getString(String question){
+        Scanner scanner = new Scanner(System.in);
+        say(question);
+        String response = scanner.nextLine();
+        if (response == "bp"){
+            Inventory.modifyInventory();
+        }
+        return response;
     }
 }

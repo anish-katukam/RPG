@@ -36,9 +36,10 @@ public class TextIO
         blank(15);
         dramatic(6000,"                                                                  “Which of us has not felt that the character we are reading in the screen is more real than the person standing beside us?”");
     }
+
     /*
      * Chapter One's Logo & Quote
-       */
+     */
     public void chapterOneLogo(){
         blank(7);
         System.out.println("                                                                                    # ###      /                                                                  # ###");
@@ -61,8 +62,9 @@ public class TextIO
         System.out.println("                                                                                                /               ##");
         System.out.println("                                                                                               /                 ##");
         blank(5);
-        dramatic(5000,"                                                                                                                        “Come without a map. Draw your own.”");
+        dramatic(5000,"                                                                                                                        “%fdeep_quote%f.”");
     }
+
     /*
      * delay sleeps the thread for a passed-in time. Exceptions are caught but not dealt with.
      */
@@ -89,6 +91,13 @@ public class TextIO
         System.out.println(dialogue);
         delay(time);
         clear();
+    }
+
+    /*
+     * A simpler way, rather than typing out System.out.println() every time.
+     */
+    public void say(String dialogue){
+        System.out.println(dialogue);
     }
 
     /*

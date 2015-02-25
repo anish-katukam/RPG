@@ -1,8 +1,8 @@
 #BlueJ class context
 comment0.params=
-comment0.target=void\ modifyInventory()
+comment0.target=void\ modify()
 comment1.params=i
 comment1.target=void\ addItem(Item)
-comment2.params=i\ index
-comment2.target=void\ modulateItem(Item,\ int)
+comment2.params=index
+comment2.target=void\ modulateItem(int)
 numComments=3

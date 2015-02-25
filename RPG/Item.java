@@ -1,59 +1,49 @@
-public class Item
+public abstract class Item
 {
-    String name;
-    String desc;
-    private int attack;
-    private int defense;
-    private int HRegen;
-    private int ERegen;
-    private int health;
-    private int energy;
-    private int bloodlust;
-    /*public Item(String _name, int _attack, int _defense, int _health, int _HRegen, int _ERegen, int _energy, int _bloodlust)
-    {
-        name = _name;
-        attack = _attack;
-        defense = _defense;
-        health = _health;
-        HRegen = _HRegen;
-        ERegen = _ERegen;
-        energy = _energy;
-        bloodlust = _bloodlust;
-        
-    }*/
+    protected String name;
+    protected String desc;
+    protected int attack;
+    protected int defense;
+    protected int health;
+    protected int energy;
+    protected int bloodlust;
+
+    public Item (String name, String desc){
+        this.name = name;
+        this.desc = desc;
+    }
+
     public String getName(){
         return name;
     }
-    
+
     public String getDescription(){
         return desc;
     }
-    
+
+    public abstract void explicate(TextIO t);
+
     public int getAttack(){
-        return attack;
+        return 0;
     }
 
     public int getDefense(){
-        return defense;
+        return 0;
     }
 
-    public int getHRegen(){
-        return HRegen;
-    }
-    
-    public int getERegen(){
-        return ERegen;
-    }
-    
     public int getHealth(){
-        return health;
+        return 0;
     }
-    
+
     public int getEnergy(){
-        return energy;
+        return 0;
     }
-    
+
     public int getBloodlust(){
-        return bloodlust;
+        return 0;
+    }
+
+    public String toString(){
+        return name + "\n" + desc;
     }
 }

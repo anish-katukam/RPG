@@ -6,75 +6,47 @@
  */
 public class Inventory
 {
-    static TextIO t = new TextIO();
-    static Item[] backpack = new Item[25];
-    public static void modifyInventory(){
+    private static TextIO t = new TextIO();
+    private static Item[] backpack = new Item[25];
+    public static void modify(){
         int index = 0;
         int response = 0;
         while (index < backpack.length){
-            System.out.print((index + 1) + backpack[index].name);
+            if (backpack[index] != null){
+                System.out.println((index + 1) + " " + backpack[index].getName());
+            }
+            index++;
         }
-        while (response != 42){
+        response = t.getInt("Simply type the number of the item you would like to examine. To exit, type 42.");
+        while (response != 42 && response < backpack.length && response >= 0) {
+            modulateItem(response);
             response = t.getInt("Simply type the number of the item you would like to examine. To exit, type 42.");
-            modulateItem(backpack[response-1],response);
         }
     }
 
-    public void addItem(Item i){
+    public static void addItem(Item i){
         int nullcount = 0;
         for (int a = 0; a < backpack.length; a++){
             if (backpack[a] == null){
                 backpack[a] = i;
+                break;
             }
             else {
                 nullcount++;
             }
-            if (nullcount == 25){
-                t.say("Your backpack is full. Remove an item or something. ");
-            };
+        }
+        if (nullcount == 25){
+            t.say("Your backpack is full. Remove an item or something. ");
         }
 
     }
 
-    public static void modulateItem(Item i, int index){
-        String response;
-        t.say("To go back, type exit.");
-        t.say("To remove this item, type remove.");
-        t.blank(1);
-        t.say(i.name);
-        t.blank(1);
-        t.say(i.desc);
-        response = t.getString("");
-        if (i instanceof Armor){
-            t.say("Health: " + i.getHealth());
-            t.say("Armor: " + i.getDefense());
-        }
-        if (i instanceof Potion){
-            t.say("Health Granted: " + i.getHealth());
-            t.say("Energy Granted: " + i.getEnergy());;
-            t.say("Bloodlust Granted: " + i.getBloodlust());
-        }
-        if (i instanceof Ring){
-            t.say("Health Granted: " + i.getHealth());
-            t.say("Energy Granted: " + i.getEnergy());
-            t.say("Attack Granted: " + i.getAttack());
-            t.say("Bloodlust Granted: " + i.getBloodlust());
-            t.say("Defense Granted: " + i.getDefense());
-        }
-        if (i instanceof Hat){
-            t.say("Health Granted: " + i.getHealth());
-            t.say("Energy Granted: " + i.getEnergy());
-            t.say("Attack Granted: " + i.getAttack());
-            t.say("Bloodlust Granted: " + i.getBloodlust());
-            t.say("Defense Granted: " + i.getDefense());
-        }
-        if (i instanceof Weapon){
-            t.say("Attack: " + i.getAttack());
-        }
-        if (response == "exit"){
-            modifyInventory();
-        }
-        if (response == "remove"){
+    public static void modulateItem(int index){
+        Item i = backpack[index - 1];
+        t.say(i);
+        i.explicate(t);
+        String response = t.getString("Type rm if you want to remove this item.");
+        if (response.equals("rm")){
             backpack[index] = null;
         }
     }

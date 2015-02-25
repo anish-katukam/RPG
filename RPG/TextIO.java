@@ -169,7 +169,7 @@ public class TextIO
     /*
      * A simpler way, rather than typing out System.out.println() every time.
      */
-    public void say(String dialogue){
+    public void say(Object dialogue){
         System.out.println(dialogue);
     }
 
@@ -193,7 +193,7 @@ public class TextIO
         say(question);
         String response = scanner.nextLine();
         if (response == "bp"){
-            Inventory.modifyInventory();
+            Inventory.modify();
         }
         return response;
     }

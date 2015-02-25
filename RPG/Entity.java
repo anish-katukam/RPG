@@ -48,30 +48,6 @@ public class Entity
         return this.stats;
     }
 
-    public void pickUp(Item x)
-    {
-        if (x instanceof Armor)
-        {
-            armor = (Armor) x;
-        }
-        else if (x instanceof Potion)
-        {
-            potion = (Potion) x;
-        }
-        else if (x instanceof Weapon)
-        {
-            weapon = (Weapon) x;
-        }
-        else if (x instanceof Hat)
-        {
-            hat = (Hat) x;
-        }
-        else if (x instanceof Ring)
-        {
-            ring = (Ring) x;
-        }
-    }
-
     public void consume(Potion p)
     {
         this.stats.setHealth(this.stats.getHealth() + p.getHealth());

@@ -89,7 +89,7 @@ public class Stats
     {
         attack = base + a.getWeapon().getAttack() + a.getHat().getAttack() + a.getRing().getAttack();
         defense = base + a.getArmor().getDefense() + a.getHat().getDefense() + a.getRing().getDefense();
-        base_health = base + a.getRing().getHealth() + a.getHat().getHealth();
+        base_health = base + a.getRing().getHealth() + a.getHat().getHealth() + a.getArmor().getHealth();
         bloodlust = base + a.getRing().getBloodlust() + a.getHat().getBloodlust();
         base_energy = base + a.getRing().getEnergy() + a.getHat().getEnergy();
     }

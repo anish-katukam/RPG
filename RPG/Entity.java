@@ -72,19 +72,16 @@ public class Entity
         }
     }
 
-    public void consume(Potion a)
+    public void consume(Potion p)
     {
-        this.stats.setHealth(this.stats.getHealth() + a.getHealth());
-        this.stats.setEnergy(this.stats.getEnergy() + a.getEnergy());
-        this.stats.setAttack(this.stats.getAttack() + a.getAttack());
-        this.stats.setBloodlust(this.stats.getBloodlust() + a.getBloodlust());
-        this.stats.setDefense(this.stats.getDefense() + a.getDefense());
+        this.stats.setHealth(this.stats.getHealth() + p.getHealth());
+        this.stats.setEnergy(this.stats.getEnergy() + p.getEnergy());
+        this.stats.setBloodlust(this.stats.getBloodlust() + p.getBloodlust());
     }
 
     public int attack (Entity a)
     {
         int damage = 100 * (this.getStats().getAttack() / a.getStats().getDefense());
-        a.getStats().takeHealthDamage(damage);
         int critchance = random.nextInt(11);
         if (critchance == 1){
             return (2*damage);
@@ -92,6 +89,7 @@ public class Entity
         else{
             damage += (damage*(random.nextInt(10)-5));
         }
+        a.getStats().takeHealthDamage(damage);
         return damage;
     }
 }

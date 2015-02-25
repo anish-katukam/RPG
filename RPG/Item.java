@@ -2,14 +2,25 @@ public class Item
 {
     String name;
     String desc;
-    int attack;
-    int defense;
-    int HRegen;
-    int ERegen;
-    int health;
-    int energy;
-    int bloodlust;
-    
+    private int attack;
+    private int defense;
+    private int HRegen;
+    private int ERegen;
+    private int health;
+    private int energy;
+    private int bloodlust;
+    /*public Item(String _name, int _attack, int _defense, int _health, int _HRegen, int _ERegen, int _energy, int _bloodlust)
+    {
+        name = _name;
+        attack = _attack;
+        defense = _defense;
+        health = _health;
+        HRegen = _HRegen;
+        ERegen = _ERegen;
+        energy = _energy;
+        bloodlust = _bloodlust;
+        
+    }*/
     public String getName(){
         return name;
     }

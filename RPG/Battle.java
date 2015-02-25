@@ -27,6 +27,8 @@ public class Battle
 
     public Entity advanceBattle(Potion p)
     {
+        a.getStats().updateStats(a);
+        b.getStats().updateStats(b);
         if (a.getStats().getHealth() > 0 && b.getStats().getHealth() > 0)
         {
             System.out.println("This is turn " + turnCount);

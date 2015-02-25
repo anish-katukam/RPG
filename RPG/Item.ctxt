@@ -1,6 +1,7 @@
 #BlueJ class context
 comment0.params=
 comment0.target=java.lang.String\ getName()
+comment0.text=public\ Item(String\ _name,\ int\ _attack,\ int\ _defense,\ int\ _health,\ int\ _HRegen,\ int\ _ERegen,\ int\ _energy,\ int\ _bloodlust)\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ name\ \=\ _name;\r\n\ \ \ \ \ \ \ \ attack\ \=\ _attack;\r\n\ \ \ \ \ \ \ \ defense\ \=\ _defense;\r\n\ \ \ \ \ \ \ \ health\ \=\ _health;\r\n\ \ \ \ \ \ \ \ HRegen\ \=\ _HRegen;\r\n\ \ \ \ \ \ \ \ ERegen\ \=\ _ERegen;\r\n\ \ \ \ \ \ \ \ energy\ \=\ _energy;\r\n\ \ \ \ \ \ \ \ bloodlust\ \=\ _bloodlust;\r\n\ \ \ \ \ \ \ \ \r\n}
 comment1.params=
 comment1.target=java.lang.String\ getDescription()
 comment2.params=

@@ -5,6 +5,4 @@ comment1.params=i
 comment1.target=void\ addItem(Item)
 comment2.params=i\ index
 comment2.target=void\ modulateItem(Item,\ int)
-comment3.params=p
-comment3.target=void\ removePotion(Potion)
-numComments=4
+numComments=3

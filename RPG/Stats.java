@@ -1,9 +1,11 @@
 public class Stats
 {
     int health;
-    int basehealth;
+    int base_health;
     int bloodlust;
+    int base_bloodlust;
     int defense;
+    int base_energy;
     int energy;
     int attack;
     String name;
@@ -50,12 +52,14 @@ public class Stats
 
     public void setHealth(int n)
     {
-        health = n;
+         if (n < base_health) health = n;
+        else health = base_health;
     }
 
     public void setBloodlust(int n)
     {
-        bloodlust = n;
+       if (n < base_bloodlust) bloodlust = n;
+        else bloodlust = bloodlust;
     }  
 
     public void setDefense(int n)
@@ -65,7 +69,8 @@ public class Stats
 
     public void setEnergy(int n)
     {
-        energy = n;
+        if (n < base_energy) energy = n;
+        else energy = base_energy;
     }
 
     public void setAttack(int n)
@@ -84,7 +89,8 @@ public class Stats
     {
         attack = base + a.getWeapon().getAttack() + a.getHat().getAttack() + a.getRing().getAttack();
         defense = base + a.getArmor().getDefense() + a.getHat().getDefense() + a.getRing().getDefense();
-        basehealth = base + a.getRing().getHealth() + a.getHat().getHealth();
-
+        base_health = base + a.getRing().getHealth() + a.getHat().getHealth();
+        bloodlust = base + a.getRing().getBloodlust() + a.getHat().getBloodlust();
+        base_energy = base + a.getRing().getEnergy() + a.getHat().getEnergy();
     }
 }

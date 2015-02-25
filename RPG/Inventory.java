@@ -7,7 +7,7 @@
 public class Inventory
 {
     static TextIO t = new TextIO();
-    static Item[] backpack = new Item[24];
+    static Item[] backpack = new Item[25];
     public static void modifyInventory(){
         int index = 0;
         int response = 0;
@@ -21,13 +21,17 @@ public class Inventory
     }
 
     public void addItem(Item i){
-        for (int a = 0; a <= backpack.length; a++){
+        int nullcount = 0;
+        for (int a = 0; a < backpack.length; a++){
             if (backpack[a] == null){
                 backpack[a] = i;
             }
-            else{
-                t.say("Your backpack's full. You should be on Hoarders.");
+            else {
+                nullcount++;
             }
+            if (nullcount == 25){
+                t.say("Your backpack is full. Remove an item or something. ");
+            };
         }
 
     }
@@ -42,32 +46,30 @@ public class Inventory
         t.say(i.desc);
         response = t.getString("");
         if (i instanceof Armor){
-            t.say("Health: " + i.health);
-            t.say("Armor: " + i.defense);
+            t.say("Health: " + i.getHealth());
+            t.say("Armor: " + i.getDefense());
         }
         if (i instanceof Potion){
-            t.say("Health Granted: " + i.health);
-            t.say("Energy Granted: " + i.energy);
-            t.say("Attack Granted: " + i.attack);
-            t.say("Bloodlust Granted: " + i.bloodlust);
-            t.say("Defense Granted: " + i.defense);
+            t.say("Health Granted: " + i.getHealth());
+            t.say("Energy Granted: " + i.getEnergy());;
+            t.say("Bloodlust Granted: " + i.getBloodlust());
         }
         if (i instanceof Ring){
-            t.say("Health Granted: " + i.health);
-            t.say("Energy Granted: " + i.energy);
-            t.say("Attack Granted: " + i.attack);
-            t.say("Bloodlust Granted: " + i.bloodlust);
-            t.say("Defense Granted: " + i.defense);
+            t.say("Health Granted: " + i.getHealth());
+            t.say("Energy Granted: " + i.getEnergy());
+            t.say("Attack Granted: " + i.getAttack());
+            t.say("Bloodlust Granted: " + i.getBloodlust());
+            t.say("Defense Granted: " + i.getDefense());
         }
         if (i instanceof Hat){
-            t.say("Health Granted: " + i.health);
-            t.say("Energy Granted: " + i.energy);
-            t.say("Attack Granted: " + i.attack);
-            t.say("Bloodlust Granted: " + i.bloodlust);
-            t.say("Defense Granted: " + i.defense);
+            t.say("Health Granted: " + i.getHealth());
+            t.say("Energy Granted: " + i.getEnergy());
+            t.say("Attack Granted: " + i.getAttack());
+            t.say("Bloodlust Granted: " + i.getBloodlust());
+            t.say("Defense Granted: " + i.getDefense());
         }
         if (i instanceof Weapon){
-            t.say("Attack: " + i.attack);
+            t.say("Attack: " + i.getAttack());
         }
         if (response == "exit"){
             modifyInventory();
@@ -76,8 +78,5 @@ public class Inventory
             backpack[index] = null;
         }
     }
-    
-    public static void removePotion(Potion p){
-        
-    }
+
 }

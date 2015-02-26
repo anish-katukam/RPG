@@ -24,6 +24,26 @@ public class Inventory
         }
     }
 
+    public static Item getPotion()
+    {
+        int index = 0;
+        int response = 0;
+        int[] shift = new int[25];
+        int shiftIndex = 0;
+        t.say("Pick a potion:\n");
+        
+        while (index < backpack.length){
+            if (backpack[index] instanceof Potion){
+                System.out.println((shiftIndex + 1) + " " + backpack[index].getName());
+                shift[shiftIndex] = index;
+                shiftIndex++;
+            }
+            index++;
+        }
+        response = t.getInt("Simply type the number of the item you would like to examine. To exit, type 42.");
+        return backpack[shift[response]];
+    }
+
     public static void addItem(Item i){
         int nullcount = 0;
         for (int a = 0; a < backpack.length; a++){

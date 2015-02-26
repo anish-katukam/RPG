@@ -3,6 +3,7 @@ public class Battle
     int turnCount;
     Entity a;
     Entity b;
+    private static TextIO t = new TextIO();
     public Battle (Entity x, Entity y)
     {
         turnCount=1;
@@ -10,7 +11,7 @@ public class Battle
         b = y;
     }
 
-    public Entity advanceBattle()
+    public void advanceBattle()
     {
         if (a.getStats().getHealth() > 0 && b.getStats().getHealth() > 0)
         {
@@ -20,12 +21,10 @@ public class Battle
             System.out.println(b.getStats().getName() + " has dealt " + a.getStats().getName() + b.attack(a) + " damage, leaving " + b.getStats().getName() + " with " + a.getStats().getHealth() + " HP");
 
         }
-        if (a.getStats().getHealth() == 0) return b;
-        else if (b.getStats().getHealth() == 0) return a;
-        else return null;
+
     }
 
-    public Entity advanceBattle(Potion p)
+    public void advanceBattle(Potion p)
     {
         a.getStats().updateStats(a);
         b.getStats().updateStats(b);
@@ -35,10 +34,30 @@ public class Battle
             turnCount++;
             a.consume(p);
         }
+
+    }
+
+    public Entity promptUser()
+    {
+        if (t.getInt("Use potion or attack? (1/2)") == 1)
+        {
+            this.advanceBattle((Potion) Inventory.getPotion());
+
+        }
+        else advanceBattle();
         if (a.getStats().getHealth() == 0) return b;
         else if (b.getStats().getHealth() == 0) return a;
         else return null;
     }
 
+    public void collect()
+    {
+        if (t.getInt("Collect dropped items from enemy? (YES-1/NO-2) Items dropped are: " + b.getWeapon().getName() + b.getRing().getName() + b.getArmor().getName()) == 1)
+        {
+            b.drop();
+
+        }
+        else t.say("The items were lost...");
+    }
 }
 

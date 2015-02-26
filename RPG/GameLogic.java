@@ -10,6 +10,10 @@ public class GameLogic
 {
     String name;
     TextIO t = new TextIO();
+    Character character = new Character();
+    Enemy enemy;
+    Entity victor = null;
+    Battle battle;
     /*
      * Exposition explains the story so far and leads into the opening credits.
      */
@@ -52,11 +56,27 @@ public class GameLogic
         t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
+        //example battle
+        enemy = new Enemy("Example", new Weapon(), new Armor(), new Ring());
+        battle = new Battle(character, enemy);
+        while (victor == null)
+        {
+            victor = battle.promptUser();
+        }
+        if (victor == character)
+        {
+            battle.collect();
+        }
+        else gameOver();
     }
     public void chaptertwo(){
         t.chapterTwoLogo();
     }
     public void chapterthree(){
         t.chapterThreeLogo();
+    }
+    public void gameOver()
+    {
+        
     }
 }

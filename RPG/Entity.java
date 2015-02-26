@@ -62,4 +62,10 @@ public class Entity
         a.getStats().takeHealthDamage(damage);
         return damage;
     }
+    public void drop()
+    {
+        Inventory.addItem(weapon);
+        Inventory.addItem(ring);
+        Inventory.addItem(armor);
+    }
 }

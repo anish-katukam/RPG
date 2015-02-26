@@ -2,7 +2,11 @@
 comment0.params=x\ y
 comment0.target=Battle(Entity,\ Entity)
 comment1.params=
-comment1.target=Entity\ advanceBattle()
+comment1.target=void\ advanceBattle()
 comment2.params=p
-comment2.target=Entity\ advanceBattle(Potion)
-numComments=3
+comment2.target=void\ advanceBattle(Potion)
+comment3.params=
+comment3.target=Entity\ promptUser()
+comment4.params=
+comment4.target=void\ collect()
+numComments=5

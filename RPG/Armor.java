@@ -3,7 +3,7 @@
  */
 public class Armor extends Item
 {
-    public Armor (String name, String desc){
+    public Armor (){
         super ();
     }
     

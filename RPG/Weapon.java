@@ -1,6 +1,6 @@
 public class Weapon extends Item
 {
-    public Weapon(String name, String desc){
+    public Weapon(){
         super();
     }
     

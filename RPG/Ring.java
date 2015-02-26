@@ -3,7 +3,7 @@
  */
 public class Ring extends Item
 {
-    public Ring(String name, String desc){
+    public Ring(){
         super();
     }
     

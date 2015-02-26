@@ -24,7 +24,6 @@ public class GameLogic
         t.dramatic(3500,"We are not most.");
     }
 
-
     /*
      * Intro is the beginning of the game (expectably), and introduces the person to the game. The character does not
      * get to define his own stats. Such is life.
@@ -36,26 +35,26 @@ public class GameLogic
     }
 
     public void chapterone(){
-        t.chapterOneLogo();
-        t.dramatic(3500,"We awoke far, far away in lands strange and barren.");
-        t.dramatic(3500,"We could feel the ancient power flowing through the sand and reverberating in the air.");
-        t.dramatic(3500,"We saw the yellow sands stretch forever. It culminated near the east in a great earthen spire.");
-        t.dramatic(3500,"Our resolve hardened. We set off.");
-        t.dramatic(3500,"The sands stirred a few feet ahead. We clutched our staff tightly.");
-        t.dramatic(3500,"With a roar of rage, a draugr rose from the ground, holding a sceptre and prepared to attack.");
-        t.dramatic(3500,"When we held power over the dead, we commanded legions of undead like this.");
-        t.dramatic(3500,"With our power stolen, we must use other magiks to quell our enemies.");
+        //t.chapterOneLogo();
+        //   t.dramatic(3500,"We awoke far, far away in lands strange and barren.");
+        //  t.dramatic(3500,"We could feel the ancient power flowing through the sand and reverberating in the air.");
+        //   t.dramatic(3500,"We saw the yellow sands stretch forever. It culminated near the east in a great earthen spire.");
+        //  t.dramatic(3500,"Our resolve hardened. We set off.");
+        //  t.dramatic(3500,"The sands stirred a few feet ahead. We clutched our staff tightly.");
+        //   t.dramatic(3500,"With a roar of rage, a draugr rose from the ground, holding a sceptre and prepared to attack.");
+        //   t.dramatic(3500,"When we held power over the dead, we commanded legions of undead like this.");
+        //   t.dramatic(3500,"With our power stolen, we must use other magiks to quell our enemies.");
         /*
          * Here, introduce the battle mechanic. If we chose to code individual battles seperately, we can 
          * have a call like battle.draugr();, or we can do a generic battle like battle(draugr);
          */
-        t.dramatic(3500,"Sand swallows the remains, but leaves us our spoils. Its sceptre remains aboveground, and seems to beckon.");
+        //   t.dramatic(3500,"Sand swallows the remains, but leaves us our spoils. Its sceptre remains aboveground, and seems to beckon.");
         /*
          * The draugr drops its staff, here we introduce the whole inventory mechanic.
          */
-        t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
-        t.dramatic(3500,"The spire in the distance looked all the more interesting.");
-        t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
+        //  t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
+        //   t.dramatic(3500,"The spire in the distance looked all the more interesting.");
+        //t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
         //example battle
         enemy = new Enemy("Example", new Weapon(), new Armor(), new Ring());
         battle = new Battle(character, enemy);
@@ -67,16 +66,21 @@ public class GameLogic
         {
             battle.collect();
         }
-        else gameOver();
+        else{
+            gameOver();
+        } 
     }
+
     public void chaptertwo(){
         t.chapterTwoLogo();
     }
+
     public void chapterthree(){
         t.chapterThreeLogo();
     }
+
     public void gameOver()
     {
-        
+
     }
 }

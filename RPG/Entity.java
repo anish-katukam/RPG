@@ -51,13 +51,13 @@ public class Entity
 
     public int attack (Entity a)
     {
-        int damage = 100 * (this.getStats().getAttack() / a.getStats().getDefense());
+        int damage = 10 * (this.getStats().getAttack() / a.getStats().getDefense());
         int critchance = random.nextInt(11);
         if (critchance == 1){
             return (2*damage);
         }
         else{
-            damage += (damage*(random.nextInt(10)-5));
+            damage += random.nextInt(damage/3);
         }
         a.getStats().takeHealthDamage(damage);
         return damage;

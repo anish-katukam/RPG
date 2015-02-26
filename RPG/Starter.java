@@ -4,7 +4,7 @@ public class Starter
         GameLogic g = new GameLogic();
         //g.exposition();
         //g.intro();
-        //g.chapterone();
+        g.chapterone();
         //g.chaptertwo();
         //g.chapterthree();
     }

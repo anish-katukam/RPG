@@ -80,7 +80,7 @@ public class Stats
 
     public void takeHealthDamage(int amount)
     {
-        if (health - amount > 0) health -= amount;
+        if (health - amount > 0) health = health - amount;
         else health = 0;
 
     }

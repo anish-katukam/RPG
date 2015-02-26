@@ -17,8 +17,8 @@ public class Battle
         {
             System.out.println("This is turn " + turnCount);
             turnCount++;
-            System.out.println(a.getStats().getName() + " has dealt " + b.getStats().getName() + a.attack(b) + " damage, leaving " + a.getStats().getName() + " with " + a.getStats().getHealth() + " HP");
-            System.out.println(b.getStats().getName() + " has dealt " + a.getStats().getName() + b.attack(a) + " damage, leaving " + b.getStats().getName() + " with " + a.getStats().getHealth() + " HP");
+            System.out.println(a.getStats().getName() + " has dealt " + b.getStats().getName() + " "+ a.attack(b) + " damage, leaving " + b.getStats().getName() + " with " + b.getStats().getHealth() + " HP");
+            System.out.println(b.getStats().getName() + " has dealt " + a.getStats().getName() + " "+ b.attack(a) + " damage, leaving " + a.getStats().getName() + " with " + a.getStats().getHealth() + " HP");
 
         }
 
@@ -52,10 +52,10 @@ public class Battle
 
     public void collect()
     {
-        if (t.getInt("Collect dropped items from enemy? (YES-1/NO-2) Items dropped are: " + b.getWeapon().getName() + b.getRing().getName() + b.getArmor().getName()) == 1)
+        if (t.getInt("Collect dropped items from enemy? (YES-1/NO-2) Items dropped are: " + b.getWeapon().getName() + ", " +b.getRing().getName() +", " + b.getArmor().getName()) == 1)
         {
             b.drop();
-
+            t.say("Items collected!");
         }
         else t.say("The items were lost...");
     }

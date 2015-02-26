@@ -5,6 +5,10 @@ public class Hat extends Item
     }
     
     public void explicate(TextIO t){
+        t.say(name);
+        t.blank(1);
+        t.say(desc);
+        t.blank(1);
         t.say("Health Granted: " + health);
         t.say("Energy Granted: " + energy);
         t.say("Attack Granted: " + attack);

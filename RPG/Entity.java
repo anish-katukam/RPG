@@ -1,21 +1,15 @@
 import java.util.*;
 public class Entity
 {
-    private Weapon weapon;
-    private Hat hat;
-    private Potion potion;
-    private Ring ring;
-    private Armor armor;
-    private Stats stats;
+    protected Weapon weapon;
+    protected Hat hat;
+    protected Potion potion;
+    protected Ring ring;
+    protected Armor armor;
+    protected Stats stats;
     Random random = new Random();
-    public Entity(String name)
+    public Entity()
     {
-        //stats = new Stats(name);
-        //weapon = new Crowbar();
-        //hat = new GhastlyGibus();
-        //potion = new Obamacare();
-        //ring = new ring_t1();
-        //armor = new Norton360();
     }
 
     public Weapon getWeapon()

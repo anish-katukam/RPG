@@ -4,7 +4,7 @@
 public class Armor extends Item
 {
     public Armor (String name, String desc){
-        super (name, desc);
+        super ();
     }
     
     public void explicate(TextIO t){

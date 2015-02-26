@@ -1,7 +1,7 @@
 public class Hat extends Item
 {
-    public Hat(String name, String desc){
-        super(name, desc);
+    public Hat(){
+        super();
     }
     
     public void explicate(TextIO t){

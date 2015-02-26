@@ -4,7 +4,7 @@
 public class Ring extends Item
 {
     public Ring(String name, String desc){
-        super(name, desc);
+        super();
     }
     
     public void explicate(TextIO t){

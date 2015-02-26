@@ -8,9 +8,7 @@ public abstract class Item
     protected int energy;
     protected int bloodlust;
 
-    public Item (String name, String desc){
-        this.name = name;
-        this.desc = desc;
+    public Item (){ 
     }
 
     public String getName(){

@@ -1,7 +1,7 @@
 public class Weapon extends Item
 {
     public Weapon(String name, String desc){
-        super(name, desc);
+        super();
     }
     
     public void explicate(TextIO t){

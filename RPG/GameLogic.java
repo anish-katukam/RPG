@@ -35,28 +35,17 @@ public class GameLogic
     }
 
     public void chapterone(){
-        //t.chapterOneLogo();
-        //   t.dramatic(3500,"We awoke far, far away in lands strange and barren.");
-        //  t.dramatic(3500,"We could feel the ancient power flowing through the sand and reverberating in the air.");
-        //   t.dramatic(3500,"We saw the yellow sands stretch forever. It culminated near the east in a great earthen spire.");
-        //  t.dramatic(3500,"Our resolve hardened. We set off.");
-        //  t.dramatic(3500,"The sands stirred a few feet ahead. We clutched our staff tightly.");
-        //   t.dramatic(3500,"With a roar of rage, a draugr rose from the ground, holding a sceptre and prepared to attack.");
-        //   t.dramatic(3500,"When we held power over the dead, we commanded legions of undead like this.");
-        //   t.dramatic(3500,"With our power stolen, we must use other magiks to quell our enemies.");
-        /*
-         * Here, introduce the battle mechanic. If we chose to code individual battles seperately, we can 
-         * have a call like battle.draugr();, or we can do a generic battle like battle(draugr);
-         */
-        //   t.dramatic(3500,"Sand swallows the remains, but leaves us our spoils. Its sceptre remains aboveground, and seems to beckon.");
-        /*
-         * The draugr drops its staff, here we introduce the whole inventory mechanic.
-         */
-        //  t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
-        //   t.dramatic(3500,"The spire in the distance looked all the more interesting.");
-        //t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
-        //example battle
-        enemy = new Enemy("Example", new Weapon(), new Armor(), new Ring());
+        /*t.chapterOneLogo();
+        t.dramatic(3500,"We awoke far, far away in lands strange and barren.");
+        t.dramatic(3500,"We could feel the ancient power flowing through the sand and reverberating in the air.");
+        t.dramatic(3500,"We saw the yellow sands stretch forever. It culminated near the east in a great earthen spire.");
+        t.dramatic(3500,"We set off.");
+        t.dramatic(3500,"The sands stirred a few feet ahead. We clutched our staff tightly.");
+        t.dramatic(3500,"With a roar of rage, a draugr rose from the ground, holding a sceptre and prepared to attack.");
+        t.dramatic(3500,"When we held power over the dead, we commanded legions of undead like this.");
+        t.dramatic(3500,"With our power stolen, we must use other magic to quell our enemies.");*/
+        Enemy draugr = new Enemy("Draugr", new WeaponT2(), new ArmorT2(), new RingOfHealth(), new HatOfHealth());
+        System.out.println(draugr.stats.health);
         battle = new Battle(character, enemy);
         while (victor == null)
         {
@@ -68,7 +57,12 @@ public class GameLogic
         }
         else{
             gameOver();
-        } 
+        }
+        /*
+        t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
+        t.dramatic(3500,"The spire in the distance looked all the more interesting.");
+        t.dramatic(3500,"A swath of desert lay between. We continued onwards.");*/
+         
     }
 
     public void chaptertwo(){
@@ -81,6 +75,19 @@ public class GameLogic
 
     public void gameOver()
     {
-
+        t.dramatic(3000, "We've failed.");
+        t.dramatic(2000, "Death is no stranger to us.");
+        t.dramatic(3000, "Many times we've called Death to claim our enemies.");
+        t.dramatic(3000, "How ironic.");
+        outro(true);
+    }
+    
+    public void outro(boolean lose){
+        t.dramatic(2000, "Thanks for playing.");
+        if (lose) {
+            t.dramatic(2000, "It's a shame you couldn't make it.");
+            t.dramatic(3000, "But not all of us do.");
+        }
+        t.dramatic(3000, "          coded and designed by \n                          Anish Katukam and Sid Mani");
     }
 }

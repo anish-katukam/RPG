@@ -67,5 +67,6 @@ public class Entity
         Inventory.addItem(weapon);
         Inventory.addItem(ring);
         Inventory.addItem(armor);
+        Inventory.addItem(hat);
     }
 }

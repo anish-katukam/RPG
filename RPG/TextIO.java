@@ -177,7 +177,7 @@ public class TextIO
      * Mainly used for logos, blank() offers a simple way of entering spaces.
      */   
     public void blank(int lines){
-        for (int i = 0; i<=lines; i++){
+        for (int i = 0; i<lines; i++){
             System.out.println();
         }
     }

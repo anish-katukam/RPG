@@ -41,6 +41,7 @@ public class Battle
     {
         t.clear();
         System.out.println("This is turn " + turnCount);
+        System.out.println("You are fighting an evil +" + b.getStats().getName());
         System.out.println("You have " + a.stats.health + " health.");
         System.out.println("The " + b.getStats().getName() + " has " + b.stats.health + " health." );
         if (Inventory.potionExists())

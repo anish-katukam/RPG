@@ -39,6 +39,7 @@ public class Inventory
             t.say("Your backpack is full. Remove an item or something. ");
         }
     }
+
     public static Item getPotion()
     {
         int index = 0;
@@ -46,7 +47,7 @@ public class Inventory
         int[] shift = new int[25];
         int shiftIndex = 0;
         t.say("Pick a potion:\n");
-        
+
         while (index < backpack.length){
             if (backpack[index] instanceof Potion){
                 System.out.println((shiftIndex + 1) + " " + backpack[index].getName());
@@ -57,6 +58,7 @@ public class Inventory
         }
         response = t.getInt("Simply type the number of the item you would like to examine. To exit, type 42.");
         return backpack[shift[response]];
+
     }
 
     public static void modulateItem(int index){
@@ -76,5 +78,15 @@ public class Inventory
 
     public static boolean isEmpty(){
         return (backpack[0] != null);
+    }
+    
+    public static boolean potionExists(){
+        boolean potionExists = false;
+        for (int i = 0; i < backpack.length; i++){
+            if (backpack[i] instanceof Potion){
+                potionExists = true;
+            }
+        }
+        return potionExists;
     }
 }

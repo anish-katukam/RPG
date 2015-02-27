@@ -5,6 +5,7 @@ public class Starter
         //g.exposition();
         //g.intro();
         g.chapterone();
+        Inventory.modify();
         //g.chaptertwo();
         //g.chapterthree();
         //g.outro(true);

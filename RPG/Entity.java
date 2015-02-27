@@ -54,6 +54,7 @@ public class Entity
         int damage = 10 * (this.getStats().getAttack() / a.getStats().getDefense());
         int critchance = random.nextInt(11);
         if (critchance == 1){
+            System.out.println("Critical Strike");
             return (2*damage);
         }
         else{

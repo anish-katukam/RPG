@@ -13,6 +13,8 @@ public class Battle
 
     public void advanceBattle()
     {
+        a.getStats().updateStats(a);
+        b.getStats().updateStats(b);
         if (a.getStats().getHealth() > 0 && b.getStats().getHealth() > 0)
         {
             System.out.println("This is turn " + turnCount);
@@ -39,12 +41,17 @@ public class Battle
 
     public Entity promptUser()
     {
-        System.out.println(a.stats.health);
-        System.out.println(b.stats.health);
+        t.clear();
+        System.out.println("You have " + a.stats.health + " health.");
+        System.out.println("The " + b.getStats().getName() + " has " + b.stats.health + " health." );
         if (t.getInt("Use potion or attack? (1/2)") == 1)
         {
-            this.advanceBattle((Potion) Inventory.getPotion());
-
+            if (Inventory.potionExists()){
+                this.advanceBattle((Potion) Inventory.getPotion());
+            }
+            else{
+                t.say("You have no potions");
+            }
         }
         else advanceBattle();
         if (a.stats.health == 0) return b;
@@ -54,7 +61,7 @@ public class Battle
 
     public void collect()
     {
-        if (t.getInt("Collect dropped items from enemy? (YES-1/NO-2) The weapon dropped is: " + b.getWeapon().getName()) == 1)
+        if (t.getInt("Collect dropped items from enemy? (YES-1/NO-2) The items dropped are: \n" + b.getWeapon().getName() + "\n" + b.getArmor().getName() + "\n" + b.getHat().getName() + "/n" + b.getRing().getName() ) == 1)
         {
             b.drop();
             t.say("Items collected!");

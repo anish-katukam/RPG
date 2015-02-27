@@ -83,7 +83,9 @@ public class GameLogic
     }
     
     public void outro(boolean lose){
+        t.clear();
         t.dramatic(2000, "Thanks for playing.");
+        t.clear();
         if (lose) {
             t.dramatic(2000, "It's a shame you couldn't make it.");
             t.dramatic(3000, "But not all of us do.");

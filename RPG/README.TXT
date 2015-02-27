@@ -5,7 +5,7 @@ Armor:
     1.  
     2.  
   ss  3.  
-    4.  Placebo
+    4.ss  Placebo
     5.  Norton 360
     
 Potions:

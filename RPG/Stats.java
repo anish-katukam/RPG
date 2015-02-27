@@ -19,7 +19,16 @@ public class Stats
         attack = base;
         name = x;
     }
-
+    public Stats(String x, int xbase)
+    {
+        base = xbase;
+        health = base;
+        bloodlust = base;
+        defense = base;
+        energy = base;
+        attack = base;
+        name = x;
+    }
     public String getName()
     {
         return name;

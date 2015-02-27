@@ -44,8 +44,8 @@ public class GameLogic
         t.dramatic(3500,"With a roar of rage, a draugr rose from the ground, holding a sceptre and prepared to attack.");
         t.dramatic(3500,"When we held power over the dead, we commanded legions of undead like this.");
         t.dramatic(3500,"With our power stolen, we must use other magic to quell our enemies.");*/
-        Enemy draugr = new Enemy("Draugr", new WeaponT2(), new ArmorT2(), new RingOfHealth(), new HatOfHealth());
-        System.out.println(draugr.stats.health);
+        enemy = new Enemy("Draugr", new WeaponT2(), new ArmorT2(), new RingOfHealth(), new HatOfHealth());
+        System.out.println(enemy.stats.health);
         battle = new Battle(character, enemy);
         while (victor == null)
         {

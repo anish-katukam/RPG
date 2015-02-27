@@ -56,7 +56,7 @@ public class Inventory
             }
             index++;
         }
-        response = t.getInt("Simply type the number of the item you would like to examine. To exit, type 42.");
+        response = t.getInt("Pick a potion.");
         return backpack[shift[response]];
 
     }

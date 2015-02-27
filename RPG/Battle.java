@@ -17,11 +17,9 @@ public class Battle
         b.getStats().updateStats(b);
         if (a.getStats().getHealth() > 0 && b.getStats().getHealth() > 0)
         {
-            System.out.println("This is turn " + turnCount);
             turnCount++;
-            System.out.println(a.getStats().getName() + " has dealt " + b.getStats().getName() + " "+ a.attack(b) + " damage, leaving " + b.getStats().getName() + " with " + b.getStats().getHealth() + " HP");
-            System.out.println(b.getStats().getName() + " has dealt " + a.getStats().getName() + " "+ b.attack(a) + " damage, leaving " + a.getStats().getName() + " with " + a.getStats().getHealth() + " HP");
-
+            a.attack(b);
+            b.attack(a);
         }
 
     }
@@ -32,7 +30,7 @@ public class Battle
         b.getStats().updateStats(b);
         if (a.stats.health > 0 && b.stats.health > 0)
         {
-            System.out.println("This is turn " + turnCount);
+
             turnCount++;
             a.consume(p);
         }
@@ -42,18 +40,22 @@ public class Battle
     public Entity promptUser()
     {
         t.clear();
+        System.out.println("This is turn " + turnCount);
         System.out.println("You have " + a.stats.health + " health.");
         System.out.println("The " + b.getStats().getName() + " has " + b.stats.health + " health." );
-        if (t.getInt("Use potion or attack? (1/2)") == 1)
+        if (Inventory.potionExists())
         {
-            if (Inventory.potionExists()){
+            if (t.getInt("Use potion or attack? (1/2)") == 1)
+            {
                 this.advanceBattle((Potion) Inventory.getPotion());
             }
-            else{
-                t.say("You have no potions");
-            }
         }
-        else advanceBattle();
+        else 
+        {
+            t.getInt("You have no choice but to fight. Enter 1 to continue.");
+            advanceBattle();
+            
+        }
         if (a.stats.health == 0) return b;
         else if (b.stats.health == 0) return a;
         else return null;
@@ -61,7 +63,9 @@ public class Battle
 
     public void collect()
     {
-        if (t.getInt("Collect dropped items from enemy? (YES-1/NO-2) The items dropped are: \n" + b.getWeapon().getName() + "\n" + b.getArmor().getName() + "\n" + b.getHat().getName() + "/n" + b.getRing().getName() ) == 1)
+        t.clear();
+        t.say("Victory!");
+        if (t.getInt("Collect dropped items from enemy? (YES-1/NO-2) The items dropped are: \n" + b.getWeapon().getName() + "\n" + b.getArmor().getName() + "\n" + b.getHat().getName() + "\n" + b.getRing().getName() ) == 1)
         {
             b.drop();
             t.say("Items collected!");

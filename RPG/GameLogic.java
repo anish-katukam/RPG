@@ -56,13 +56,13 @@ public class GameLogic
             battle.collect();
         }
         else{
-            gameOver();
+            outro(true);
         }
         /*
         t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");*/
-         
+
     }
 
     public void chaptertwo(){
@@ -73,23 +73,19 @@ public class GameLogic
         t.chapterThreeLogo();
     }
 
-    public void gameOver()
-    {
-        t.dramatic(3000, "We've failed.");
-        t.dramatic(2000, "Death is no stranger to us.");
-        t.dramatic(3000, "Many times we've called Death to claim our enemies.");
-        t.dramatic(3000, "How ironic.");
-        outro(true);
-    }
-    
     public void outro(boolean lose){
-        t.clear();
-        t.dramatic(2000, "Thanks for playing.");
-        t.clear();
+
         if (lose) {
+            t.dramatic(3000, "We've failed.");
+            t.dramatic(2000, "Death is no stranger to us.");
+            t.dramatic(3000, "Many times we've called Death to claim our enemies.");
+            t.dramatic(3000, "How ironic.");
             t.dramatic(2000, "It's a shame you couldn't make it.");
             t.dramatic(3000, "But not all of us do.");
         }
+        t.clear();
+        t.dramatic(2000, "Thanks for playing.");
+        t.clear();
         t.dramatic(3000, "          coded and designed by \n                          Anish Katukam and Sid Mani");
     }
 }

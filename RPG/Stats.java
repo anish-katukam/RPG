@@ -1,35 +1,35 @@
 public class Stats
 {
-    int health;
-    int base_health;
-    int bloodlust;
-    int base_bloodlust;
-    int defense;
-    int base_energy;
-    int energy;
-    int attack;
-    String name;
-    int base = 100;
-    public Stats(String x)
+    int health; //current health
+    int base_health; //max health
+    int bloodlust; //current bloodlust
+    int base_bloodlust; //max bloodlust
+    int defense; //defense strength
+    int base_energy; //max energy
+    int energy; //current energy
+    int attack; //attack strength
+    String name; //name of entity
+    int base = 100; //base level for stats, used to generate all numbers
+    public Stats(String x) //take in name
     {
-        health = base;
+        health = base; //set all stats to the base
         bloodlust = base;
         defense = base;
         energy = base;
         attack = base;
-        name = x;
+        name = x; //set name
     }
-    public Stats(String x, int xbase)
+    public Stats(String x, int xbase) //overload method with a variable to edit the base stat (used to adjust enemy difficulty)
     {
-        base = xbase;
-        health = base;
+        base = xbase; // set base to explicit param
+        health = base; //set stats
         bloodlust = base;
         defense = base;
         energy = base;
         attack = base;
-        name = x;
+        name = x; //set name
     }
-    public String getName()
+    public String getName() //accessors for instance fields
     {
         return name;
     }
@@ -59,9 +59,9 @@ public class Stats
         return energy;    
     }
 
-    public void setHealth(int n)
+    public void setHealth(int n) //mutators for instance fields
     {
-         if (n < base_health) health = n;
+         if (n < base_health) health = n; //make sure health doesn't go over max
         else health = base_health;
     }
 
@@ -87,14 +87,14 @@ public class Stats
         attack = n;
     }
 
-    public void takeHealthDamage(int amount)
+    public void takeHealthDamage(int amount) //take amount damage to health
     {
         if (health - amount > 0) health = health - amount;
         else health = 0;
 
     }
 
-    public void updateStats(Entity a)
+    public void updateStats(Entity a) //update stats based on current loadout's properties
     {
         attack = base + a.getWeapon().getAttack() + a.getHat().getAttack() + a.getRing().getAttack();
         defense = base + a.getArmor().getDefense() + a.getHat().getDefense() + a.getRing().getDefense();

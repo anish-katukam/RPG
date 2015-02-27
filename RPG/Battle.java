@@ -43,7 +43,7 @@ public class Battle
         System.out.println(b.stats.health);
         if (t.getInt("Use potion or attack? (1/2)") == 1)
         {
-            //this.advanceBattle((Potion) Inventory.getPotion());
+            this.advanceBattle((Potion) Inventory.getPotion());
 
         }
         else advanceBattle();

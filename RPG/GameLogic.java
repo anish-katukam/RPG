@@ -57,8 +57,10 @@ public class GameLogic
         }
         else{
             outro(true);
+
         }
         victor = null;
+        Inventory.modify();
         t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
@@ -87,7 +89,9 @@ public class GameLogic
         }
         else{
             outro(true);
+
         }
+        Inventory.modify();
         t.dramatic(2500,"Something was satisfying about the way its remnants melded back into the ground.");
         t.dramatic(2500,"We walked into the room, letting the doors close behind us with a resonating thud.");
         t.dramatic(2500,"Surveying the room, we saw a collection of gear pinned up on the walls, emanating with magical energy.");
@@ -111,7 +115,9 @@ public class GameLogic
         }
         else{
             outro(true);
+
         }
+        Inventory.modify();
         t.dramatic(2500, "The withered body of the enemy lay before me... With its dying breath it touched my forehead with its... arm, if one could describe the appendage as such.");
         t.dramatic(3000, "I transcended reality and witnessed the glory of the higher planes.");
         t.dramatic(3000, "The universal truth... everything could be explained by one simple concept.");
@@ -121,6 +127,7 @@ public class GameLogic
         t.dramatic(2000,"   Continue playing \n-> Quit");
         t.clear();
         outro(false);
+        return;
     }
 
     public void chaptertwo(){
@@ -146,5 +153,6 @@ public class GameLogic
         t.dramatic(2000, "Thanks for playing.");
         t.clear();
         t.dramatic(3000, "          coded and designed by \n                          Anish Katukam and Sid Mani");
+        System.exit(0);
     }
 }

@@ -40,7 +40,7 @@ public class Battle
         b.getStats().updateStats(b);
         t.clear(); //clear screen
         System.out.println("This is turn " + turnCount); //print data about situation
-        System.out.println("You are fighting an evil +" + b.getStats().getName()); 
+        System.out.println("You are fighting an evil " + b.getStats().getName()); 
         System.out.println("You have " + a.stats.health + " health.");
         System.out.println("The " + b.getStats().getName() + " has " + b.stats.health + " health." );
         if (Inventory.potionExists()) //if there exists a potion item in the inventory

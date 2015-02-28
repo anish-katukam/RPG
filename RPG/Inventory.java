@@ -65,9 +65,15 @@ public class Inventory
         Item i = backpack[index - 1];
         i.explicate(t);
         t.blank(1);
-        if (t.getString("Type rm if you want to remove this item. Press enter to view your inventory.").equals("rm")){
+        String response = t.getString("Type rm if you want to remove this item. Type equip to equip the item. Press enter to view your inventory.");
+        if (response.equals("rm")){
             for (int a = index-1; a<24;a++){
                 backpack[a] = backpack[a+1];
+            }
+        }
+        else {
+            if(response.equals("equip"){
+                i = replace(i);
             }
         }
     }
@@ -79,7 +85,7 @@ public class Inventory
     public static boolean isEmpty(){
         return (backpack[0] != null);
     }
-    
+
     public static boolean potionExists(){
         boolean potionExists = false;
         for (int i = 0; i < backpack.length; i++){

@@ -76,7 +76,7 @@ public class GameLogic
         t.dramatic(2600,"The doors parted, creaking as they revealed a figure standing behind.");
         t.dramatic(3000,"We beheld a figure of clay and stone, clutching a great staff with energy glowing on its surface.");
         t.dramatic(2000,"We clutched our staff and approached.");
-        enemy = new Enemy("Earth Guardian", 100, new WeaponT2(), new ArmorT3(), new RingOfHealth(), new HatOfHealth());
+        enemy = new Enemy("Earth Guardian", 90, new WeaponT2(), new ArmorT3(), new RingOfHealth(), new HatOfHealth());
         System.out.println(enemy.stats.health);
         battle = new Battle(character, enemy);
         while (victor == null)
@@ -101,7 +101,7 @@ public class GameLogic
         t.dramatic(2500, "A massive whirlwind had formed around the tower, surrounding us");
         t.dramatic(2500, "From this vortex descended an ephemeral shape... one that moved too quickly to see");
         t.dramatic(2500, "My staff crackled with energy... I knew not what it was, or why, but I knew I had to fight it.");
-        enemy = new Enemy("Air Goddess", 110, new WeaponT4(), new ArmorT1(), new RingOfHealth(), new HatOfHealth());
+        enemy = new Enemy("Air Goddess", 100, new WeaponT4(), new ArmorT1(), new RingOfHealth(), new HatOfHealth());
         System.out.println(enemy.stats.health);
         battle = new Battle(character, enemy);
         victor= null;

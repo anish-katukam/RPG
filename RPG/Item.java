@@ -15,7 +15,7 @@ public abstract class Item
         return name;
     }
 
-    public String getDescription(){
+    public String getDescription(){ // get description
         return desc;
     }
 

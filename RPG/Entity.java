@@ -58,7 +58,7 @@ public class Entity //this class is used for every living thing in the game
             return (2*damage);
         }
         else{
-            damage += random.nextInt(damage/3);
+            damage += random.nextInt(10);
         }
         a.getStats().takeHealthDamage(damage); //get stats object of victim, decrease health
         return damage; //return amount of damage taken

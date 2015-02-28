@@ -58,7 +58,7 @@ public class GameLogic
         else{
             outro(true);
         }
-
+        victor = null;
         t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
@@ -74,11 +74,53 @@ public class GameLogic
         t.dramatic(2600,"The doors parted, creaking as they revealed a figure standing behind.");
         t.dramatic(3000,"We beheld a figure of clay and stone, clutching a great staff with energy glowing on its surface.");
         t.dramatic(2000,"We clutched our staff and approached.");
-        //BATTLE THE EARTH GUARDIAN
+        enemy = new Enemy("Earth Guardian", 100, new WeaponT2(), new ArmorT3(), new RingOfHealth(), new HatOfHealth());
+        System.out.println(enemy.stats.health);
+        battle = new Battle(character, enemy);
+        while (victor == null)
+        {
+            victor = battle.promptUser();
+        }
+        if (victor == character)
+        {
+            battle.collect();
+        }
+        else{
+            outro(true);
+        }
         t.dramatic(2500,"Something was satisfying about the way its remnants melded back into the ground.");
         t.dramatic(2500,"We walked into the room, letting the doors close behind us with a resonating thud.");
         t.dramatic(2500,"Surveying the room, we saw a collection of gear pinned up on the walls, emanating with magical energy.");
-
+        t.dramatic(2500, "The floor shook, dust drifted down from the ceiling");
+        t.dramatic(2500, "A massic rock fell from the ceiling, blocking the entrance");
+        t.dramatic(2500, "We could not turn back, so we climbed out to the top");
+        t.dramatic(2500, "A massive whirlwind had formed around the tower, surrounding us");
+        t.dramatic(2500, "From this vortex descended an ephemeral shape... one that moved too quickly to see");
+        t.dramatic(2500, "My staff crackled with energy... I knew not what it was, or why, but I knew I had to fight it.");
+        enemy = new Enemy("Air Goddess", 110, new WeaponT4(), new ArmorT1(), new RingOfHealth(), new HatOfHealth());
+        System.out.println(enemy.stats.health);
+        battle = new Battle(character, enemy);
+        victor= null;
+        while (victor == null)
+        {
+            victor = battle.promptUser();
+        }
+        if (victor == character)
+        {
+            battle.collect();
+        }
+        else{
+            outro(true);
+        }
+        t.dramatic(2500, "The withered body of the enemy lay before me... With its dying breath it touched my forehead with its... arm, if one could describe the appendage as such.");
+        t.dramatic(3000, "I transcended reality and witnessed the glory of the higher planes.");
+        t.dramatic(3000, "The universal truth... everything could be explained by one simple concept.");
+        t.dramatic(3000, "Every philosopher, scientist, every mortal being had searched for this truth which now filled my being");
+        t.dramatic(2500, "Unfortunately, I collapsed of blood loss at that point and suffered severe brain damage. The truth was lost to the mortal realm, but at least I'm still alive, right? Right?");
+        t.dramatic(1000, "-> Continue playing \n   Quit");
+        t.dramatic(2000,"   Continue playing \n-> Quit");
+        t.clear();
+        outro(false);
     }
 
     public void chaptertwo(){

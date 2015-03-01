@@ -1,5 +1,5 @@
 Story
-A necromancer seeks his destiny by travelling across generic barren plains. He was never able to use necromancy correctly and always needed the skull of power to use any necromancy at all. He learns that his power was sealed away by a great evil. He journeys to kill that evil and reclaim his power. 
+A necromancer seeks his destiny by travelling across generic desert plains. He was never able to use necromancy correctly and always needed the skull of power to use any necromancy at all. He learns that his power was sealed away by a great evil. He journeys to kill that evil and reclaim his power. 
 
 (Anish writes code for this in main class)
 

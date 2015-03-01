@@ -182,6 +182,9 @@ public class TextIO
         }
     }
 
+    /*
+     * Because I don't want to create a new scanner every time in every class.
+     */
     public int getInt(String question){
         Scanner scanner = new Scanner(System.in);
         say(question);

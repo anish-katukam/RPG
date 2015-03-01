@@ -8,12 +8,11 @@
 import java.util.Scanner;
 public class GameLogic
 {
-    String name;
-    TextIO t = new TextIO();
-    Character character = new Character();
-    Enemy enemy;
-    Entity victor = null;
-    Battle battle;
+    TextIO t = new TextIO(); //new textIO for text input/output
+    Character character = new Character(); //person you play as
+    Enemy enemy; // generic enemy
+    Entity victor = null; //for battle
+    Battle battle; // new battle for events
     /*
      * Exposition explains the story so far and leads into the opening credits.
      */
@@ -43,24 +42,22 @@ public class GameLogic
         t.dramatic(3500,"The sands stirred a few feet ahead. We clutched our staff tightly.");
         t.dramatic(3500,"With a roar of rage, a draugr rose from the ground, holding a sceptre and prepared to attack.");
         t.dramatic(3500,"When we held power over the dead, we commanded legions of undead like this.");
-        t.dramatic(3500,"With our power stolen, we must use other magic to quell our enemies.");
-        enemy = new Enemy("Draugr", 80, new WeaponT2(), new ArmorT2(), new RingOfHealth(), new HatOfHealth());
-        System.out.println(enemy.stats.health);
-        battle = new Battle(character, enemy);
-        while (victor == null)
+        t.dramatic(3500,"With our power stolen, we must use other magic to quell our enemies.");                                    //dialogue
+        enemy = new Enemy("Draugr", 80, new WeaponT2(), new ArmorT2(), new RingOfHealth(), new HatOfHealth());  // new enemy for first battle
+        battle = new Battle(character, enemy);  //start battle
+        while (victor == null) //while battle undecided
         {
-            victor = battle.promptUser();
+            victor = battle.promptUser(); //next step
         }
         if (victor == character)
         {
-            battle.collect();
+            battle.collect(); //pick up dead persons items
         }
         else{
-            outro(true);
-
+            outro(true); //you died, sucks to be you
         }
-        victor = null;
-        Inventory.modify(character);
+        victor = null; //reset for next battle
+        Inventory.modify(character); //give chance to organize inventory
         t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
@@ -89,7 +86,6 @@ public class GameLogic
         }
         else{
             outro(true);
-
         }
         Inventory.modify(character);
         t.dramatic(2500,"Something was satisfying about the way its remnants melded back into the ground.");
@@ -115,7 +111,6 @@ public class GameLogic
         }
         else{
             outro(true);
-
         }
         Inventory.modify(character);
         t.dramatic(2500, "The withered body of the enemy lay before me... With its dying breath it touched my forehead with its... arm, if one could describe the appendage as such.");
@@ -126,21 +121,21 @@ public class GameLogic
         t.dramatic(1000, "-> Continue playing \n   Quit");
         t.dramatic(2000,"   Continue playing \n-> Quit");
         t.clear();
-        outro(false);
+        outro(false); //you didnt die so pass in false
         return;
     }
 
     public void chaptertwo(){
-        t.chapterTwoLogo();
+        t.chapterTwoLogo(); //not in yet
     }
 
     public void chapterthree(){
-        t.chapterThreeLogo();
+        t.chapterThreeLogo(); //same
     }
 
     public void outro(boolean lose){
 
-        if (lose) {
+        if (lose) { //lose is true if you died
             t.clear();
             t.dramatic(3000, "We've failed.");
             t.dramatic(2000, "Death is no stranger to us.");

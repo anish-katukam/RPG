@@ -29,4 +29,5 @@ comment8.target=void\ blank(int)
 comment8.text=\r\n\ Mainly\ used\ for\ logos,\ blank()\ offers\ a\ simple\ way\ of\ entering\ spaces.\r\n
 comment9.params=question
 comment9.target=int\ getInt(java.lang.String)
+comment9.text=\r\n\ Because\ I\ don't\ want\ to\ create\ a\ new\ scanner\ every\ time\ in\ every\ class.\r\n
 numComments=11

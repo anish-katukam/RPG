@@ -60,7 +60,7 @@ public class GameLogic
 
         }
         victor = null;
-        Inventory.modify();
+        Inventory.modify(character);
         t.dramatic(3500,"We sense the land's hostility as well. It seems to be controlled by another.");
         t.dramatic(3500,"The spire in the distance looked all the more interesting.");
         t.dramatic(3500,"A swath of desert lay between. We continued onwards.");
@@ -91,7 +91,7 @@ public class GameLogic
             outro(true);
 
         }
-        Inventory.modify();
+        Inventory.modify(character);
         t.dramatic(2500,"Something was satisfying about the way its remnants melded back into the ground.");
         t.dramatic(2500,"We walked into the room, letting the doors close behind us with a resonating thud.");
         t.dramatic(2500,"Surveying the room, we saw a collection of gear pinned up on the walls, emanating with magical energy.");
@@ -117,7 +117,7 @@ public class GameLogic
             outro(true);
 
         }
-        Inventory.modify();
+        Inventory.modify(character);
         t.dramatic(2500, "The withered body of the enemy lay before me... With its dying breath it touched my forehead with its... arm, if one could describe the appendage as such.");
         t.dramatic(3000, "I transcended reality and witnessed the glory of the higher planes.");
         t.dramatic(3000, "The universal truth... everything could be explained by one simple concept.");

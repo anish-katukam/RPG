@@ -192,9 +192,6 @@ public class TextIO
         Scanner scanner = new Scanner(System.in);
         say(question);
         String response = scanner.nextLine();
-        if (response == "bp"){
-            Inventory.modify();
-        }
         return response;
     }
 }

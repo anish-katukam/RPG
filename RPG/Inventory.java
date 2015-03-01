@@ -8,7 +8,7 @@ public class Inventory
 {
     private static TextIO t = new TextIO();
     private static Item[] backpack = new Item[25];
-    public static void modify(){
+    public static void modify(Entity a){
         t.clear();
         int index = 0;
         int response = 0;
@@ -23,8 +23,8 @@ public class Inventory
         }
         while (response != 42 && response < backpack.length && response >= 0 && backpack[response] != null) {
             t.blank(1);
-            modulateItem(t.getInt("Simply type the number of the item you would like to examine. To exit, type 42."));
-            modify();
+            modulateItem(t.getInt("Simply type the number of the item you would like to examine. To exit, type 42."),a);
+            modify(a);
         }
     }
 
@@ -61,7 +61,7 @@ public class Inventory
 
     }
 
-    public static void modulateItem(int index){
+    public static void modulateItem(int index, Entity character){
         Item i = backpack[index - 1];
         i.explicate(t);
         t.blank(1);
@@ -72,8 +72,8 @@ public class Inventory
             }
         }
         else {
-            if(response.equals("equip"){
-                i = replace(i);
+            if(response.equals("equip")){
+                i = character.replace(i);
             }
         }
     }

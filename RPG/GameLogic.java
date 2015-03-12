@@ -30,11 +30,11 @@ public class GameLogic
     public void intro(){
         t.dramatic(1750,"Welcome.");
         t.dramatic(2750,"This game is meant to be played in fullscreen. Please maximize now.");
-        t.openingLogo();
+        //t.openingLogo();
     }
 
     public void chapterone(){
-        t.chapterOneLogo();
+        //t.chapterOneLogo();
         t.dramatic(3500,"We awoke far, far away in lands strange and barren.");
         t.dramatic(3500,"We could feel the ancient power flowing through the sand and reverberating in the air.");
         t.dramatic(3500,"We saw the yellow sands stretch forever. It culminated near the east in a great earthen spire.");
@@ -126,11 +126,11 @@ public class GameLogic
     }
 
     public void chaptertwo(){
-        t.chapterTwoLogo(); //not in yet
+        //t.chapterTwoLogo(); //not in yet
     }
 
     public void chapterthree(){
-        t.chapterThreeLogo(); //same
+        //t.chapterThreeLogo(); //same
     }
 
     public void outro(boolean lose){

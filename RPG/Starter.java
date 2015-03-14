@@ -11,7 +11,6 @@ public class Starter
     public static void main (String Args[]){
         JFrame frame = new JFrame("Swords & Sworcery");
         frame.setSize(1920,1080);
-
         GraphicsEngine game = new GraphicsEngine();
         frame.setUndecorated(true);
         frame.add(game);

@@ -1,4 +1,4 @@
-import javax.swing.JComponent;
+import javax.swing.*;
 import java.awt.*;
 import java.awt.image.*;
 import java.io.*;
@@ -7,23 +7,24 @@ import java.awt.Graphics;
 
 public class GTextIO extends JComponent
 {
-
-    public void paintComponent(Graphics g, String dialogue){
-        super.paintComponent(g);
+    public static void dramatic(Graphics g, String dialogue){
         Graphics2D g2 = (Graphics2D) g;
         int x = 75;
         int y = 75;
         Font fixedsys = loadFont();
+        GraphicsEnvironment ge = 
+            GraphicsEnvironment.getLocalGraphicsEnvironment();
+        ge.registerFont(fixedsys);
+        g2.setFont(fixedsys);
         g2.drawString(dialogue,75,75);
     }   
 
-    public Font loadFont(){
+    public static Font loadFont(){
         Font font = null; 
-        try {
-            GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            font = Font.createFont(Font.TRUETYPE_FONT, new File("vgafix.fon"));
-        } catch (Exception e) {
-            
+        try (InputStream stream = GTextIO.class.getResourceAsStream("vgafix.ttf")) {
+            font = Font.createFont(Font.TRUETYPE_FONT, stream).deriveFont(50f);
+        } catch(FontFormatException | IOException e){
+            System.out.println("Something went wrong" + e);            
         }
         return font;
     }

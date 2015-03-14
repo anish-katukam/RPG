@@ -19,7 +19,7 @@ public class GraphicsEngine extends JComponent
         splash3.paintComponent(g);
         splasho.paintComponent(g);*/
         GTextIO t = new GTextIO();
-        t.paintComponent(g,"hello");
+        t.dramatic(g,"hello");
     }   
 
 }

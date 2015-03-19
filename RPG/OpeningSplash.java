@@ -11,7 +11,7 @@ public class OpeningSplash extends JComponent
         Graphics2D g2 = (Graphics2D) g;
         BufferedImage img = null;
         try {
-            img = ImageIO.read(new File("/Resources/OpeningSplash.jpg"));
+            img = ImageIO.read(new File("OpeningSplash.jpg"));
         } catch (IOException e) {
         }
         g2.drawImage(img, 0, 0, this);

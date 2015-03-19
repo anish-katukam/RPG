@@ -4,6 +4,8 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 import java.awt.Graphics;
+import java.awt.event.*;
+import javax.swing.Timer;
 
 public class GTextIO extends JComponent
 {
@@ -11,12 +13,26 @@ public class GTextIO extends JComponent
         Graphics2D g2 = (Graphics2D) g;
         int x = 75;
         int y = 75;
-        Font fixedsys = loadFont();
+        Font fixedsys;
+        fixedsys = new Font ("Fixedsys", Font.PLAIN , 11);
+        /*fixedsys = loadFont(); 
         GraphicsEnvironment ge = 
-            GraphicsEnvironment.getLocalGraphicsEnvironment();
-        ge.registerFont(fixedsys);
+        GraphicsEnvironment.getLocalGraphicsEnvironment();                                          //add this block when loadFont() actually works
+        ge.registerFont(fixedsys);*/
         g2.setFont(fixedsys);
-        g2.drawString(dialogue,75,75);
+        for(char c : dialogue.toCharArray()){
+            g2.drawString(String.valueOf(c),x,y);
+            x += 10;
+            try{
+                Thread.sleep(400);
+            } catch(Exception e){
+
+            }
+            if (x > 1000){                                                                                //replace with intended cutoff
+                x = 75;                                                                                         
+                y = y + 20;                                                                             //replace with actual height or whatever
+            }
+        }
     }   
 
     public static Font loadFont(){
@@ -28,4 +44,5 @@ public class GTextIO extends JComponent
         }
         return font;
     }
+
 }

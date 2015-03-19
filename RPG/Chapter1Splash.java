@@ -11,7 +11,7 @@ public class Chapter1Splash extends JComponent
         Graphics2D g2 = (Graphics2D) g;
         BufferedImage img = null;
         try {
-            img = ImageIO.read(new File("Resources\\chapter1.jpg"));
+            img = ImageIO.read(new File("chapter1.jpg"));
         } catch (IOException e) {
         }
         g2.drawImage(img, 0, 0, this);

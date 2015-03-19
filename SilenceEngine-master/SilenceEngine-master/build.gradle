@@ -1,0 +1,38 @@
+apply plugin: 'java'
+
+// Source sets in the project, specify source directories
+sourceSets {
+    main {
+        java.srcDir("${projectDir}/src/main/java/")
+        resources.srcDir("${projectDir}/src/main/java/")
+    }
+}
+
+// Dependencies for the project are stored in the libs directory
+dependencies {
+    compile fileTree(dir: "libs", includes: ["*.jar"])
+    runtime fileTree(dir: "libs", includes: ["*.jar"])
+
+    // Using this because the resources are in source code
+    runtime fileTree(dir: "${projectDir}/src/main/java/", includes: ["*"])
+}
+
+// Exclude the tests from JavaDoc
+javadoc {
+    exclude("com/shc/silenceengine/tests/**")
+
+    // Add MathJax to the header, so that we can render math inside documentation.
+    javadoc.options.header = '<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>'
+}
+
+// Control what goes into the JAR
+jar {
+    // Include all the classes except the tests
+    include("com/shc/silenceengine/**")
+    exclude("com/shc/silenceengine/tests/**")
+
+    // Only include the logo and the shader sources
+    include("resources/**.frag")
+    include("resources/**.vert")
+    include("resources/logo.png")
+}

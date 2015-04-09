@@ -9,13 +9,13 @@ import javax.swing.*;
 public class Starter
 {
     public static void main (String Args[]){
+        
         JFrame frame = new JFrame("Swords & Sworcery");
         frame.setSize(1920,1080);
         GraphicsEngine game = new GraphicsEngine();
         frame.add(game);
         frame.setUndecorated(true);
         frame.setVisible(true);
-        frame.getContentPane().setBackground(Color.RED);
         /*CharacterComponent character = new CharacterComponent();
         frame.add(character);
         final Timer t = new Timer(100,character);
@@ -64,6 +64,5 @@ public class Starter
         //g.chaptertwo();
         //g.chapterthree();
         //g.outro(true);*/
-        return;
     }
 }

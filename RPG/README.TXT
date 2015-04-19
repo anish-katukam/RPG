@@ -1,47 +1,19 @@
-Item Dossier:
+Music Directory
 
-Armor:
+"The Prettiest Weed" - Intro music
 
-    1.  
-    2.  
-  ss  3.  
-    4.ss  Placebo
-    5.  Norton 360
-    
-Potions:
+3-5 Ambient Tunes
 
-    1.  Faulty Anger Management  
-    2.  
-    3.
-    4.
-    5.
+"Dark Flute" - Happy music
 
-Weapons:
+"The Cloud" - Melancholy, kinda sad music
 
-    1.  Praise Gaben
-    2.  '); DROP TABLE 
-    3.  Generic Wand
-    4.  Great Flag of the Glorious Democratic Republic of the Congo  
-    5.  Crowbar
-    
-Hats:
+"The Maelstorm" - Just music, u feel?
 
-    1.  Burning Flames Team Captain
-    2.  Bill's Hat
-    3.  Valhalla Helm
-    4.  Sombrero
-    5.  Ghastly Gibus
-    
-Rings:
+1 Spoopy tune
 
-    1.
-    2.  
-    3.
-    4.
-    5.
+"Doom Sock' - 3spoopy5me
 
-OTHER: 
-When accessing items, do we have to use the methods? Why not keep them public?
-Add items
-Test stuff
-Story theme
+Closing Tune
+
+"The Prettiest Remix" - Closing music

@@ -5,64 +5,30 @@ import java.awt.image.*;
 import java.io.*;
 import javax.imageio.*;
 import javax.swing.*;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.*;
 
 public class Starter
 {
     public static void main (String Args[]){
-        
-        JFrame frame = new JFrame("Swords & Sworcery");
+        JFrame frame = new JFrame("Swords & Sworcery");               
         frame.setSize(1920,1080);
-        GraphicsEngine game = new GraphicsEngine();
-        frame.add(game);
         frame.setUndecorated(true);
+
+        final JFXPanel fxPanel = new JFXPanel(); 
+        frame.add(fxPanel); 
+        initFX(fxPanel); 
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+
+
+        frame.add(new OpeningSplash());
+        MUSIK.playIntro();
         frame.setVisible(true);
-        /*CharacterComponent character = new CharacterComponent();
-        frame.add(character);
-        final Timer t = new Timer(100,character);
-
-        class KeyboardListener implements KeyListener{
-
-            @Override
-            public void keyPressed (KeyEvent e){
-                int key = e.getKeyCode();
-                if (key == KeyEvent.VK_UP){
-                    character.setDirection (1);
-                    t.start();
-                }
-                if (key == KeyEvent.VK_DOWN){ 
-                    character.setDirection (2);
-                    t.start();
-                }
-                if (key == KeyEvent.VK_LEFT){
-                    character.setDirection (3);
-                    t.start();
-                }
-                if (key == KeyEvent.VK_RIGHT){
-                    character.setDirection (4);
-                    t.start();
-                }
-                character.repaint();
-            }
-
-            @Override
-            public void keyReleased (KeyEvent e) {
-
-            }
-
-            @Override
-            public void keyTyped (KeyEvent e) {
-
-            }
-
-        }
-        KeyboardListener listener  = new KeyboardListener();
-        frame.addKeyListener(listener);*/
-        /*GameLogic g = new GameLogic(); //instantiates new gamelogic
-        g.exposition(); 
-        g.intro();
-        g.chapterone(); //calling the scripted events
-        //g.chaptertwo();
-        //g.chapterthree();
-        //g.outro(true);*/
     }
+
+    private static void initFX(JFXPanel fxPanel) {
+    }
+
 }

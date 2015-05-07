@@ -16,15 +16,17 @@ public class Starter
         JFrame frame = new JFrame("Swords & Sworcery");               
         frame.setSize(1920,1080);
         frame.setUndecorated(true);
+        Toolkit toolkit = Toolkit.getDefaultToolkit();
+        Image image = toolkit.getImage("icons/handwriting.gif");
+        java.awt.Cursor c = toolkit.createCustomCursor(image, new Point(frame.getX(), frame.getY()), "img");
+        frame.setCursor (c);
 
         final JFXPanel fxPanel = new JFXPanel(); 
         frame.add(fxPanel); 
         initFX(fxPanel); 
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
-
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         frame.add(new OpeningSplash());
-        MUSIK.playIntro();
         frame.setVisible(true);
     }
 

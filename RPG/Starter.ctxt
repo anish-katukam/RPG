@@ -1,6 +1,4 @@
 #BlueJ class context
 comment0.params=Args
 comment0.target=void\ main(java.lang.String[])
-comment1.params=fxPanel
-comment1.target=void\ initFX(javafx.embed.swing.JFXPanel)
-numComments=2
+numComments=1

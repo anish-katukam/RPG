@@ -12,30 +12,57 @@ import javax.swing.*;
 
 public class Starter
 {
+    static final JFrame frame = new JFrame("Swords & Sworcery");
     public static void main (String Args[]){
-        JFrame frame = new JFrame("Swords & Sworcery");               
+                        
         frame.setSize(1500,900);
-        frame.setUndecorated(true);
+        JLayeredPane buttonOptionPane = new JLayeredPane();
+        
 
-
-// //        final JFXPanel fxPanel = new JFXPanel(); 
-//         frame.add(fxPanel); 
-//         initFX(fxPanel); 
-//         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        // //        final JFXPanel fxPanel = new JFXPanel(); 
+        //         frame.add(fxPanel); 
+        //         initFX(fxPanel); 
+        //         frame.setDefaultfullScreenButtonOperation(JFrame.EXIT_ON_fullScreenButton);
 
         //frame.add(new OpeningSplash());
-        JButton close = new JButton("Close");
-        close.setOpaque(false);
-        close.setContentAreaFilled(false);
-        close.setBorderPainted(false);
-        JPanel masterPanel = new JPanel(new BorderLayout());
-        masterPanel.add(new OpeningSplash(), BorderLayout.CENTER);
-        masterPanel.add(close, BorderLayout.NORTH);
-        frame.add(masterPanel);
-        frame.setVisible(true);
-    }
+        //JButton fullScreenButton = new JButton(new ImageIcon("Full_Screen_Icon.png"));
 
- //   private static void initFX(JFXPanel fxPanel) {
- //   }
+        JButton fullScreenButton = new JButton(new ImageIcon("Full_Screen_Icon.png"));
+        fullScreenButton.setOpaque(false);
+        fullScreenButton.setContentAreaFilled(false);
+        fullScreenButton.setBorderPainted(false);
+        fullScreenButton.setSize(50, 50);
+        
+        JPanel masterPanel = new JPanel(new BorderLayout());
+        buttonOptionPane.add(new JButton("Test"), new Integer(1));
+        buttonOptionPane.add(fullScreenButton, new Integer(1));
+        //masterPanel.add(fullScreenButton, BorderLayout.NORTH);
+        //frame.add(masterPanel);
+        frame.add(buttonOptionPane);
+        frame.setUndecorated(true);
+        frame.setVisible(true);
+        
+        //The buttonlistnere class will be used later to do shit with the minimize and fullScreenButton buttons. Bitch.
+        class ButtonListener implements ActionListener
+        {
+            public void actionPerformed(ActionEvent e)
+            {
+                frame.dispose();
+                frame.setUndecorated(!frame.isUndecorated());
+                frame.pack();
+                frame.setSize(1500,900);
+                frame.setVisible(true);
+                
+            }
+        }
+        
+        fullScreenButton.addActionListener(new ButtonListener());
+        
+        
+    }
+   
+
+    //   private static void initFX(JFXPanel fxPanel) {
+    //   }
 
 }

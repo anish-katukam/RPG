@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=frame\ p
+comment0.target=java.awt.Point\ map_to_frame(javax.swing.JFrame,\ java.awt.Point)
+comment1.params=frame\ i
+comment1.target=java.awt.image.BufferedImage\ resize_img(javax.swing.JFrame,\ java.awt.image.BufferedImage)
+comment2.params=img
+comment2.target=java.awt.image.BufferedImage\ toBufferedImage(java.awt.Image)
+numComments=3

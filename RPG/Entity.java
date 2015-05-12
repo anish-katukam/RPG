@@ -1,17 +1,29 @@
 import java.util.*;
-public class Entity //this class is used for every living thing in the game
+import javax.swing.JComponent;
+import java.awt.*;
+import java.awt.image.*;
+import java.io.*;
+import javax.imageio.*;
+import javax.swing.*;
+public class Entity extends JComponent//this class is used for every living thing in the game
 {
     protected Weapon weapon; //entities possess certain items
     protected Hat hat;
+    protected Point position;
     protected Potion potion;
     protected Ring ring;
     protected Armor armor;
+    protected BufferedImage curr_sprite;
     protected Stats stats; // object containing the stats used for damage calculations
     Random random = new Random(); //instance of random
+    protected BufferedImage sprites[] = new BufferedImage[4]; //4 sprites: 0 = motionless, 1 = walking left, 2 = walking right, 3 = low health
     public Entity() //constructor (handled in subclasses)
     {
     }
-
+    public Entity(BufferedImage[] s)
+    {
+       sprites = s;
+    }
     public Weapon getWeapon() //return items
     {
         return this.weapon;
@@ -101,5 +113,18 @@ public class Entity //this class is used for every living thing in the game
         Inventory.addItem(ring);
         Inventory.addItem(armor);
         Inventory.addItem(hat);
+    }
+    public void paintComponent(Graphics g)
+    {
+            Graphics2D g2 = (Graphics2D) g;
+            g2.drawImage(get_curr_sprite(), (int)position.getX(), (int)position.getY(), this);
+    }
+    public BufferedImage get_curr_sprite()
+    {
+        return curr_sprite;
+    }
+    public void set_curr_sprite(BufferedImage s)
+    {
+        curr_sprite = s;
     }
 }

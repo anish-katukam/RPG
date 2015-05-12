@@ -18,6 +18,7 @@ public class Starter
         frame.setSize(1500,900);
         JLayeredPane buttonOptionPane = new JLayeredPane();
         
+        
 
         // //        final JFXPanel fxPanel = new JFXPanel(); 
         //         frame.add(fxPanel); 
@@ -31,13 +32,23 @@ public class Starter
         fullScreenButton.setOpaque(false);
         fullScreenButton.setContentAreaFilled(false);
         fullScreenButton.setBorderPainted(false);
-        fullScreenButton.setSize(50, 50);
+        fullScreenButton.setBounds(1300, 100, 100, 100);
         
-        JPanel masterPanel = new JPanel(new BorderLayout());
-        buttonOptionPane.add(new JButton("Test"), new Integer(1));
+        
+        
+        //JPanel masterPanel = new JPanel(new BorderLayout());
+        //frame.add(new OpeningSplash());
+        //buttonOptionPane.add(new OpeningSplash(), JLayeredPane.DEFAULT_LAYER);
+        //frame.add(new OpeningSplash());
+        OpeningSplash image = new OpeningSplash();
+        image.setBounds(0, 0, 1500, 900);
+        buttonOptionPane.add(image, new Integer(0));
         buttonOptionPane.add(fullScreenButton, new Integer(1));
+        
+        //buttonOptionPane.add(test, new Integer(0));
         //masterPanel.add(fullScreenButton, BorderLayout.NORTH);
         //frame.add(masterPanel);
+        //frame.add(new OpeningSplash());
         frame.add(buttonOptionPane);
         frame.setUndecorated(true);
         frame.setVisible(true);

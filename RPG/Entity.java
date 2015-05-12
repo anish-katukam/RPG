@@ -9,7 +9,7 @@ public class Entity extends JComponent//this class is used for every living thin
 {
     protected Weapon weapon; //entities possess certain items
     protected Hat hat;
-    protected Point position;
+    protected volatile Point position;
     protected Potion potion;
     protected Ring ring;
     protected Armor armor;
@@ -126,5 +126,9 @@ public class Entity extends JComponent//this class is used for every living thin
     public void set_curr_sprite(BufferedImage s)
     {
         curr_sprite = s;
+    }
+    public Point getPosition()
+    {
+        return position;
     }
 }

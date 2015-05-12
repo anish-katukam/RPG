@@ -53,7 +53,7 @@ public class Starter
         frame.setUndecorated(true);
         frame.setVisible(true);
         
-        //The buttonlistnere class will be used later to do shit with the minimize and fullScreenButton buttons. Bitch.
+        //The buttonlistnere class will be used later to do stuff with the minimize and fullScreenButton buttons
         class ButtonListener implements ActionListener
         {
             public void actionPerformed(ActionEvent e)

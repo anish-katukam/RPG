@@ -15,7 +15,7 @@ public class Starter
     static final JFrame frame = new JFrame("Swords & Sworcery");
     public static void main (String Args[]){
                         
-        frame.setSize(1500,900);
+        frame.setSize(1920,1080);
         JLayeredPane buttonOptionPane = new JLayeredPane();
         
         
@@ -41,7 +41,7 @@ public class Starter
         //buttonOptionPane.add(new OpeningSplash(), JLayeredPane.DEFAULT_LAYER);
         //frame.add(new OpeningSplash());
         OpeningSplash image = new OpeningSplash();
-        image.setBounds(0, 0, 1500, 900);
+        image.setBounds(0, 0, 1920, 1080);
         buttonOptionPane.add(image, new Integer(0));
         buttonOptionPane.add(fullScreenButton, new Integer(1));
         

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=OurGraphics()
+comment1.params=chapterNum
+comment1.target=javax.swing.JLayeredPane\ getGraphics(int)
+numComments=2

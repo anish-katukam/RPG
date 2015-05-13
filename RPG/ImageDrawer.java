@@ -7,12 +7,12 @@
  */
 public class ImageDrawer
 {
-    private BufferedImages[] listOfPics = new BufferedImage[4];
+    //private BufferedImages[] listOfPics = new BufferedImage[4];
     
     
     
-    public BufferedImage getImage()   {
-    }
+    //public BufferedImage getImage()   {
+    //}
     
-    public 
+    //public 
 }

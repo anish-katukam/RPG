@@ -32,7 +32,7 @@ public class Starter
         fullScreenButton.setOpaque(false);
         fullScreenButton.setContentAreaFilled(false);
         fullScreenButton.setBorderPainted(false);
-        fullScreenButton.setBounds(1300, 100, 100, 100);
+        fullScreenButton.setBounds(1350, 0, 50, 50);
         
         
         

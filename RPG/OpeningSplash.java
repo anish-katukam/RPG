@@ -9,9 +9,10 @@ public class OpeningSplash extends JComponent
 {
     public void paintComponent(Graphics g){
         Graphics2D g2 = (Graphics2D) g;
+        
         BufferedImage img = null;
         try {
-            img = ImageIO.read(new File("OpeningSplash.jpg"));
+            img = ImageIO.read(new File("Resources/Splashes/OpeningSplash.jpg"));
         } catch (IOException e) {
         }
         g2.drawImage(img, 0, 0, this);

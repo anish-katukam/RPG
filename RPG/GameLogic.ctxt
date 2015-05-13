@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.params=
 comment0.target=void\ exposition()
-comment0.text=\r\n\ Exposition\ explains\ the\ story\ so\ far\ and\ leads\ into\ the\ opening\ credits.\r\n
+comment0.text=\n\ Exposition\ explains\ the\ story\ so\ far\ and\ leads\ into\ the\ opening\ credits.\n
 comment1.params=
 comment1.target=void\ intro()
-comment1.text=\r\n\ Intro\ is\ the\ beginning\ of\ the\ game\ (expectably),\ and\ introduces\ the\ person\ to\ the\ game.\ The\ character\ does\ not\r\n\ get\ to\ define\ his\ own\ stats.\ Such\ is\ life.\r\n
+comment1.text=\n\ Intro\ is\ the\ beginning\ of\ the\ game\ (expectably),\ and\ introduces\ the\ person\ to\ the\ game.\ The\ character\ does\ not\n\ get\ to\ define\ his\ own\ stats.\ Such\ is\ life.\n
 comment2.params=
 comment2.target=void\ chapterone()
 comment3.params=

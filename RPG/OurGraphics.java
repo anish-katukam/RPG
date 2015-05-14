@@ -84,6 +84,7 @@ public class OurGraphics
     }
     public void addEntity(Entity e)
     {
+        e.setBounds((int)e.getPosition().getX(), (int)e.getPosition().getY(),(int)e.getPosition().getX()+e.get_curr_sprite().getWidth(), (int)e.getPosition().getY()+e.get_curr_sprite().getHeight());
         openingPane.add(e, new Integer(2));
     }
     public JLayeredPane getGraphics(int chapterNum)

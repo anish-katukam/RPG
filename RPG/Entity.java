@@ -9,7 +9,7 @@ public class Entity extends JComponent//this class is used for every living thin
 {
     protected Weapon weapon; //entities possess certain items
     protected Hat hat;
-    protected volatile Point position;
+    protected volatile Point position =  new Point();
     protected Potion potion;
     protected Ring ring;
     protected Armor armor;
@@ -19,11 +19,22 @@ public class Entity extends JComponent//this class is used for every living thin
     protected BufferedImage sprites[] = new BufferedImage[4]; //4 sprites: 0 = motionless, 1 = walking left, 2 = walking right, 3 = low health
     public Entity() //constructor (handled in subclasses)
     {
+
     }
-    public Entity(BufferedImage[] s)
+
+    public void setSprites(String[] sprite_locs)
     {
-       sprites = s;
+        try {
+            int count = 0;
+            for(String s: sprite_locs)
+            {
+                sprites[count] = ImageIO.read(new File(s));
+                count++;
+            }
+        } catch (IOException e) {
+        }
     }
+
     public Weapon getWeapon() //return items
     {
         return this.weapon;
@@ -114,21 +125,28 @@ public class Entity extends JComponent//this class is used for every living thin
         Inventory.addItem(armor);
         Inventory.addItem(hat);
     }
+
     public void paintComponent(Graphics g)
     {
-            Graphics2D g2 = (Graphics2D) g;
-            g2.drawImage(get_curr_sprite(), (int)position.getX(), (int)position.getY(), this);
+        Graphics2D g2 = (Graphics2D) g;
+        g2.drawImage(get_curr_sprite(), (int)position.getX(), (int)position.getY(), this);
     }
+
     public BufferedImage get_curr_sprite()
     {
         return curr_sprite;
     }
-    public void set_curr_sprite(BufferedImage s)
+
+    public void set_curr_sprite(int index)
     {
-        curr_sprite = s;
+        curr_sprite = sprites[index];
     }
     public Point getPosition()
     {
         return position;
+    }
+    public void setPosition(int x, int y)
+    {
+        position.setLocation(x,y);
     }
 }

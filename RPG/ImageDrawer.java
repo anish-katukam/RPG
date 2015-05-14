@@ -5,17 +5,31 @@ import java.io.*;
 import javax.imageio.*;
 import javax.swing.*;
 
-public abstract class ImageDrawer
+public class ImageDrawer extends JComponent
 {
-    private static BufferedImage openingSplash = (BufferedImage) new ImageIcon("Resources/Splashes/OpeningSplash.jpg").getImage();
-    private static BufferedImage chapter1Splash = (BufferedImage) new ImageIcon("chapter1.jpg").getImage();
-    private static BufferedImage chapter2Splash = (BufferedImage) new ImageIcon("chapter2.jpg").getImage();
-    private static BufferedImage chapter3Splash = (BufferedImage) new ImageIcon("chapter3.jpg").getImage();
+    private int image_index;
+    private static BufferedImage[] listOfImages = new BufferedImage[4];
     
-    private static BufferedImage[] listOfImages = {openingSplash,chapter1Splash,chapter2Splash,chapter3Splash};
-    
+    public ImageDrawer(int index)
+    {
+         try {
+            
+            listOfImages[0] = ImageIO.read(new File("Resources/Splashes/OpeningSplash.jpg"));
+            listOfImages[1] = ImageIO.read(new File("chapter1.jpg"));
+            listOfImages[2] = ImageIO.read(new File("chapter2.jpg"));
+            listOfImages[3] = ImageIO.read(new File("chapter3.jpg"));
+        } catch (IOException e) {
+        }
+        image_index = index;
+    }
     public static BufferedImage getImage(int index)
     {
         return listOfImages[index];
+    }
+    
+    public void paintComponent(Graphics g)
+    {
+        Graphics2D g2 = (Graphics2D) g;
+        g2.drawImage(util.resize_img(util.screen_size, listOfImages[image_index]), 0, 0, this);
     }
 }

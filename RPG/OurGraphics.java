@@ -82,6 +82,10 @@ public class OurGraphics
         menuButton.addActionListener(new ButtonListener());
 
     }
+    public void addEntity(Entity e)
+    {
+        openingPane.add(e, new Integer(2));
+    }
     public JLayeredPane getGraphics(int chapterNum)
     {
         switch (chapterNum)
@@ -92,10 +96,13 @@ public class OurGraphics
                 openingPane.add(exitButton, new Integer(1));
                 openingPane.add(openingImage, new Integer(0));
                 return openingPane;
-
+                
+            }
+            default: 
+            {
+                return null;
             }
         }
-        return null;
 
     }
 

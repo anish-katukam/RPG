@@ -13,9 +13,10 @@ import javax.swing.*;
 public class Starter
 {
     static final JFrame frame = new JFrame("Swords & Sworcery");
+    static final OurGraphics graphics = new OurGraphics();
     public static void main (String Args[]){
 
-        final OurGraphics graphics = new OurGraphics();
+
         frame.setSize((int)util.screen_size.getWidth(),(int)util.screen_size.getHeight());
         //         final JLayeredPane layeredPane = new JLayeredPane();
         //         final JPanel menu = new JPanel(new GridLayout(6, 1));

@@ -19,9 +19,8 @@ public class OurGraphics
     final JButton option5;
     final JButton exitOption;
     final JButton menuButton;
-    final JButton fullScreenButton;
+    final JButton exitButton;
     OpeningSplash openingImage; 
-    
 
     public OurGraphics()
     {
@@ -47,26 +46,27 @@ public class OurGraphics
         menuPanel.add(option5);
         menuPanel.add(exitOption);
 
-        fullScreenButton = new JButton(new ImageIcon("Resources/Assets/Full_Screen_Icon.png"));
-        fullScreenButton.setOpaque(false);
-        fullScreenButton.setContentAreaFilled(false);
-        fullScreenButton.setBorderPainted(false);
-        fullScreenButton.setBounds(1350, 0, 50, 50);
+        exitButton = new JButton(new ImageIcon("Resources/Assets/Full_Screen_Icon.png"));
+        exitButton.setOpaque(false);
+        exitButton.setContentAreaFilled(false);
+        exitButton.setBorderPainted(false);
+        exitButton.setBounds(1350, 0, 50, 50);
 
         openingImage = new OpeningSplash();
         openingImage.setBounds(0, 0, 1920, 1080);
-        
+
         class ButtonListener implements ActionListener
         {
             public void actionPerformed(ActionEvent e)
             {
-                if (e.getSource() == fullScreenButton)
+                if (e.getSource() == exitButton)
                 {
-                    Starter.frame.dispose();
-                    Starter.frame.setUndecorated(!Starter.frame.isUndecorated());
-                    Starter.frame.pack();
-                    Starter.frame.setSize(1500,900);
-                    Starter.frame.setVisible(true);
+                    //                     Starter.frame.dispose();
+                    //                     Starter.frame.setUndecorated(!Starter.frame.isUndecorated());
+                    //                     Starter.frame.pack();
+                    //                     Starter.frame.setSize(1500,900);
+                    //                     Starter.frame.setVisible(true);
+                    System.exit(0);
                 }
 
                 else if (e.getSource() == menuButton)
@@ -77,13 +77,11 @@ public class OurGraphics
                 }
             }
         }
-        
-        fullScreenButton.addActionListener(new ButtonListener());
+
+        exitButton.addActionListener(new ButtonListener());
         menuButton.addActionListener(new ButtonListener());
- 
 
     }
-
     public JLayeredPane getGraphics(int chapterNum)
     {
         switch (chapterNum)
@@ -91,7 +89,7 @@ public class OurGraphics
             case 0:
             {
                 openingPane.add(menuButton, new Integer(1));
-                openingPane.add(fullScreenButton, new Integer(1));
+                openingPane.add(exitButton, new Integer(1));
                 openingPane.add(openingImage, new Integer(0));
                 return openingPane;
 

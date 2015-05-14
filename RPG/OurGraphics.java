@@ -47,7 +47,7 @@ public class OurGraphics
         menuPanel.add(option5);
         menuPanel.add(exitOption);
 
-        fullScreenButton = new JButton(new ImageIcon("Full_Screen_Icon.png"));
+        fullScreenButton = new JButton(new ImageIcon("Resources/Assets/Full_Screen_Icon.png"));
         fullScreenButton.setOpaque(false);
         fullScreenButton.setContentAreaFilled(false);
         fullScreenButton.setBorderPainted(false);

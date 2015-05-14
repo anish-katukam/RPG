@@ -77,9 +77,35 @@ public class OurGraphics
                 }
             }
         }
+        
+        class MainPlayerMover implements MouseListener
+        {
+            public void mouseClicked(MouseEvent e)
+            {
+               Point whereToGo = e.getPoint();
+               System.out.println("Hi");
+            }
+            public void mousePressed(MouseEvent e)
+            {
+               
+            }
+            public void mouseReleased(MouseEvent e)
+            {
+               
+            }
+            public void mouseEntered(MouseEvent e)
+            {
+               
+            }
+            public void mouseExited(MouseEvent e)
+            {
+               
+            }
+        }
 
         exitButton.addActionListener(new ButtonListener());
         menuButton.addActionListener(new ButtonListener());
+        Starter.frame.addMouseListener(new MainPlayerMover());
 
     }
     public void addEntity(Entity e)

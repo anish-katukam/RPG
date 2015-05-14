@@ -20,7 +20,7 @@ public class OurGraphics
     final JButton exitOption;
     final JButton menuButton;
     final JButton exitButton;
-    OpeningSplash openingImage; 
+    ImageDrawer openingImage; 
 
     public OurGraphics()
     {
@@ -52,8 +52,8 @@ public class OurGraphics
         exitButton.setBorderPainted(false);
         exitButton.setBounds(1350, 0, 50, 50);
 
-        openingImage = new OpeningSplash();
-        openingImage.setBounds(0, 0, 1920, 1080);
+        openingImage = new ImageDrawer(0);
+        openingImage.setBounds(0, 0, (int)util.screen_size.getWidth(),(int)util.screen_size.getHeight());
 
         class ButtonListener implements ActionListener
         {

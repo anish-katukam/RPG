@@ -11,30 +11,36 @@ public abstract class util
     static Point map_to_frame(JFrame frame, Point p)
     {
         Dimension d = frame.getContentPane().getSize();
-        int x = (int)(d.getWidth()*(p.getX()))/(1920);
-        int y = (int)(d.getHeight()*(p.getY()))/(1080);
+        int x = (int)((d.getWidth()*(p.getX()))/(screen_size.getWidth()));
+        int y = (int)((d.getHeight()*(p.getY()))/(screen_size.getHeight()));
         p.setLocation(x,y);
         return p;
 
     }
-    
-    static BufferedImage resize_img(JFrame frame, BufferedImage i)
+
+    static BufferedImage resize_img(Dimension d, BufferedImage i)
     {
-        Dimension d = frame.getContentPane().getSize();
+
         return toBufferedImage(i.getScaledInstance((int)d.getWidth(),(int)d.getHeight(), Image.SCALE_FAST));
 
     }
-    
+
     public static BufferedImage toBufferedImage(Image img)
     {
         if (img instanceof BufferedImage)
         {
             return (BufferedImage) img;
         }
+
+        // Create a buffered image with transparency
         BufferedImage bimage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+
+        // Draw the image on to the buffered image
         Graphics2D bGr = bimage.createGraphics();
         bGr.drawImage(img, 0, 0, null);
         bGr.dispose();
+
+        // Return the buffered image
         return bimage;
     }
 }

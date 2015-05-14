@@ -69,7 +69,7 @@ public class OurGraphics
                     Starter.frame.setVisible(true);
                 }
 
-                if (e.getSource() == menuButton)
+                else if (e.getSource() == menuButton)
                 {
 
                     openingPane.add(menuPanel, new Integer(2));

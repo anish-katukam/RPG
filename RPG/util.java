@@ -7,6 +7,7 @@ import javax.imageio.*;
 import javax.swing.*;
 public abstract class util
 {
+    public static final Dimension screen_size = Toolkit.getDefaultToolkit().getScreenSize();
     static Point map_to_frame(JFrame frame, Point p)
     {
         Dimension d = frame.getContentPane().getSize();

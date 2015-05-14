@@ -12,7 +12,7 @@ public class OpeningSplash extends JComponent
         
         BufferedImage img = null;
         try {
-            img = ImageIO.read(new File("Resources/Splashes/OpeningSplash.jpg"));
+            img = ImageIO.read(new File("OpeningSplash.jpg"));
         } catch (IOException e) {
         }
         g2.drawImage(img, 0, 0, this);

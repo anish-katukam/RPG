@@ -10,7 +10,7 @@ public class moveThreader extends Thread
     private int d;
     private Point p;
     private Entity e;
-    private boolean cancel = false;
+    static volatile boolean cancel = false;
     public void moveThreader(Entity _e, Point _p, int _d)
     {
         e=_e;
@@ -21,12 +21,20 @@ public class moveThreader extends Thread
 
     public void run()
     {
+        long millis = System.currentTimeMillis();
         while (!cancel)
         {
-
+            
+            {
+                
+            }
         }
         cancel = false;
     }
+//     private Point linear_handler(Point p1, Point p2, double f)
+//     {
+//         
+//     }
     public void cancel()
     {
         cancel = true;

@@ -31,10 +31,10 @@ public class moveThreader extends Thread
         }
         cancel = false;
     }
-    private Point linear_handler(Point p1, Point p2, double f)
-    {
-        
-    }
+//     private Point linear_handler(Point p1, Point p2, double f)
+//     {
+//         
+//     }
     public void cancel()
     {
         cancel = true;

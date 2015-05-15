@@ -66,11 +66,11 @@ public class Starter
         //masterPanel.add(fullScreenButton, BorderLayout.NORTH);
         //frame.add(masterPanel);
         //frame.add(new OpeningSplash());
-        Entity e = new Entity();
-        e.setSprites(new String[] {"Resources/Assets/sprite_test.png"});
-        e.setPosition(100,100);
-        e.set_curr_sprite(0);
-        graphics.addEntity(e);
+        //Entity e = new Entity();
+        //e.setSprites(new String[] {"Resources/Assets/sprite_test.png"});
+        //e.setPosition(100,100);
+        //e.set_curr_sprite(0);
+        //graphics.addEntity(e);
         frame.add(graphics.getGraphics(0));
         frame.setUndecorated(true);
         frame.setVisible(true);

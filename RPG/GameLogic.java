@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class GameLogic
 {
     TextIO t = new TextIO(); //new textIO for text input/output
-    Character character = new Character(); //person you play as
+    static final Character character = new Character(); //person you play as
     Enemy enemy; // generic enemy
     Entity victor = null; //for battle
     Battle battle; // new battle for events

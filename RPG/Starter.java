@@ -66,13 +66,15 @@ public class Starter
         //masterPanel.add(fullScreenButton, BorderLayout.NORTH);
         //frame.add(masterPanel);
         //frame.add(new OpeningSplash());
-        //Entity e = new Entity();
-        //e.setSprites(new String[] {"Resources/Assets/sprite_test.png"});
-        //e.setPosition(100,100);
-        //e.set_curr_sprite(0);
-        //graphics.addEntity(e);
+        GameLogic.character.setSprites(new String[] {"Resources/sprite_test.png"});
+        GameLogic.character.setPosition(100,100);
+        GameLogic.character.set_curr_sprite(0);
+        
+        //e.moveTo(new Point(500,500), 5000);
+        graphics.addEntity(GameLogic.character);
         frame.add(graphics.getGraphics(0));
         frame.setUndecorated(true);
+        
         frame.setVisible(true);
 
         //The buttonlistnere class will be used later to do stuff with the minimize and fullScreenButton buttons

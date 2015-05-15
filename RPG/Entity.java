@@ -136,7 +136,11 @@ public class Entity extends JComponent//this class is used for every living thin
     {
         return curr_sprite;
     }
-
+    public void moveTo(Point p, int duration)
+    {
+        moveThreader m = new moveThreader(this, p, duration);
+        
+    }
     public void set_curr_sprite(int index)
     {
         curr_sprite = sprites[index];

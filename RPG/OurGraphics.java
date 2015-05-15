@@ -20,7 +20,6 @@ public class OurGraphics
     final JButton back;
     final JButton menuButton;
     ImageDrawer openingImage; 
-    
 
     public OurGraphics()
     {
@@ -63,7 +62,7 @@ public class OurGraphics
                     openingPane.add(menuPanel, new Integer(2));
 
                 }
-                
+
             }
         }
 
@@ -71,8 +70,9 @@ public class OurGraphics
         {
             public void mouseClicked(MouseEvent e)
             {
-//                 Point whereToGo = e.getPoint();
-//                 System.out.println("Hi");
+                //                Point whereToGo = e.getPoint();
+                                System.out.println("Hi");
+                GameLogic.character.moveTo(e.getPoint(), 2000);
             }
 
             public void mousePressed(MouseEvent e)
@@ -126,35 +126,35 @@ public class OurGraphics
         }
 
     }
-    
-    public void saveGame()  {
-        FileSystemView fsv = new FileSystemView();
-        JFileChooser fileChooser = new JFileChooser("RPG",fsv);
-        
-        public class saveGameClicker implements ActionListener   {
-            public void actionPerformed()   {
-                fileChooser.setDialogTitle("Specify a file to save");   
- 
-                int userSelection = fileChooser.showSaveDialog(parentFrame);
-                 
-                if (userSelection == JFileChooser.APPROVE_OPTION) {
-                    File fileToSave = fileChooser.getSelectedFile();
-//                     System.out.println("Save as file: " + fileToSave.getAbsolutePath());
-                    try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileToSave)))   {
-                       out.writeObject(myObject);
-                    } catch (IOException ioe) {
-                        // do something if there is an error, at least this so you
-                        // know if something went wrong
-                       ioe.printStackTrace();
-                    }
-                }
-            }
-        }
-        
-        File file = "Save Game.txt";/* ask the user for a file name somehow - JFileChooser, whatever */
 
-
-        
-    }
+    //     public void saveGame()  {
+    //         FileSystemView fsv = new FileSystemView();
+    //         JFileChooser fileChooser = new JFileChooser("RPG",fsv);
+    //         
+    //         public class saveGameClicker implements ActionListener   {
+    //             public void actionPerformed()   {
+    //                 fileChooser.setDialogTitle("Specify a file to save");   
+    //  
+    //                 int userSelection = fileChooser.showSaveDialog(parentFrame);
+    //                  
+    //                 if (userSelection == JFileChooser.APPROVE_OPTION) {
+    //                     File fileToSave = fileChooser.getSelectedFile();
+    // //                     System.out.println("Save as file: " + fileToSave.getAbsolutePath());
+    //                     try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileToSave)))   {
+    //                        out.writeObject(myObject);
+    //                     } catch (IOException ioe) {
+    //                         // do something if there is an error, at least this so you
+    //                         // know if something went wrong
+    //                        ioe.printStackTrace();
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //         
+    //         File file = "Save Game.txt";/* ask the user for a file name somehow - JFileChooser, whatever */
+    // 
+    // 
+    //         
+    //     }
 
 }

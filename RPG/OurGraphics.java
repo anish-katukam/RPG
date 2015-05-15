@@ -32,7 +32,7 @@ public class OurGraphics
         menuButton.setOpaque(false);
         menuButton.setContentAreaFilled(false);
         menuButton.setBorderPainted(false);
-        menuButton.setBounds(1350, 0, 50, 50);
+        menuButton.setBounds((int)util.screen_size.getWidth()-50, 0, 50, 50);
 
         inventory = new JButton("inventory");
         loadout = new JButton("loadout");

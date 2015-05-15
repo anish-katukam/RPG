@@ -203,6 +203,7 @@ dependency7.type=UsesDependency
 dependency70.from=OurGraphics
 dependency70.to=Starter
 dependency70.type=UsesDependency
+<<<<<<< HEAD
 dependency71.from=Entity
 dependency71.to=moveThreader
 dependency71.type=UsesDependency
@@ -211,6 +212,16 @@ dependency72.to=GameLogic
 dependency72.type=UsesDependency
 dependency73.from=moveThreader
 dependency73.to=Starter
+=======
+dependency71.from=OurGraphics
+dependency71.to=GameLogic
+dependency71.type=UsesDependency
+dependency72.from=moveThreader
+dependency72.to=Starter
+dependency72.type=UsesDependency
+dependency73.from=Entity
+dependency73.to=moveThreader
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 dependency73.type=UsesDependency
 dependency8.from=Inventory
 dependency8.to=Weapon
@@ -222,23 +233,36 @@ objectbench.height=76
 objectbench.width=1420
 package.editor.height=734
 package.editor.width=1312
+<<<<<<< HEAD
 package.editor.x=22
 package.editor.y=209
+=======
+package.editor.x=0
+package.editor.y=23
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 package.numDependencies=73
 package.numTargets=45
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
+<<<<<<< HEAD
 target1.editor.height=873
 target1.editor.width=1440
 target1.editor.x=170
 target1.editor.y=155
+=======
+target1.editor.height=1056
+target1.editor.width=1936
+target1.editor.x=-8
+target1.editor.y=-8
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target1.height=50
-target1.name=Entity
+target1.name=RingOfEnergy
 target1.naviview.expanded=true
 target1.showInterface=false
 target1.type=ClassTarget
 target1.typeParameters=
+<<<<<<< HEAD
 target1.width=80
 target1.x=460
 target1.y=0
@@ -248,11 +272,23 @@ target10.editor.x=88
 target10.editor.y=196
 target10.height=50
 target10.name=Weapon
+=======
+target1.width=100
+target1.x=1330
+target1.y=60
+target10.editor.height=699
+target10.editor.width=900
+target10.editor.x=366
+target10.editor.y=554
+target10.height=50
+target10.name=Potion
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target10.naviview.expanded=true
 target10.showInterface=false
 target10.type=ClassTarget
 target10.typeParameters=
 target10.width=80
+<<<<<<< HEAD
 target10.x=1120
 target10.y=250
 target11.editor.height=1040
@@ -261,10 +297,21 @@ target11.editor.x=960
 target11.editor.y=0
 target11.height=50
 target11.name=ArmorT3
+=======
+target10.x=1140
+target10.y=180
+target11.editor.height=1040
+target11.editor.width=960
+target11.editor.x=325
+target11.editor.y=383
+target11.height=50
+target11.name=HatOfHealth
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target11.naviview.expanded=true
 target11.showInterface=false
 target11.type=ClassTarget
 target11.typeParameters=
+<<<<<<< HEAD
 target11.width=80
 target11.x=1380
 target11.y=130
@@ -274,11 +321,23 @@ target12.editor.x=-8
 target12.editor.y=-8
 target12.height=50
 target12.name=Item
+=======
+target11.width=90
+target11.x=1230
+target11.y=0
+target12.editor.height=700
+target12.editor.width=900
+target12.editor.x=32
+target12.editor.y=12
+target12.height=50
+target12.name=EnergyPot
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target12.naviview.expanded=true
 target12.showInterface=false
 target12.type=AbstractTarget
 target12.typeParameters=
 target12.width=80
+<<<<<<< HEAD
 target12.x=900
 target12.y=40
 target13.editor.height=1040
@@ -307,16 +366,50 @@ target14.typeParameters=
 target14.width=80
 target14.x=1210
 target14.y=130
+=======
+target12.x=1310
+target12.y=180
+target13.editor.height=700
+target13.editor.width=900
+target13.editor.x=0
+target13.editor.y=23
+target13.height=50
+target13.name=OurGraphics
+target13.naviview.expanded=false
+target13.showInterface=false
+target13.type=ClassTarget
+target13.typeParameters=
+target13.width=100
+target13.x=780
+target13.y=10
+target14.editor.height=700
+target14.editor.width=900
+target14.editor.x=0
+target14.editor.y=2
+target14.height=50
+target14.name=moveThreader
+target14.showInterface=false
+target14.type=ClassTarget
+target14.typeParameters=
+target14.width=110
+target14.x=260
+target14.y=70
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target15.editor.height=700
 target15.editor.width=900
 target15.editor.x=32
 target15.editor.y=12
 target15.height=50
+<<<<<<< HEAD
 target15.name=HatOfRejuvenation
+=======
+target15.name=HealthPot
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target15.naviview.expanded=true
 target15.showInterface=false
 target15.type=ClassTarget
 target15.typeParameters=
+<<<<<<< HEAD
 target15.width=130
 target15.x=1520
 target15.y=10
@@ -326,10 +419,22 @@ target16.editor.x=-8
 target16.editor.y=-8
 target16.height=50
 target16.name=Enemy
+=======
+target15.width=80
+target15.x=1230
+target15.y=180
+target16.editor.height=700
+target16.editor.width=900
+target16.editor.x=32
+target16.editor.y=23
+target16.height=50
+target16.name=WeaponT4
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target16.naviview.expanded=true
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
+<<<<<<< HEAD
 target16.width=80
 target16.x=500
 target16.y=50
@@ -339,11 +444,23 @@ target17.editor.x=32
 target17.editor.y=23
 target17.height=50
 target17.name=WeaponT1
+=======
+target16.width=90
+target16.x=1500
+target16.y=240
+target17.editor.height=700
+target17.editor.width=900
+target17.editor.x=32
+target17.editor.y=12
+target17.height=50
+target17.name=WeaponT5
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target17.naviview.expanded=true
 target17.showInterface=false
 target17.type=ClassTarget
 target17.typeParameters=
 target17.width=90
+<<<<<<< HEAD
 target17.x=1210
 target17.y=250
 target18.editor.height=700
@@ -358,30 +475,62 @@ target18.typeParameters=
 target18.width=110
 target18.x=990
 target18.y=50
+=======
+target17.x=1590
+target17.y=240
+target18.editor.height=1040
+target18.editor.width=960
+target18.editor.x=0
+target18.editor.y=0
+target18.height=50
+target18.name=HatOfEnergy
+target18.naviview.expanded=true
+target18.showInterface=false
+target18.type=ClassTarget
+target18.typeParameters=
+target18.width=100
+target18.x=1320
+target18.y=0
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target19.editor.height=700
 target19.editor.width=900
 target19.editor.x=32
 target19.editor.y=23
 target19.height=50
+<<<<<<< HEAD
 target19.name=WeaponT2
+=======
+target19.name=WeaponT1
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target19.naviview.expanded=true
 target19.showInterface=false
 target19.type=ClassTarget
 target19.typeParameters=
 target19.width=90
+<<<<<<< HEAD
 target19.x=1310
 target19.y=250
 target2.editor.height=1092
+=======
+target19.x=1230
+target19.y=240
+target2.editor.height=1056
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target2.editor.width=1936
 target2.editor.x=-8
 target2.editor.y=-8
 target2.height=50
+<<<<<<< HEAD
 target2.name=GTextIO
+=======
+target2.name=Inventory
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target2.naviview.expanded=true
 target2.showInterface=false
 target2.type=ClassTarget
 target2.typeParameters=
 target2.width=80
+<<<<<<< HEAD
 target2.x=690
 target2.y=100
 target20.editor.height=700
@@ -390,11 +539,22 @@ target20.editor.x=32
 target20.editor.y=12
 target20.height=50
 target20.name=WeaponT3
+=======
+target2.x=90
+target2.y=50
+target20.editor.height=700
+target20.editor.width=900
+target20.editor.x=32
+target20.editor.y=23
+target20.height=50
+target20.name=WeaponT2
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target20.naviview.expanded=true
 target20.showInterface=false
 target20.type=ClassTarget
 target20.typeParameters=
 target20.width=90
+<<<<<<< HEAD
 target20.x=1400
 target20.y=250
 target21.editor.height=700
@@ -404,9 +564,20 @@ target21.editor.y=23
 target21.height=50
 target21.name=WeaponT4
 target21.naviview.expanded=true
+=======
+target20.x=1320
+target20.y=240
+target21.editor.height=700
+target21.editor.width=900
+target21.editor.x=0
+target21.editor.y=2
+target21.height=50
+target21.name=util
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target21.showInterface=false
-target21.type=ClassTarget
+target21.type=AbstractTarget
 target21.typeParameters=
+<<<<<<< HEAD
 target21.width=90
 target21.x=1490
 target21.y=250
@@ -416,10 +587,22 @@ target22.editor.x=32
 target22.editor.y=12
 target22.height=50
 target22.name=WeaponT5
+=======
+target21.width=80
+target21.x=590
+target21.y=10
+target22.editor.height=1096
+target22.editor.width=1936
+target22.editor.x=-8
+target22.editor.y=-8
+target22.height=50
+target22.name=Entity
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target22.naviview.expanded=true
 target22.showInterface=false
 target22.type=ClassTarget
 target22.typeParameters=
+<<<<<<< HEAD
 target22.width=90
 target22.x=1580
 target22.y=250
@@ -429,10 +612,22 @@ target23.editor.x=-960
 target23.editor.y=0
 target23.height=50
 target23.name=RingOfHealth
+=======
+target22.width=80
+target22.x=460
+target22.y=0
+target23.editor.height=700
+target23.editor.width=900
+target23.editor.x=32
+target23.editor.y=12
+target23.height=50
+target23.name=WeaponT3
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target23.naviview.expanded=true
 target23.showInterface=false
 target23.type=ClassTarget
 target23.typeParameters=
+<<<<<<< HEAD
 target23.width=100
 target23.x=1210
 target23.y=70
@@ -442,11 +637,23 @@ target24.editor.x=32
 target24.editor.y=12
 target24.height=50
 target24.name=PotOfLife
+=======
+target23.width=90
+target23.x=1410
+target23.y=240
+target24.editor.height=1044
+target24.editor.width=1300
+target24.editor.x=-1928
+target24.editor.y=-8
+target24.height=50
+target24.name=Ring
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target24.naviview.expanded=true
 target24.showInterface=false
 target24.type=ClassTarget
 target24.typeParameters=
 target24.width=80
+<<<<<<< HEAD
 target24.x=1600
 target24.y=190
 target25.editor.height=1040
@@ -455,10 +662,21 @@ target25.editor.x=0
 target25.editor.y=0
 target25.height=50
 target25.name=HatOfBloodlust
+=======
+target24.x=1140
+target24.y=60
+target25.editor.height=1096
+target25.editor.width=1936
+target25.editor.x=-1928
+target25.editor.y=-8
+target25.height=50
+target25.name=TextIO
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target25.naviview.expanded=true
 target25.showInterface=false
 target25.type=ClassTarget
 target25.typeParameters=
+<<<<<<< HEAD
 target25.width=110
 target25.x=1410
 target25.y=10
@@ -468,10 +686,22 @@ target26.editor.x=245
 target26.editor.y=92
 target26.height=50
 target26.name=Character
+=======
+target25.width=80
+target25.x=170
+target25.y=50
+target26.editor.height=700
+target26.editor.width=900
+target26.editor.x=32
+target26.editor.y=12
+target26.height=50
+target26.name=HatOfRejuvenation
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target26.naviview.expanded=true
 target26.showInterface=false
 target26.type=ClassTarget
 target26.typeParameters=
+<<<<<<< HEAD
 target26.width=80
 target26.x=420
 target26.y=50
@@ -481,10 +711,22 @@ target27.editor.x=32
 target27.editor.y=12
 target27.height=50
 target27.name=BloodlustPot
+=======
+target26.width=130
+target26.x=1530
+target26.y=0
+target27.editor.height=1096
+target27.editor.width=1936
+target27.editor.x=-8
+target27.editor.y=-8
+target27.height=50
+target27.name=Battle
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target27.naviview.expanded=true
 target27.showInterface=false
 target27.type=ClassTarget
 target27.typeParameters=
+<<<<<<< HEAD
 target27.width=100
 target27.x=1380
 target27.y=190
@@ -494,11 +736,23 @@ target28.editor.x=366
 target28.editor.y=554
 target28.height=50
 target28.name=Potion
+=======
+target27.width=80
+target27.x=690
+target27.y=50
+target28.editor.height=873
+target28.editor.width=1440
+target28.editor.x=0
+target28.editor.y=23
+target28.height=50
+target28.name=Starter
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target28.naviview.expanded=true
 target28.showInterface=false
 target28.type=ClassTarget
 target28.typeParameters=
 target28.width=80
+<<<<<<< HEAD
 target28.x=1120
 target28.y=190
 target29.editor.height=1040
@@ -507,10 +761,21 @@ target29.editor.x=0
 target29.editor.y=0
 target29.height=50
 target29.name=RingOfAttack
+=======
+target28.x=90
+target28.y=0
+target29.editor.height=700
+target29.editor.width=900
+target29.editor.x=32
+target29.editor.y=12
+target29.height=50
+target29.name=RingOfBloodlust
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target29.naviview.expanded=true
 target29.showInterface=false
 target29.type=ClassTarget
 target29.typeParameters=
+<<<<<<< HEAD
 target29.width=100
 target29.x=1540
 target29.y=70
@@ -520,13 +785,30 @@ target3.editor.x=0
 target3.editor.y=0
 target3.height=50
 target3.name=HatOfEnergy
+=======
+target29.width=120
+target29.x=1430
+target29.y=60
+target3.editor.height=1092
+target3.editor.width=1936
+target3.editor.x=-8
+target3.editor.y=-8
+target3.height=50
+target3.name=GTextIO
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target3.naviview.expanded=true
 target3.showInterface=false
 target3.type=ClassTarget
 target3.typeParameters=
+<<<<<<< HEAD
 target3.width=100
 target3.x=1310
 target3.y=10
+=======
+target3.width=80
+target3.x=690
+target3.y=100
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target30.editor.height=700
 target30.editor.width=900
 target30.editor.x=32
@@ -537,6 +819,7 @@ target30.naviview.expanded=true
 target30.showInterface=false
 target30.type=ClassTarget
 target30.typeParameters=
+<<<<<<< HEAD
 target30.width=120
 target30.x=1420
 target30.y=70
@@ -546,11 +829,23 @@ target31.editor.x=-1928
 target31.editor.y=-8
 target31.height=50
 target31.name=TextIO
+=======
+target30.width=110
+target30.x=990
+target30.y=10
+target31.editor.height=700
+target31.editor.width=900
+target31.editor.x=32
+target31.editor.y=12
+target31.height=50
+target31.name=HatOfLife
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target31.naviview.expanded=true
 target31.showInterface=false
 target31.type=ClassTarget
 target31.typeParameters=
 target31.width=80
+<<<<<<< HEAD
 target31.x=170
 target31.y=50
 target32.editor.height=700
@@ -560,22 +855,43 @@ target32.editor.y=23
 target32.height=50
 target32.name=OurGraphics
 target32.naviview.expanded=false
+=======
+target31.x=1660
+target31.y=0
+target32.editor.height=1040
+target32.editor.width=960
+target32.editor.x=0
+target32.editor.y=0
+target32.height=50
+target32.name=RingOfAttack
+target32.naviview.expanded=true
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target32.showInterface=false
 target32.type=ClassTarget
 target32.typeParameters=
 target32.width=100
+<<<<<<< HEAD
 target32.x=780
 target32.y=50
+=======
+target32.x=1550
+target32.y=60
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target33.editor.height=1056
 target33.editor.width=1936
 target33.editor.x=-8
 target33.editor.y=-8
 target33.height=50
+<<<<<<< HEAD
 target33.name=RingOfEnergy
+=======
+target33.name=Enemy
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target33.naviview.expanded=true
 target33.showInterface=false
 target33.type=ClassTarget
 target33.typeParameters=
+<<<<<<< HEAD
 target33.width=100
 target33.x=1320
 target33.y=70
@@ -585,13 +901,30 @@ target34.editor.x=960
 target34.editor.y=0
 target34.height=50
 target34.name=ArmorT5
+=======
+target33.width=80
+target33.x=500
+target33.y=50
+target34.editor.height=1040
+target34.editor.width=960
+target34.editor.x=0
+target34.editor.y=0
+target34.height=50
+target34.name=HatOfBloodlust
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target34.naviview.expanded=true
 target34.showInterface=false
 target34.type=ClassTarget
 target34.typeParameters=
+<<<<<<< HEAD
 target34.width=80
 target34.x=1540
 target34.y=130
+=======
+target34.width=110
+target34.x=1420
+target34.y=0
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target35.editor.height=1040
 target35.editor.width=960
 target35.editor.x=960
@@ -603,6 +936,7 @@ target35.showInterface=false
 target35.type=ClassTarget
 target35.typeParameters=
 target35.width=110
+<<<<<<< HEAD
 target35.x=1640
 target35.y=70
 target36.editor.height=700
@@ -611,9 +945,21 @@ target36.editor.x=0
 target36.editor.y=2
 target36.height=50
 target36.name=util
+=======
+target35.x=1650
+target35.y=60
+target36.editor.height=700
+target36.editor.width=900
+target36.editor.x=32
+target36.editor.y=12
+target36.height=50
+target36.name=BloodlustPot
+target36.naviview.expanded=true
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target36.showInterface=false
 target36.type=AbstractTarget
 target36.typeParameters=
+<<<<<<< HEAD
 target36.width=80
 target36.x=590
 target36.y=10
@@ -623,11 +969,23 @@ target37.editor.x=-8
 target37.editor.y=-8
 target37.height=50
 target37.name=Battle
+=======
+target36.width=100
+target36.x=1390
+target36.y=180
+target37.editor.height=1040
+target37.editor.width=960
+target37.editor.x=960
+target37.editor.y=0
+target37.height=50
+target37.name=ArmorT5
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target37.naviview.expanded=true
 target37.showInterface=false
 target37.type=ClassTarget
 target37.typeParameters=
 target37.width=80
+<<<<<<< HEAD
 target37.x=690
 target37.y=50
 target38.editor.height=1044
@@ -636,10 +994,21 @@ target38.editor.x=-1928
 target38.editor.y=-8
 target38.height=50
 target38.name=Ring
+=======
+target37.x=1550
+target37.y=120
+target38.editor.height=1096
+target38.editor.width=1936
+target38.editor.x=-8
+target38.editor.y=-8
+target38.height=50
+target38.name=GameLogic
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target38.naviview.expanded=true
 target38.showInterface=false
 target38.type=ClassTarget
 target38.typeParameters=
+<<<<<<< HEAD
 target38.width=80
 target38.x=1120
 target38.y=70
@@ -649,11 +1018,23 @@ target39.editor.x=120
 target39.editor.y=197
 target39.height=50
 target39.name=Stats
+=======
+target38.width=90
+target38.x=170
+target38.y=0
+target39.editor.height=700
+target39.editor.width=900
+target39.editor.x=245
+target39.editor.y=92
+target39.height=50
+target39.name=Character
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target39.naviview.expanded=true
 target39.showInterface=false
 target39.type=ClassTarget
 target39.typeParameters=
 target39.width=80
+<<<<<<< HEAD
 target39.x=690
 target39.y=0
 target4.editor.height=700
@@ -662,23 +1043,44 @@ target4.editor.x=32
 target4.editor.y=12
 target4.height=50
 target4.name=RejuvenationPot
+=======
+target39.x=420
+target39.y=50
+target4.editor.height=1044
+target4.editor.width=960
+target4.editor.x=-960
+target4.editor.y=0
+target4.height=50
+target4.name=RingOfHealth
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target4.naviview.expanded=true
 target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
+<<<<<<< HEAD
 target4.width=120
 target4.x=1480
 target4.y=190
+=======
+target4.width=100
+target4.x=1230
+target4.y=60
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target40.editor.height=700
 target40.editor.width=900
 target40.editor.x=32
 target40.editor.y=12
 target40.height=50
+<<<<<<< HEAD
 target40.name=EnergyPot
+=======
+target40.name=RejuvenationPot
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target40.naviview.expanded=true
 target40.showInterface=false
 target40.type=ClassTarget
 target40.typeParameters=
+<<<<<<< HEAD
 target40.width=80
 target40.x=1300
 target40.y=190
@@ -688,11 +1090,23 @@ target41.editor.x=535
 target41.editor.y=196
 target41.height=50
 target41.name=Hat
+=======
+target40.width=120
+target40.x=1490
+target40.y=180
+target41.editor.height=1044
+target41.editor.width=1300
+target41.editor.x=-8
+target41.editor.y=-8
+target41.height=50
+target41.name=Armor
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target41.naviview.expanded=true
 target41.showInterface=false
 target41.type=ClassTarget
 target41.typeParameters=
 target41.width=80
+<<<<<<< HEAD
 target41.x=1120
 target41.y=10
 target42.editor.height=700
@@ -701,11 +1115,22 @@ target42.editor.x=32
 target42.editor.y=12
 target42.height=50
 target42.name=HatOfLife
+=======
+target41.x=1140
+target41.y=120
+target42.editor.height=700
+target42.editor.width=900
+target42.editor.x=88
+target42.editor.y=196
+target42.height=50
+target42.name=Weapon
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target42.naviview.expanded=true
 target42.showInterface=false
 target42.type=ClassTarget
 target42.typeParameters=
 target42.width=80
+<<<<<<< HEAD
 target42.x=1650
 target42.y=10
 target43.editor.height=873
@@ -714,10 +1139,21 @@ target43.editor.x=16
 target43.editor.y=513
 target43.height=50
 target43.name=GameLogic
+=======
+target42.x=1140
+target42.y=240
+target43.editor.height=700
+target43.editor.width=900
+target43.editor.x=535
+target43.editor.y=196
+target43.height=50
+target43.name=Hat
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target43.naviview.expanded=true
 target43.showInterface=false
 target43.type=ClassTarget
 target43.typeParameters=
+<<<<<<< HEAD
 target43.width=90
 target43.x=170
 target43.y=0
@@ -727,11 +1163,23 @@ target44.editor.x=-8
 target44.editor.y=-8
 target44.height=50
 target44.name=Inventory
+=======
+target43.width=80
+target43.x=1140
+target43.y=0
+target44.editor.height=731
+target44.editor.width=1043
+target44.editor.x=120
+target44.editor.y=197
+target44.height=50
+target44.name=Stats
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target44.naviview.expanded=true
 target44.showInterface=false
 target44.type=ClassTarget
 target44.typeParameters=
 target44.width=80
+<<<<<<< HEAD
 target44.x=90
 target44.y=50
 target45.editor.height=700
@@ -752,11 +1200,35 @@ target5.editor.x=32
 target5.editor.y=12
 target5.height=50
 target5.name=HealthPot
+=======
+target44.x=690
+target44.y=0
+target45.editor.height=700
+target45.editor.width=900
+target45.editor.x=32
+target45.editor.y=12
+target45.height=50
+target45.name=PotOfLife
+target45.naviview.expanded=true
+target45.showInterface=false
+target45.type=ClassTarget
+target45.typeParameters=
+target45.width=80
+target45.x=1610
+target45.y=180
+target5.editor.height=1096
+target5.editor.width=1936
+target5.editor.x=-8
+target5.editor.y=-8
+target5.height=50
+target5.name=Item
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target5.naviview.expanded=true
 target5.showInterface=false
-target5.type=ClassTarget
+target5.type=AbstractTarget
 target5.typeParameters=
 target5.width=80
+<<<<<<< HEAD
 target5.x=1210
 target5.y=190
 target6.editor.height=700
@@ -765,11 +1237,22 @@ target6.editor.x=32
 target6.editor.y=23
 target6.height=50
 target6.name=ArmorT2
+=======
+target5.x=900
+target5.y=0
+target6.editor.height=1040
+target6.editor.width=960
+target6.editor.x=960
+target6.editor.y=0
+target6.height=50
+target6.name=ArmorT4
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target6.naviview.expanded=true
 target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
 target6.width=80
+<<<<<<< HEAD
 target6.x=1300
 target6.y=130
 target7.editor.height=873
@@ -778,11 +1261,22 @@ target7.editor.x=16
 target7.editor.y=531
 target7.height=50
 target7.name=Starter
+=======
+target6.x=1470
+target6.y=120
+target7.editor.height=1040
+target7.editor.width=960
+target7.editor.x=960
+target7.editor.y=0
+target7.height=50
+target7.name=ArmorT3
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target7.naviview.expanded=true
 target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
 target7.width=80
+<<<<<<< HEAD
 target7.x=90
 target7.y=0
 target8.editor.height=700
@@ -791,11 +1285,22 @@ target8.editor.x=143
 target8.editor.y=196
 target8.height=50
 target8.name=ArmorT1
+=======
+target7.x=1390
+target7.y=120
+target8.editor.height=700
+target8.editor.width=900
+target8.editor.x=32
+target8.editor.y=23
+target8.height=50
+target8.name=ArmorT2
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target8.naviview.expanded=true
 target8.showInterface=false
 target8.type=ClassTarget
 target8.typeParameters=
 target8.width=80
+<<<<<<< HEAD
 target8.x=1120
 target8.y=130
 target9.editor.height=1040
@@ -804,10 +1309,25 @@ target9.editor.x=960
 target9.editor.y=0
 target9.height=50
 target9.name=ArmorT4
+=======
+target8.x=1310
+target8.y=120
+target9.editor.height=700
+target9.editor.width=900
+target9.editor.x=143
+target9.editor.y=196
+target9.height=50
+target9.name=ArmorT1
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307
 target9.naviview.expanded=true
 target9.showInterface=false
 target9.type=ClassTarget
 target9.typeParameters=
 target9.width=80
+<<<<<<< HEAD
 target9.x=1460
 target9.y=130
+=======
+target9.x=1230
+target9.y=120
+>>>>>>> 38610851cbe81a880a85eb685c27f3fda9f95307

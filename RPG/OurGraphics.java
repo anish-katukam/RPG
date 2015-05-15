@@ -29,7 +29,10 @@ public class OurGraphics
         menuPanel.setBounds(500, 150, 500, 500);
 
         menuButton = new JButton(new ImageIcon("Resources/Assets/menuicon.png"));
-        menuButton.setBounds(1350, 60, 50, 50);
+        menuButton.setOpaque(false);
+        menuButton.setContentAreaFilled(false);
+        menuButton.setBorderPainted(false);
+        menuButton.setBounds(1350, 0, 50, 50);
 
         inventory = new JButton("inventory");
         loadout = new JButton("loadout");

@@ -26,13 +26,13 @@ public class OurGraphics
         openingPane = new JLayeredPane();
 
         menuPanel = new JPanel(new GridLayout(6, 1));
-        menuPanel.setBounds(500, 150, 500, 500);
+        menuPanel.setBounds(((int)util.screen_size.getWidth()/2)-250, ((int)util.screen_size.getHeight()/2)-250, 500, 500);
 
         menuButton = new JButton(new ImageIcon("Resources/Assets/menuicon.png"));
         menuButton.setOpaque(false);
         menuButton.setContentAreaFilled(false);
         menuButton.setBorderPainted(false);
-        menuButton.setBounds(1350, 0, 50, 50);
+        menuButton.setBounds((int)util.screen_size.getWidth()-50, 0, 50, 50);
 
         inventory = new JButton("inventory");
         loadout = new JButton("loadout");

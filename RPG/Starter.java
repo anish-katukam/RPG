@@ -18,6 +18,11 @@ public class Starter
 
 
         frame.setSize((int)util.screen_size.getWidth(),(int)util.screen_size.getHeight());
+        
+        String[] yesOrNo = {"Yes","No"};
+        
+        response = (String) JOptionPane.showInputDialog(null, "Which European Leader would you like to be?", "Leader", JOptionPane.PLAIN_MESSAGE,null, leaders, leaders[0]);
+        
         //         final JLayeredPane layeredPane = new JLayeredPane();
         //         final JPanel menu = new JPanel(new GridLayout(6, 1));
         //         menu.setBounds(500, 150, 500, 500);

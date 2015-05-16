@@ -34,17 +34,10 @@ public class moveThreader extends Thread
             double new_x = ((curr_time/d))*x_distance+x_orig;
             double new_y = ((curr_time/d))*y_distance+y_orig;
             e.setPosition((int)new_x, (int)new_y);
-            e.repaint();
-            Starter.frame.repaint();
-            System.out.println(curr_time + "|" + new_x + "|" + new_y + "|" + d);
         }
         cancel = false;
 
     }
-    //     private Point linear_handler(Point p1, Point p2, double f)
-    //     {
-    //         
-    //     }
     public static void cancel()
     {
         cancel = true;

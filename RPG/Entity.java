@@ -152,5 +152,6 @@ public class Entity extends JComponent//this class is used for every living thin
     public void setPosition(int x, int y)
     {
         position.setLocation(x,y);
+        this.repaint();
     }
 }

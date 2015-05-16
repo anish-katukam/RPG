@@ -64,6 +64,10 @@ public class Inventory
     public static Item[] getListOfPotions() {
         return backpack;
     }
+    
+    public static void setListOfPotions(Item[] i)   {
+        backpack = i;
+    }
 
     public static void modulateItem(int index, Entity character){
         Item i = backpack[index - 1];

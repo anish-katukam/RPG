@@ -25,14 +25,15 @@ public class OurGraphics
     {
         openingPane = new JLayeredPane();
 
-        menuPanel = new JPanel(new GridLayout(6, 1));
-        menuPanel.setBounds(((int)util.screen_size.getWidth()/2)-250, ((int)util.screen_size.getHeight()/2)-250, 500, 500);
 
         menuButton = new JButton(new ImageIcon("Resources/Assets/menuicon.png"));
         menuButton.setOpaque(false);
         menuButton.setContentAreaFilled(false);
         menuButton.setBorderPainted(false);
         menuButton.setBounds((int)util.screen_size.getWidth()-50, 0, 50, 50);
+
+        menuPanel = new JPanel(new GridLayout(6, 1));
+        menuPanel.setBounds(((int)util.screen_size.getWidth()/2)-250, ((int)util.screen_size.getHeight()/2)-250, 500, 500);
 
         inventory = new JButton("inventory");
         loadout = new JButton("loadout");
@@ -76,7 +77,7 @@ public class OurGraphics
                 //                Point whereToGo = e.getPoint();
                 System.out.println("Hi");
                 moveThreader.cancel();
-                GameLogic.character.moveTo(e.getPoint(), 2000);
+                GameLogic.character.moveTo(util.screen_point_adjust(e.getPoint()), 500);
             }
 
             public void mousePressed(MouseEvent e)
@@ -103,15 +104,16 @@ public class OurGraphics
         quit.addActionListener(new ButtonListener());
         menuButton.addActionListener(new ButtonListener());
         Starter.frame.addMouseListener(new MainPlayerMover());
-        
-        SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
-        gameSave.saveGame();
+
+        //SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
+        //gameSave.saveGame();
 
     }
 
     public void addEntity(Entity e)
     {
-        e.setBounds((int)e.getPosition().getX(), (int)e.getPosition().getY(),(int)e.getPosition().getX()+e.get_curr_sprite().getWidth(), (int)e.getPosition().getY()+e.get_curr_sprite().getHeight());
+        //e.setBounds((int)e.getPosition().getX(), (int)e.getPosition().getY(),(int)e.getPosition().getX()+e.get_curr_sprite().getWidth(), (int)e.getPosition().getY()+e.get_curr_sprite().getHeight());
+        e.setBounds(0,0, (int)util.screen_size.getWidth(), (int)util.screen_size.getHeight());
         openingPane.add(e, new Integer(2));
     }
 
@@ -133,7 +135,6 @@ public class OurGraphics
         }
 
     }
-
 
 
 }

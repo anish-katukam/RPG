@@ -17,6 +17,7 @@ import java.io.IOException;
 
 public class SaveGame
 {
+    /*
     public static JButton button;
     public static Item[] backpack;
 
@@ -27,6 +28,10 @@ public class SaveGame
 
     public void saveGame()  {
         //         FileSystemView fsv = new FileSystemView();
+<<<<<<< HEAD
+=======
+        JFileChooser fileChooser = new JFileChooser();
+>>>>>>> 25130eb2a02779e8dec768ef75174ce1cc38b5af
 
         class saveGameClicker implements ActionListener {
             public void actionPerformed(ActionEvent e)  {
@@ -52,8 +57,12 @@ public class SaveGame
 
         button.addActionListener(new saveGameClicker());
 
+<<<<<<< HEAD
         //         File file = "Save Game.txt";/* ask the user for a file name somehow - JFileChooser, whatever */
+=======
+        //         File file = "Save Game.txt";/* ask the user for a file name somehow - JFileChooser, whatever 
+>>>>>>> 25130eb2a02779e8dec768ef75174ce1cc38b5af
 
         
-    }
+    }*/
 }

@@ -24,7 +24,11 @@ public abstract class util
         return toBufferedImage(i.getScaledInstance((int)d.getWidth(),(int)d.getHeight(), Image.SCALE_FAST));
 
     }
-
+    public static Point screen_point_adjust(Point p)
+    {
+        p.setLocation(p.getX() - 160, p.getY() -200);
+        return p;
+    }
     public static BufferedImage toBufferedImage(Image img)
     {
         if (img instanceof BufferedImage)

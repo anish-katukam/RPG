@@ -19,12 +19,14 @@ public class OurGraphics
     final JButton quit;
     final JButton back;
     final JButton menuButton;
+    final JPanel menuOptionDisplay;
     ImageDrawer openingImage; 
 
     public OurGraphics()
     {
         openingPane = new JLayeredPane();
-
+        
+        menuOptionDisplay = new JPanel();
 
         menuButton = new JButton(new ImageIcon("Resources/Assets/menuicon.png"));
         menuButton.setOpaque(false);
@@ -32,15 +34,28 @@ public class OurGraphics
         menuButton.setBorderPainted(false);
         menuButton.setBounds((int)util.screen_size.getWidth()-50, 0, 50, 50);
 
-        menuPanel = new JPanel(new GridLayout(6, 1));
-        menuPanel.setBounds(((int)util.screen_size.getWidth()/2)-250, ((int)util.screen_size.getHeight()/2)-250, 500, 500);
+        menuPanel = new JPanel(null);
+        menuPanel.setBounds(0, 0, (int)util.screen_size.getWidth(), (int)util.screen_size.getHeight());
+        menuPanel.setBackground(Color.black);
 
         inventory = new JButton("inventory");
         loadout = new JButton("loadout");
         stats = new JButton("stats");
         save = new JButton("save");
         quit = new JButton("quit");
-        back = new JButton("back");
+        back = new JButton(new ImageIcon());
+        
+        back.setOpaque(true);
+        back.setContentAreaFilled(false);
+        back.setBorderPainted(false);
+        back.setIcon(new ImageIcon("Resources/Assets/backicon.png"));
+
+        inventory.setBounds(((int)util.screen_size.getWidth()/4)-150, ((int)util.screen_size.getHeight()/4)-130, 300, 100);
+        loadout.setBounds(((int)util.screen_size.getWidth()/4)-150, ((int)util.screen_size.getHeight()/4)-5, 300, 100);
+        stats.setBounds(((int)util.screen_size.getWidth()/4)-150, ((int)util.screen_size.getHeight()/4)+120, 300, 100);
+        save.setBounds(((int)util.screen_size.getWidth()/4)-150, ((int)util.screen_size.getHeight()/4)+245, 300, 100);
+        quit.setBounds(((int)util.screen_size.getWidth()/4)-150, ((int)util.screen_size.getHeight()/4)+370, 300, 100);
+        back.setBounds(0, 0, 100, 100);
 
         menuPanel.add(inventory);
         menuPanel.add(loadout);
@@ -64,6 +79,13 @@ public class OurGraphics
                 if (e.getSource() == menuButton)
                 {
                     openingPane.add(menuPanel, new Integer(2));
+
+                }
+                
+                if (e.getSource() == back)
+                {
+                    openingPane.remove(openingPane.getIndexOf(menuPanel));
+                    Starter.frame.repaint();
 
                 }
 
@@ -104,6 +126,7 @@ public class OurGraphics
         quit.addActionListener(new ButtonListener());
         menuButton.addActionListener(new ButtonListener());
         Starter.frame.addMouseListener(new MainPlayerMover());
+        back.addActionListener(new ButtonListener());
 
         //SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
         //gameSave.saveGame();
@@ -114,7 +137,7 @@ public class OurGraphics
     {
         //e.setBounds((int)e.getPosition().getX(), (int)e.getPosition().getY(),(int)e.getPosition().getX()+e.get_curr_sprite().getWidth(), (int)e.getPosition().getY()+e.get_curr_sprite().getHeight());
         e.setBounds(0,0, (int)util.screen_size.getWidth(), (int)util.screen_size.getHeight());
-        openingPane.add(e, new Integer(2));
+        openingPane.add(e, new Integer(1));
     }
 
     public JLayeredPane getGraphics(int chapterNum)

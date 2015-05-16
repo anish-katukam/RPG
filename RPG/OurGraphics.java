@@ -25,14 +25,15 @@ public class OurGraphics
     {
         openingPane = new JLayeredPane();
 
-        menuPanel = new JPanel(new GridLayout(6, 1));
-        menuPanel.setBounds(((int)util.screen_size.getWidth()/2)-250, ((int)util.screen_size.getHeight()/2)-250, 500, 500);
 
         menuButton = new JButton(new ImageIcon("Resources/Assets/menuicon.png"));
         menuButton.setOpaque(false);
         menuButton.setContentAreaFilled(false);
         menuButton.setBorderPainted(false);
         menuButton.setBounds((int)util.screen_size.getWidth()-50, 0, 50, 50);
+
+        menuPanel = new JPanel(new GridLayout(6, 1));
+        menuPanel.setBounds(((int)util.screen_size.getWidth()/2)-250, ((int)util.screen_size.getHeight()/2)-250, 500, 500);
 
         inventory = new JButton("inventory");
         loadout = new JButton("loadout");
@@ -103,7 +104,7 @@ public class OurGraphics
         quit.addActionListener(new ButtonListener());
         menuButton.addActionListener(new ButtonListener());
         Starter.frame.addMouseListener(new MainPlayerMover());
-        
+
         //SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
         //gameSave.saveGame();
 
@@ -134,7 +135,6 @@ public class OurGraphics
         }
 
     }
-
 
 
 }

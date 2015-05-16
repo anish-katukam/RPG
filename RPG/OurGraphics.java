@@ -74,8 +74,8 @@ public class OurGraphics
         {
             public void mouseClicked(MouseEvent e)
             {
-                //                Point whereToGo = e.getPoint();
-                System.out.println("Hi");
+        
+               
                 moveThreader.cancel();
                 GameLogic.character.moveTo(util.screen_point_adjust(e.getPoint()), 500);
             }

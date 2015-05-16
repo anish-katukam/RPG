@@ -10,7 +10,7 @@ public class moveThreader extends Thread
     private volatile int d;
     private volatile Point p;
     private volatile Entity e;
-    static volatile boolean cancel = false;
+    private static volatile boolean cancel = false;
     public moveThreader(Entity _e, Point _p, int _d)
     {
         e=_e;
@@ -28,16 +28,20 @@ public class moveThreader extends Thread
         double x_distance = p.getX() - e.getPosition().getX();
         double y_distance = p.getY() - e.getPosition().getY();
         double curr_time = System.currentTimeMillis() - millis;
-        while (!cancel && curr_time < d)
+        while (curr_time < d && !cancel)
         {
             curr_time = System.currentTimeMillis() - millis;
             e.setPosition((int)(((curr_time/d))*x_distance+x_orig), (int)(((curr_time/d))*y_distance+y_orig));
+           
         }
-        cancel = false;
+
+        
 
     }
+
     public static void cancel()
     {
+        
         cancel = true;
     }
 }

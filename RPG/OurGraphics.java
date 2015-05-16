@@ -105,8 +105,8 @@ public class OurGraphics
         menuButton.addActionListener(new ButtonListener());
         Starter.frame.addMouseListener(new MainPlayerMover());
 
-        //SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
-        //gameSave.saveGame();
+        SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
+        gameSave.saveGame();
 
     }
 

@@ -231,42 +231,17 @@ objectbench.height=76
 objectbench.width=1420
 package.editor.height=734
 package.editor.width=1312
-package.editor.x=1
+package.editor.x=0
 package.editor.y=23
-<<<<<<< HEAD
-=======
-=======
-objectbench.height=168
-objectbench.width=1595
-package.editor.height=832
-package.editor.width=1802
-package.editor.x=-1737
-package.editor.y=156
->>>>>>> cbc43a9e4445eb6183fae50467366b58140f06b2
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 package.numDependencies=76
 package.numTargets=46
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
-<<<<<<< HEAD
 target1.editor.height=1044
 target1.editor.width=1300
 target1.editor.x=-1928
 target1.editor.y=-8
-=======
-<<<<<<< HEAD
-target1.editor.height=873
-target1.editor.width=1440
-target1.editor.x=0
-target1.editor.y=23
-=======
-target1.editor.height=1096
-target1.editor.width=1936
-target1.editor.x=-1795
-target1.editor.y=503
->>>>>>> cbc43a9e4445eb6183fae50467366b58140f06b2
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target1.height=50
 target1.name=Ring
 target1.naviview.expanded=true
@@ -299,7 +274,6 @@ target11.naviview.expanded=true
 target11.showInterface=false
 target11.type=ClassTarget
 target11.typeParameters=
-<<<<<<< HEAD
 target11.width=100
 target11.x=1230
 target11.y=60
@@ -307,15 +281,6 @@ target12.editor.height=700
 target12.editor.width=900
 target12.editor.x=40
 target12.editor.y=43
-=======
-target11.width=80
-target11.x=1390
-target11.y=120
-target12.editor.height=873
-target12.editor.width=1440
-target12.editor.x=0
-target12.editor.y=23
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target12.height=50
 target12.name=ImageDrawer
 target12.naviview.expanded=false
@@ -392,13 +357,8 @@ target17.x=1230
 target17.y=120
 target18.editor.height=700
 target18.editor.width=900
-<<<<<<< HEAD
 target18.editor.x=32
 target18.editor.y=12
-=======
-target18.editor.x=634
-target18.editor.y=190
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target18.height=50
 target18.name=HatOfLife
 target18.naviview.expanded=true
@@ -418,15 +378,9 @@ target19.naviview.expanded=true
 target19.showInterface=false
 target19.type=ClassTarget
 target19.typeParameters=
-<<<<<<< HEAD
 target19.width=100
 target19.x=1550
 target19.y=60
-=======
-target19.width=90
-target19.x=1320
-target19.y=240
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target2.editor.height=873
 target2.editor.width=1440
 target2.editor.x=0
@@ -555,7 +509,6 @@ target28.showInterface=false
 target28.type=ClassTarget
 target28.typeParameters=
 target28.width=80
-<<<<<<< HEAD
 target28.x=420
 target28.y=50
 target29.editor.height=700
@@ -566,18 +519,6 @@ target29.height=50
 target29.name=EnergyPot
 target29.naviview.expanded=true
 target29.showInterface=false
-=======
-target28.x=1140
-target28.y=180
-target29.editor.height=700
-target29.editor.width=900
-target29.editor.x=40
-target29.editor.y=36
-target29.height=50
-target29.name=SaveGame
-target29.naviview.expanded=false
-target29.showInterface=true
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target29.type=ClassTarget
 target29.typeParameters=
 target29.width=80
@@ -633,28 +574,12 @@ target32.showInterface=false
 target32.type=ClassTarget
 target32.typeParameters=
 target32.width=80
-<<<<<<< HEAD
 target32.x=1230
 target32.y=180
 target33.editor.height=700
 target33.editor.width=900
 target33.editor.x=32
 target33.editor.y=12
-=======
-target32.x=170
-target32.y=50
-<<<<<<< HEAD
-target33.editor.height=873
-target33.editor.width=1440
-target33.editor.x=0
-target33.editor.y=23
-=======
-target33.editor.height=1096
-target33.editor.width=1936
-target33.editor.x=415
-target33.editor.y=76
->>>>>>> cbc43a9e4445eb6183fae50467366b58140f06b2
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target33.height=50
 target33.name=RejuvenationPot
 target33.naviview.expanded=true
@@ -752,7 +677,6 @@ target4.naviview.expanded=true
 target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
-<<<<<<< HEAD
 target4.width=130
 target4.x=1530
 target4.y=0
@@ -760,15 +684,6 @@ target40.editor.height=1040
 target40.editor.width=960
 target40.editor.x=0
 target40.editor.y=0
-=======
-target4.width=120
-target4.x=1490
-target4.y=180
-target40.editor.height=731
-target40.editor.width=1043
-target40.editor.x=120
-target40.editor.y=165
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target40.height=50
 target40.name=HatOfEnergy
 target40.naviview.expanded=true
@@ -841,21 +756,12 @@ target45.showInterface=false
 target45.type=ClassTarget
 target45.typeParameters=
 target45.width=80
-<<<<<<< HEAD
 target45.x=460
 target45.y=0
 target46.editor.height=700
 target46.editor.width=900
 target46.editor.x=32
 target46.editor.y=12
-=======
-target45.x=90
-target45.y=50
-target46.editor.height=1046
-target46.editor.width=1632
-target46.editor.x=0
-target46.editor.y=23
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target46.height=50
 target46.name=WeaponT3
 target46.naviview.expanded=true
@@ -889,13 +795,8 @@ target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
 target6.width=80
-<<<<<<< HEAD
 target6.x=690
 target6.y=100
-=======
-target6.x=1310
-target6.y=120
->>>>>>> 43aed7e054da99ea00ba6e890aad13f6e9cc01de
 target7.editor.height=873
 target7.editor.width=1440
 target7.editor.x=0

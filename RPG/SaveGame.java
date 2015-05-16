@@ -18,33 +18,31 @@ import java.io.IOException;
 public class SaveGame
 {
 
-    public static JButton button;
+    public static JButton button; //making instances so it can be initialised by the constructor so the method has acess to it
+
     public static Item[] backpack;
 
     public SaveGame(JButton b,Item[] pack) {
-        button = b;
+        button = b; //amking the instance varaible the value passed in by the explicit parameter
         backpack = pack;
     }
 
     public void saveGame()  {
-        //FileSystemView fsv = new FileSystemView();
 
-        JFileChooser fileChooser = new JFileChooser();
+        class saveGameClicker implements ActionListener { //inner class to add to the button to get it to work
+            public void actionPerformed(ActionEvent e)  { //overriding the mehod in actionListerner
+                JFileChooser fileChooser = new JFileChooser(); //making an instance of this class which you can invoke upon later
 
-        class saveGameClicker implements ActionListener {
-            public void actionPerformed(ActionEvent e)  {
-                JFileChooser fileChooser = new JFileChooser();
+                fileChooser.setDialogTitle("Specify a file to save");   //setting title 
 
-                fileChooser.setDialogTitle("Specify a file to save");   
+                int userSelection = fileChooser.showSaveDialog(button); //displaying the option of what to name the file and save
 
-                int userSelection = fileChooser.showSaveDialog(button);
-
-                if (userSelection == JFileChooser.APPROVE_OPTION) {
-                    File fileToSave = fileChooser.getSelectedFile();
-                    System.out.println("Save as file: " + fileToSave.getAbsolutePath());
-                    try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileToSave)))   {
-                        out.writeObject(backpack);
-                    } catch (IOException ioe) {
+                if (userSelection == JFileChooser.APPROVE_OPTION) { // if the file is approved then execute
+                    File fileToSave = fileChooser.getSelectedFile(); //creating the file to save it into
+                    try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileToSave)))   { //try this and the out object reference only exists for this try catch
+                        out.writeObject(backpack);  //writing the array of backpack into the file
+                    }
+                    catch (IOException ioe) {
                         //do something if there is an error, at least this so you
                         //know if something went wrong
                         ioe.printStackTrace();
@@ -53,9 +51,7 @@ public class SaveGame
             }
         }
 
-        button.addActionListener(new saveGameClicker());
-
-        //File file = "Save Game.txt";/* ask the user for a file name somehow - JFileChooser, whatever */
-
+        button.addActionListener(new saveGameClicker()); //adding the actionlistener to the button
     }
 }
+

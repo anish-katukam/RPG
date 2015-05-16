@@ -96,7 +96,7 @@ public class OurGraphics
         {
             public void mouseClicked(MouseEvent e)
             {
-                //                Point whereToGo = e.getPoint();
+        
                
                 moveThreader.cancel();
                 GameLogic.character.moveTo(util.screen_point_adjust(e.getPoint()), 500);
@@ -128,8 +128,8 @@ public class OurGraphics
         Starter.frame.addMouseListener(new MainPlayerMover());
         back.addActionListener(new ButtonListener());
 
-        //SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
-        //gameSave.saveGame();
+        SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
+        gameSave.saveGame();
 
     }
 

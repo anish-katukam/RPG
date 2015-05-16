@@ -129,6 +129,7 @@ public class Entity extends JComponent//this class is used for every living thin
     public void paintComponent(Graphics g)
     {
         Graphics2D g2 = (Graphics2D) g;
+        g2.setClip((int)position.getX(), (int)position.getY(), get_curr_sprite().getWidth(), get_curr_sprite().getHeight());
         g2.drawImage(get_curr_sprite(), (int)position.getX(), (int)position.getY(), this);
     }
 
@@ -136,19 +137,23 @@ public class Entity extends JComponent//this class is used for every living thin
     {
         return curr_sprite;
     }
+
     public void moveTo(Point p, int duration)
     {
         moveThreader m = new moveThreader(this, p, duration);
-        
+
     }
+
     public void set_curr_sprite(int index)
     {
         curr_sprite = sprites[index];
     }
+
     public Point getPosition()
     {
         return position;
     }
+
     public void setPosition(int x, int y)
     {
         position.setLocation(x,y);

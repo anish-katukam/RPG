@@ -17,7 +17,7 @@ import java.io.IOException;
 
 public class SaveGame
 {
-    /*
+
     public static JButton button;
     public static Item[] backpack;
 
@@ -27,28 +27,26 @@ public class SaveGame
     }
 
     public void saveGame()  {
-        //         FileSystemView fsv = new FileSystemView();
-<<<<<<< HEAD
-=======
+        //FileSystemView fsv = new FileSystemView();
+
         JFileChooser fileChooser = new JFileChooser();
->>>>>>> 25130eb2a02779e8dec768ef75174ce1cc38b5af
 
         class saveGameClicker implements ActionListener {
             public void actionPerformed(ActionEvent e)  {
                 JFileChooser fileChooser = new JFileChooser();
-                
+
                 fileChooser.setDialogTitle("Specify a file to save");   
 
                 int userSelection = fileChooser.showSaveDialog(button);
 
                 if (userSelection == JFileChooser.APPROVE_OPTION) {
                     File fileToSave = fileChooser.getSelectedFile();
-                    //                     System.out.println("Save as file: " + fileToSave.getAbsolutePath());
+                    System.out.println("Save as file: " + fileToSave.getAbsolutePath());
                     try (ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream(fileToSave)))   {
                         out.writeObject(backpack);
                     } catch (IOException ioe) {
-                        // do something if there is an error, at least this so you
-                        // know if something went wrong
+                        //do something if there is an error, at least this so you
+                        //know if something went wrong
                         ioe.printStackTrace();
                     }
                 }
@@ -57,12 +55,7 @@ public class SaveGame
 
         button.addActionListener(new saveGameClicker());
 
-<<<<<<< HEAD
-        //         File file = "Save Game.txt";/* ask the user for a file name somehow - JFileChooser, whatever */
-=======
-        //         File file = "Save Game.txt";/* ask the user for a file name somehow - JFileChooser, whatever 
->>>>>>> 25130eb2a02779e8dec768ef75174ce1cc38b5af
+        //File file = "Save Game.txt";/* ask the user for a file name somehow - JFileChooser, whatever */
 
-        
-    }*/
+    }
 }

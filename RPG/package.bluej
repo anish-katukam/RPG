@@ -227,37 +227,21 @@ dependency8.type=UsesDependency
 dependency9.from=Battle
 dependency9.to=Entity
 dependency9.type=UsesDependency
-<<<<<<< HEAD
 objectbench.height=76
 objectbench.width=1420
 package.editor.height=734
 package.editor.width=1312
 package.editor.x=0
 package.editor.y=23
-=======
-objectbench.height=168
-objectbench.width=1595
-package.editor.height=832
-package.editor.width=1802
-package.editor.x=-1737
-package.editor.y=156
->>>>>>> cbc43a9e4445eb6183fae50467366b58140f06b2
 package.numDependencies=76
 package.numTargets=46
 package.showExtends=true
 package.showUses=true
 project.charset=UTF-8
-<<<<<<< HEAD
 target1.editor.height=873
 target1.editor.width=1440
 target1.editor.x=0
 target1.editor.y=23
-=======
-target1.editor.height=1096
-target1.editor.width=1936
-target1.editor.x=-1795
-target1.editor.y=503
->>>>>>> cbc43a9e4445eb6183fae50467366b58140f06b2
 target1.height=50
 target1.name=Entity
 target1.naviview.expanded=true
@@ -373,8 +357,8 @@ target17.x=1230
 target17.y=240
 target18.editor.height=700
 target18.editor.width=900
-target18.editor.x=634
-target18.editor.y=190
+target18.editor.x=40
+target18.editor.y=43
 target18.height=50
 target18.name=ImageDrawer
 target18.naviview.expanded=false
@@ -527,14 +511,14 @@ target28.typeParameters=
 target28.width=80
 target28.x=1140
 target28.y=180
-target29.editor.height=700
-target29.editor.width=900
-target29.editor.x=40
-target29.editor.y=36
+target29.editor.height=873
+target29.editor.width=1440
+target29.editor.x=0
+target29.editor.y=23
 target29.height=50
 target29.name=SaveGame
 target29.naviview.expanded=false
-target29.showInterface=true
+target29.showInterface=false
 target29.type=ClassTarget
 target29.typeParameters=
 target29.width=90
@@ -592,17 +576,10 @@ target32.typeParameters=
 target32.width=80
 target32.x=170
 target32.y=50
-<<<<<<< HEAD
 target33.editor.height=873
 target33.editor.width=1440
 target33.editor.x=0
 target33.editor.y=23
-=======
-target33.editor.height=1096
-target33.editor.width=1936
-target33.editor.x=415
-target33.editor.y=76
->>>>>>> cbc43a9e4445eb6183fae50467366b58140f06b2
 target33.height=50
 target33.name=OurGraphics
 target33.naviview.expanded=true
@@ -781,8 +758,8 @@ target45.typeParameters=
 target45.width=80
 target45.x=90
 target45.y=50
-target46.editor.height=1046
-target46.editor.width=1632
+target46.editor.height=700
+target46.editor.width=900
 target46.editor.x=0
 target46.editor.y=23
 target46.height=50

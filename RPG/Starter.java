@@ -21,7 +21,7 @@ public class Starter
         
         String[] yesOrNo = {"Yes","No"};
         
-        response = (String) JOptionPane.showInputDialog(null, "Which European Leader would you like to be?", "Leader", JOptionPane.PLAIN_MESSAGE,null, leaders, leaders[0]);
+        String response = (String) JOptionPane.showInputDialog(null, "Would you like to Load a Saved Game?", "Load Game?", JOptionPane.PLAIN_MESSAGE,null, yesOrNo, yesOrNo[0]);
         
         //         final JLayeredPane layeredPane = new JLayeredPane();
         //         final JPanel menu = new JPanel(new GridLayout(6, 1));

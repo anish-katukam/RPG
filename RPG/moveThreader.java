@@ -31,8 +31,8 @@ public class moveThreader extends Thread
         while (curr_time < d && !cancel)
         {
             curr_time = System.currentTimeMillis() - millis;
-            e.setPosition((int)(((curr_time/d))*x_distance+x_orig), (int)(((curr_time/d))*y_distance+y_orig));
-           
+            //e.setPosition((int)(((curr_time/d))*x_distance+x_orig), (int)(((curr_time/d))*y_distance+y_orig));
+           e.setPosition((int)(((curr_time/d))*x_distance+x_orig), piecewise_handler.getY((int)(((curr_time/d))*x_distance+x_orig), Starter.getCurrentFrame()));
         }
 
         

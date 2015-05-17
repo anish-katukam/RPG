@@ -15,3 +15,5 @@ public class Potion extends Item
         t.say("Bloodlust Granted: " + bloodlust);
     }
 }
+
+

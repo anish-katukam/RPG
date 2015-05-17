@@ -47,7 +47,7 @@ public class OurGraphics
         
         back.setOpaque(true);
         back.setContentAreaFilled(false);
-        back.setBorderPainted(false);
+        back.setBorderPainted(true);
         back.setIcon(new ImageIcon("Resources/Assets/backicon.png"));
 
         inventory.setBounds(((int)util.screen_size.getWidth()/4)-150, ((int)util.screen_size.getHeight()/4)-130, 300, 100);
@@ -88,6 +88,10 @@ public class OurGraphics
                     Starter.frame.repaint();
 
                 }
+                
+                if (e.getSource() == inventory) {
+                    InventoryDisplay display  = new InventoryDisplay();
+                }
 
             }
         }
@@ -127,6 +131,7 @@ public class OurGraphics
         menuButton.addActionListener(new ButtonListener());
         Starter.frame.addMouseListener(new MainPlayerMover());
         back.addActionListener(new ButtonListener());
+        inventory.addActionListener(new ButtonListener());
 
         SaveGame gameSave = new SaveGame(save,Inventory.getListOfPotions());
         gameSave.saveGame();

@@ -1,3 +1,7 @@
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
+
 public class PotOfLife extends Potion
 {
     public PotOfLife(){
@@ -7,5 +11,10 @@ public class PotOfLife extends Potion
         this.health = 20;
         this.energy = 20;
         this.bloodlust = 3;
+        try {
+            this.picture = ImageIO.read(new File("Resources/Potions/Life Potion.png"));
+        }   catch   (IOException ioe)   {
+            ioe.printStackTrace();
+        }
     }
 }

@@ -1,4 +1,4 @@
-public abstract class piecewise_handler
+/*public abstract class piecewise_handler
 {
     public static int getY(int x, int map)
     {
@@ -16,4 +16,4 @@ public abstract class piecewise_handler
         }
         return y;
     }
-}
+}*/

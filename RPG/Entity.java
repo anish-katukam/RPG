@@ -28,7 +28,7 @@ public class Entity extends JComponent//this class is used for every living thin
             int count = 0;
             for(String s: sprite_locs)
             {
-                sprites[count] = ImageIO.read(new File(s));
+                sprites[count] = util.resize_img(new Dimension(125, 125), ImageIO.read(new File(s)));
                 count++;
             }
         } catch (IOException e) {

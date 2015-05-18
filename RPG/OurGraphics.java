@@ -103,7 +103,8 @@ public class OurGraphics
         
                
                 moveThreader.cancel();
-                GameLogic.character.moveTo(new Point((int)util.screen_point_adjust(e.getPoint()).getX(), piecewise_handler.getY((int)util.screen_point_adjust(e.getPoint()).getX(), Starter.getCurrentFrame())) , 500);
+                //GameLogic.character.moveTo(new Point((int)util.screen_point_adjust(e.getPoint()).getX(), piecewise_handler.getY((int)util.screen_point_adjust(e.getPoint()).getX(), Starter.getCurrentFrame())) , 500);
+                GameLogic.character.moveTo(new Point((int)util.screen_point_adjust(e.getPoint()).getX(), (int)util.screen_point_adjust(e.getPoint()).getY()), 500);
             }
 
             public void mousePressed(MouseEvent e)

@@ -7,4 +7,6 @@ comment2.params=p
 comment2.target=java.awt.Point\ screen_point_adjust(java.awt.Point)
 comment3.params=img
 comment3.target=java.awt.image.BufferedImage\ toBufferedImage(java.awt.Image)
-numComments=4
+comment4.params=img
+comment4.target=java.awt.image.BufferedImage\ blur(java.awt.image.BufferedImage)
+numComments=5

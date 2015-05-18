@@ -47,4 +47,13 @@ public abstract class util
         // Return the buffered image
         return bimage;
     }
+    public static BufferedImage blur(BufferedImage img)
+    {
+        float[] bits = {1.0f/9.0f, 1.0f/9.0f, 1.0f/9.0f, 1.0f/9.0f, 1.0f/9.0f, 1.0f/9.0f, 1.0f/9.0f, 1.0f/9.0f, 1.0f/9.0f};;
+        Kernel kernel = new Kernel(3,3,bits);
+        ConvolveOp convolve_op = new ConvolveOp(kernel);
+        BufferedImage out = new BufferedImage(img.getWidth(), img.getHeight(), img.getType());
+        convolve_op.filter(img, out);
+        return out;
+    }
 }

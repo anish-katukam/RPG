@@ -8,7 +8,7 @@ import javax.swing.*;
 public class ImageDrawer extends JComponent
 {
     private int image_index;
-    private static BufferedImage[] listOfImages = new BufferedImage[4];
+    public static BufferedImage[] listOfImages = new BufferedImage[4];
 
     public ImageDrawer(int index)
     {

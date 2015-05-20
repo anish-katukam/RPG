@@ -52,7 +52,7 @@ public class Starter
         //         initFX(fxPanel); 
         //         frame.setDefaultfullScreenButtonOperation(JFrame.EXIT_ON_fullScreenButton);
 
-        GameLogic.character.setSprites(new String[] {"Resources/sprite_test.png"});
+        GameLogic.character.setSprites(new String[] {"Resources/Assets/character/front.PNG"});
         GameLogic.character.setPosition(100,100);
         GameLogic.character.set_curr_sprite(0);
 

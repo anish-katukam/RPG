@@ -1,3 +1,5 @@
+import java.awt.image.BufferedImage;
+
 public abstract class Item
 {
     protected String name;
@@ -7,6 +9,7 @@ public abstract class Item
     protected int health;
     protected int energy;
     protected int bloodlust;
+    protected BufferedImage picture;
 
     public Item (){ 
     }
@@ -22,23 +25,27 @@ public abstract class Item
     public abstract void explicate(TextIO t); //overloaded in each item to let it describe itself
 
     public int getAttack(){
-        return 0;
+        return attack;
     }
 
     public int getDefense(){
-        return 0;
+        return defense;
     }
 
     public int getHealth(){
-        return 0;
+        return health;
     }
 
     public int getEnergy(){
-        return 0;
+        return energy;
     }
 
     public int getBloodlust(){
-        return 0;
+        return bloodlust;
+    }
+    
+    public BufferedImage getPicture()   {
+        return picture;
     }
 
     public String toString(){

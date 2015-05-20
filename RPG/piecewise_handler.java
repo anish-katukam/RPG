@@ -1,4 +1,4 @@
-public abstract class piecewise_handler
+public abstract class piecewise_handler //unused class, intended to maintain a fixed y coordinate to allow the character to move on the map's ground
 {
     public static int getY(int x, int map)
     {
